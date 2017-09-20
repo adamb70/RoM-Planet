@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Definition xsi:type="MyObjectBuilder_PlanetReachabilityComponentDefinition">
+		<Id Type="MyObjectBuilder_PlanetReachabilityComponent" Subtype="Terra"/>
+		<Provider xsi:type="MyObjectBuilder_TerrainReachabilityProvider">
+			<Definition Type="MyObjectBuilder_TerrainReachabilityProviderDefinition" Subtype="Terra"/>
+		</Provider>
+
+		<Provider xsi:type="MyObjectBuilder_OwnershipReachabilityProvider"/>
+
+		<Provider xsi:type="MyObjectBuilder_DevelopmentReachabilityProvider">
+			<Definition Type="MyObjectBuilder_DevelopmentReachabilityProviderDefinition" Subtype="Terra"/>
+		</Provider>
+	</Definition>
+
+	<Definition xsi:type="MyObjectBuilder_TerrainReachabilityProviderDefinition">
+		<Id Type="MyObjectBuilder_TerrainReachabilityProviderDefinition" Subtype="Terra"/>
+
+		<RiseThreshold>.14</RiseThreshold>
+		<HeightThreshold>.6</HeightThreshold>
+
+		<!-- Per planet face overrides -->
+		<OverrideForward>Data/PlanetDataFiles/Rpmap/FastTravelOverrides/Front_ForbiddenAreas.png</OverrideForward>
+		<OverrideBackward>Data/PlanetDataFiles/Rpmap/FastTravelOverrides/Back_ForbiddenAreas.png</OverrideBackward>
+		<OverrideLeft>Data/PlanetDataFiles/Rpmap/FastTravelOverrides/Left_ForbiddenAreas.png</OverrideLeft>
+		<OverrideRight>Data/PlanetDataFiles/Rpmap/FastTravelOverrides/Right_ForbiddenAreas.png</OverrideRight>
+		<OverrideUp>Data/PlanetDataFiles/Rpmap/FastTravelOverrides/Up_ForbiddenAreas.png</OverrideUp>
+		<OverrideDown>Data/PlanetDataFiles/Rpmap/FastTravelOverrides/Down_ForbiddenAreas.png</OverrideDown>
+	</Definition>
+
+	<Definition xsi:type="MyObjectBuilder_DevelopmentReachabilityProviderDefinition">
+		<Id Type="MyObjectBuilder_DevelopmentReachabilityProviderDefinition" Subtype="Terra"/>
+
+		<BlockCountThreshold>10</BlockCountThreshold>
+	</Definition>
+</Definitions>

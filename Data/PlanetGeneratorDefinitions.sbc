@@ -1,0 +1,426 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!--Planets -->
+  <Definition xsi:type="PlanetGeneratorDefinition">
+    <Id>
+      <TypeId>PlanetGeneratorDefinition</TypeId>
+      <SubtypeId>RPmap</SubtypeId>
+    </Id>
+
+    <Environment>
+      <TypeId>MyObjectBuilder_ProceduralWorldEnvironment</TypeId>
+      <SubtypeId>Mistvalin_Environment</SubtypeId>
+    </Environment>
+
+    <!--!!!Important!! Read if you want to mod Planets! -->
+    <!--Following tag switches off loading from certain color channels. Its performance measure in cases where channels are not used-->
+    <!--Make sure you are not modding a switched off channel-->
+    <PlanetMaps Material="true" Ores="true" Biome="true" Occlusion="false"/>
+<!--
+	<MapProvider xsi:type="MyObjectBuilder_PlanetTextureMapProvider" Path="RPmap"/>
+	-->
+	<!--*Voxel Material names*
+		Grass
+		Grass_02
+		Soil
+		Rocks_moss
+		Rocks_grass
+		Grass_old
+		Stone
+		Stone_02
+		Woods
+		Woods_grass
+		Woods_needles
+	*Voxel Material names*
+	-->
+	
+	<!--*Rule List Examle*
+	<MaterialGroup	Name="NAME" Value="#">
+		<Rule>
+			<Layers>
+				<Layer Material="NAME" Depth="#"/>
+				~
+				~
+			</Layers>
+			<Slope Min="#" Max="#"/>
+			<Height Min="#" Max="#"/>
+		</Rule>
+	</MaterialGroup>
+	-->
+	
+	
+	
+    <!-- Rules that define where materials are generated -->
+   <ComplexMaterials>
+	<MaterialGroup Name="grass" Value="10">
+        <Rule>
+          <Layers>
+            <Layer Material="COGGrass" Depth="1"/>
+            <Layer Material="COGSoil" Depth="10"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+        </Rule>
+
+	</MaterialGroup>
+	
+	<MaterialGroup Name="drygrass" Value="20">
+        <Rule>
+          <Layers>
+            <Layer Material="COGGrass_old" Depth="1"/>
+			<Layer Material="COGDesert_Rubble" Depth="6"/>
+            <Layer Material="COGSand_Stone" Depth="500"/>
+          </Layers>
+        </Rule>
+	</MaterialGroup>
+	
+	<MaterialGroup Name="desert Soil" Value="30">
+        <Rule>
+          <Layers>
+			<Layer Material="COGDesert_Soil" Depth="2"/>	
+			<Layer Material="COGDesert_Rubble" Depth="5"/>
+            <Layer Material="COGSand_Stone" Depth="500"/>
+          </Layers>
+        </Rule>
+	</MaterialGroup>
+	
+	<MaterialGroup Name="Rock Grass" Value="40">
+        <Rule>
+          <Layers>
+            <Layer Material="COGRocks_grass" Depth="1"/>
+            <Layer Material="COGSoil" Depth="5"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+        </Rule>
+	</MaterialGroup>
+	
+	<MaterialGroup Name="Sand" Value="50">
+        <Rule>
+          <Layers>
+            <Layer Material="COGSand" Depth="1"/>
+			<Layer Material="COGDesert_Soil" Depth="2"/>
+            <Layer Material="COGDesert_Rubble" Depth="5"/>
+            <Layer Material="COGSand_Stone" Depth="500"/>
+          </Layers>
+        </Rule>
+	</MaterialGroup>
+	
+	<MaterialGroup Name="Road" Value="67">
+        <Rule>
+          <Layers>
+            <Layer Material="COGSoil" Depth="30"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+        </Rule>
+	</MaterialGroup>
+	
+	<MaterialGroup Name="Desert Rubble" Value="70">
+        <Rule>
+          <Layers>
+		  <Layer Material="COGDesert_Rubble" Depth="3"/>
+          <Layer Material="COGSand_Stone" Depth="500"/>
+          </Layers>
+        </Rule>
+	</MaterialGroup>
+	
+	<MaterialGroup Name="Stone" Value="80">
+        <Rule>
+          <Layers>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+        </Rule>
+	</MaterialGroup>
+	
+	<MaterialGroup Name="Sand Stone" Value="100">
+        <Rule>
+          <Layers>
+            <Layer Material="COGSand_Stone" Depth="500"/>
+          </Layers>
+        </Rule>
+	</MaterialGroup>
+	
+	<MaterialGroup Name="Edge Nordic Forest" Value="120">
+        <Rule>
+          <Layers>
+            <Layer Material="COGWoods_needles" Depth="1"/>
+            <Layer Material="COGSoil" Depth="20"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+        </Rule>
+	</MaterialGroup>
+	
+	<MaterialGroup Name="Middle Nordic Forest" Value="130">
+        <Rule>
+          <Layers>
+            <Layer Material="COGWoods_grass" Depth="2"/>
+            <Layer Material="COGSoil" Depth="20"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+        </Rule>
+	</MaterialGroup>
+	
+	<MaterialGroup Name="Dense Nordic Forest" Value="140">
+        <Rule>
+          <Layers>
+            <Layer Material="COGWoods" Depth="2"/>
+            <Layer Material="COGSoil" Depth="20"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+        </Rule>
+	</MaterialGroup>
+	
+	<MaterialGroup Name="Edge Mountain forest" Value="150">
+        <Rule>
+          <Layers>
+            <Layer Material="COGGrass" Depth="1"/>
+            <Layer Material="COGSoil" Depth="10"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+        </Rule>
+	</MaterialGroup>
+	
+	<MaterialGroup Name="Middle Mountain Forest" Value="160">
+        <Rule>
+          <Layers>
+            <Layer Material="COGWoods_needles" Depth="1"/>
+            <Layer Material="COGSoil" Depth="10"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+        </Rule>
+	</MaterialGroup>
+	
+	<MaterialGroup Name="Dense Mountain Forest" Value="170">
+        <Rule>
+          <Layers>
+            <Layer Material="COGWoods_grass" Depth="1"/>
+            <Layer Material="COGSoil" Depth="10"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+        </Rule>
+	</MaterialGroup>
+	
+	<MaterialGroup Name="Snow" Value="180">
+        <Rule>
+          <Layers>
+            <Layer Material="COGSnow" Depth="1"/>
+			<Layer Material="COGRocks_moss" Depth="1"/>
+            <Layer Material="COGSoil" Depth="5"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+        </Rule>
+	</MaterialGroup>
+	
+	<MaterialGroup Name="Edge Mountain Snow Forest" Value="190">
+        <Rule>
+          <Layers>
+            <Layer Material="COGSnow" Depth="1"/>
+			<Later Material="COGRocks_grass" Depth="1"/>
+            <Layer Material="COGSoil" Depth="5"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+        </Rule>
+	</MaterialGroup>
+	
+	<MaterialGroup Name="Middle Mountain Snow Forest" Value="200">
+        <Rule>
+          <Layers>
+            <Layer Material="COGWoods_Snow" Depth="1"/>
+            <Layer Material="COGSoil" Depth="5"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+        </Rule>
+	</MaterialGroup>
+	
+	<MaterialGroup Name="Dense Mountain Snow Forest" Value="210">
+        <Rule>
+          <Layers>
+            <Layer Material="COGWoods_Snow" Depth="1"/>
+            <Layer Material="COGSoil" Depth="5"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+        </Rule>
+	</MaterialGroup>
+	
+   </ComplexMaterials>
+
+	<SoundRules>
+      <!-- Day -->
+      <SoundRule>
+        <Height Min="0" Max="0.5"/>
+        <Latitude Min="0" Max="45"/>
+        <SunAngleFromZenith Min="0" Max="90"/>
+        <EnvironmentSound>AmbDayForestA</EnvironmentSound>
+      </SoundRule>
+      <SoundRule>
+        <Height Min="0" Max="0.5"/>
+        <Latitude Min="45" Max="90"/>
+        <SunAngleFromZenith Min="0" Max="90"/>
+        <EnvironmentSound>AmbDayForestB</EnvironmentSound>
+      </SoundRule>
+
+      <!-- Night -->
+      <SoundRule>
+        <Height Min="0" Max="0.5"/>
+        <Latitude Min="0" Max="45"/>
+        <SunAngleFromZenith Min="90" Max="180"/>
+        <EnvironmentSound>AmbNightA</EnvironmentSound>
+      </SoundRule>
+      <SoundRule>
+        <Height Min="0" Max="0.5"/>
+        <Latitude Min="45" Max="90"/>
+        <SunAngleFromZenith Min="90" Max="180"/>
+        <EnvironmentSound>AmbNightB</EnvironmentSound>
+      </SoundRule>
+
+      <!-- Mountain wind - AMB High -->
+      <SoundRule>
+        <Height Min="0.5" Max="1"/>
+        <Latitude Min="0" Max="90"/>
+        <SunAngleFromZenith Min="0" Max="180"/>
+        <EnvironmentSound>AmbHigh</EnvironmentSound>
+      </SoundRule>
+    </SoundRules>
+    
+    <OreMappings>
+      <!--!INSERT ONLY IN BLUE CHANNEL on MaterialTexture -->
+	  <Ore Value="80" Type="COGFakeOre" 				Start="20" 	Depth="5" TargetColor="#9999ff" ColorInfluence="80"/><!--1fake ore for color change elf forest-->
+	  <Ore Value="90" Type="COGGold" 					Start="10" 	Depth="10" TargetColor="#c8b036" ColorInfluence="0"/><!--1deep-->
+	  <Ore Value="100" Type="COGMithril" 				Start="60" 	Depth="40" TargetColor="#000000" ColorInfluence="0"/><!--0-->
+      <Ore Value="120" Type="IronOre_RichYield"	 		Start="20" 	Depth="10" TargetColor="#b7340a" ColorInfluence="0"/><!--10-->
+      <Ore Value="130" Type="IronOre_PoorYield" 		Start="5" 	Depth="10" TargetColor="#a76a41" ColorInfluence="0" /><!--5-->
+	  <Ore Value="140" Type="IronOre_RichYield" 		Start="50"	Depth="20" TargetColor="#b7340a" ColorInfluence="0"/><!--0deep-->
+	  <Ore Value="150" Type="IronOre_RegularYield" 		Start="10"	Depth="10" TargetColor="#b7340a" ColorInfluence="0"/><!--0deep-->
+	  <Ore Value="160" Type="COGCoal" 					Start="10" 	Depth="6" TargetColor="#121212" ColorInfluence="0"/><!--5-->
+	  <Ore Value="170" Type="COGCoal" 					Start="20"	Depth="25" TargetColor="#121212" ColorInfluence="0"/><!--0deep-->
+	  <Ore Value="190" Type="COGGold" 					Start="40"	Depth="20" TargetColor="#c8b036" ColorInfluence="0"/><!--1-->
+	  <Ore Value="200" Type="COGSalt" 					Start="15" 	Depth="6" TargetColor="#ffffff" ColorInfluence="0"/><!--5-->
+	  <Ore Value="210" Type="COGSalt" 					Start="25" 	Depth="15" TargetColor="#ffffff" ColorInfluence="0"/><!--0deep-->
+	  <Ore Value="220" Type="COGCopper" 				Start="10" 	Depth="6" TargetColor="#42ae6d" ColorInfluence="0"/><!--0-->
+	  <Ore Value="230" Type="COGCopper" 				Start="20" 	Depth="6" TargetColor="#42ae6d" ColorInfluence="0"/><!--0-->
+	  <Ore Value="240" Type="COGFuture_Nordic_Ore" 		Start="20" 	Depth="6" TargetColor="#000000" ColorInfluence="0"/><!--0-->
+	  <Ore Value="250" Type="COGFuture_Desert_Ore" 		Start="20" 	Depth="6" TargetColor="#000000" ColorInfluence="0"/><!--0-->
+	  <Ore Value="255" Type="COGFuture_Mountain_Ore" 	Start="20" 	Depth="6" TargetColor="#000000" ColorInfluence="0"/><!--0-->
+    </OreMappings>
+
+    <MaximumOxygen>1.0</MaximumOxygen>
+    <SurfaceGravity>1.0</SurfaceGravity>
+    <DefaultSurfaceMaterial Material="COGGrass" MaxDepth="1"/>
+    <DefaultSubSurfaceMaterial Material="Stone"/>
+
+    <HasAtmosphere>true</HasAtmosphere>
+    <Atmosphere>
+      <Breathable>true</Breathable>
+      <OxygenDensity>0.9</OxygenDensity>
+      <Density>1.0</Density>
+      <LimitAltitude>2.0</LimitAltitude>
+    </Atmosphere>
+
+    <!-- Earthlike Planet's Atmosphere settings -->
+    <AtmosphereSettings>
+          <RayleighScattering>
+              <X>100</X>
+              <Y>84</Y>
+              <Z>63</Z>
+          </RayleighScattering>
+          <MieScattering>50</MieScattering>
+          <MieColorScattering>
+              <X>44</X>
+              <Y>62</Y>
+              <Z>150</Z>
+          </MieColorScattering>
+          <RayleighHeight>36</RayleighHeight>
+          <RayleighHeightSpace>15</RayleighHeightSpace>
+          <RayleighTransitionModifier>0.4</RayleighTransitionModifier>
+          <MieHeight>200</MieHeight>
+          <MieG>0.9995474</MieG>
+          <Intensity>6</Intensity>
+          <SeaLevelModifier>1.0</SeaLevelModifier>
+          <AtmosphereTopModifier>1.1</AtmosphereTopModifier>
+          <FogIntensity>1.0</FogIntensity>
+          <Scale>1</Scale>
+      </AtmosphereSettings>
+
+    <!-- Earthlike Planet's Clouds settings-->
+
+    <CloudLayers>
+      <CloudLayer>
+        <!-- Far layer -->
+        <Model>Models/Environment/Sky/CloudSphere.mwm</Model>
+        <Textures>
+          <Texture>Textures/Models/Environment/Sky/EarthFarClouds.dds</Texture>
+        </Textures>
+        <RelativeAltitude>1.2</RelativeAltitude>
+        <RotationAxis>
+          <X>-0.2</X>
+          <Y>1</Y>
+          <Z>0.2</Z>
+        </RotationAxis>
+        <AngularVelocity>0.0002</AngularVelocity>
+        <InitialRotation>1.2</InitialRotation>
+        <ScalingEnabled>false</ScalingEnabled>
+        <FadeOutRelativeAltitudeStart>2.0</FadeOutRelativeAltitudeStart>
+        <FadeOutRelativeAltitudeEnd>1.4</FadeOutRelativeAltitudeEnd>
+        <ApplyFogRelativeDistance>0.05</ApplyFogRelativeDistance>
+      </CloudLayer>
+
+      <!-- Near layers -->
+      <CloudLayer>
+        <Model>Models/Environment/Sky/CloudSphere.mwm</Model>
+        <Textures>
+          <Texture>Textures/Models/Environment/Sky/Landsky_texture.dds</Texture>
+        </Textures>
+        <RelativeAltitude>1.3</RelativeAltitude>
+        <RotationAxis>
+          <X>0</X>
+          <Y>1</Y>
+          <Z>0</Z>
+        </RotationAxis>
+        <AngularVelocity>0.0006</AngularVelocity>
+        <InitialRotation>0.15</InitialRotation>
+        <ScalingEnabled>false</ScalingEnabled>
+        <FadeOutRelativeAltitudeStart>0.5</FadeOutRelativeAltitudeStart>
+        <FadeOutRelativeAltitudeEnd>1.6</FadeOutRelativeAltitudeEnd>
+      </CloudLayer>
+
+      <CloudLayer>
+        <Model>Models/Environment/Sky/CloudSphere.mwm</Model>
+        <Textures>
+          <Texture>Textures/Models/Environment/Sky/Landsky_texture.dds</Texture>
+        </Textures>
+        <RelativeAltitude>2.3</RelativeAltitude>
+        <RotationAxis>
+          <X>0.2</X>
+          <Y>1</Y>
+          <Z>-0.2</Z>
+        </RotationAxis>
+        <AngularVelocity>0.0006</AngularVelocity>
+        <InitialRotation>0.5</InitialRotation>
+        <ScalingEnabled>false</ScalingEnabled>
+        <FadeOutRelativeAltitudeStart>0.7</FadeOutRelativeAltitudeStart>
+        <FadeOutRelativeAltitudeEnd>1.5</FadeOutRelativeAltitudeEnd>
+      </CloudLayer>
+
+      <CloudLayer>
+        <Model>Models/Environment/Sky/CloudSphere.mwm</Model>
+        <Textures>
+          <Texture>Textures/Models/Environment/Sky/Landsky_texture.dds</Texture>
+        </Textures>
+        <RelativeAltitude>3.3</RelativeAltitude>
+        <RotationAxis>
+          <X>-0.2</X>
+          <Y>1</Y>
+          <Z>0.2</Z>
+        </RotationAxis>
+        <AngularVelocity>0.0006</AngularVelocity>
+        <InitialRotation>1.2</InitialRotation>
+        <ScalingEnabled>false</ScalingEnabled>
+        <FadeOutRelativeAltitudeStart>0.8</FadeOutRelativeAltitudeStart>
+        <FadeOutRelativeAltitudeEnd>1.4</FadeOutRelativeAltitudeEnd>
+      </CloudLayer>
+    </CloudLayers>
+
+    <MaterialsMaxDepth Min="4000" Max="4000"/>
+    <MaterialsMinDepth Min="20" Max="20"/>
+
+    <HillParams Min = "-0.02" Max ="0.1"/>
+  </Definition>
+</Definitions>
