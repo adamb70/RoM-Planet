@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<Definition xsi:type="MyObjectBuilder_PlanetReachabilityComponentDefinition">
-		<Id Type="MyObjectBuilder_PlanetReachabilityComponent" Subtype="Terra"/>
+		<Id Type="MyObjectBuilder_PlanetReachabilityComponent" Subtype="RoM"/>
 		<Provider xsi:type="MyObjectBuilder_TerrainReachabilityProvider">
-			<Definition Type="MyObjectBuilder_TerrainReachabilityProviderDefinition" Subtype="Terra"/>
+			<Definition Type="MyObjectBuilder_TerrainReachabilityProviderDefinition" Subtype="RoM"/>
 		</Provider>
 
 		<Provider xsi:type="MyObjectBuilder_OwnershipReachabilityProvider"/>
 
 		<Provider xsi:type="MyObjectBuilder_DevelopmentReachabilityProvider">
-			<Definition Type="MyObjectBuilder_DevelopmentReachabilityProviderDefinition" Subtype="Terra"/>
+			<Definition Type="MyObjectBuilder_DevelopmentReachabilityProviderDefinition" Subtype="RoM"/>
 		</Provider>
 	</Definition>
 
 	<Definition xsi:type="MyObjectBuilder_TerrainReachabilityProviderDefinition">
-		<Id Type="MyObjectBuilder_TerrainReachabilityProviderDefinition" Subtype="Terra"/>
+		<Id Type="MyObjectBuilder_TerrainReachabilityProviderDefinition" Subtype="RoM"/>
 
 		<RiseThreshold>.14</RiseThreshold>
 		<HeightThreshold>.6</HeightThreshold>
@@ -29,7 +29,7 @@
 	</Definition>
 
 	<Definition xsi:type="MyObjectBuilder_DevelopmentReachabilityProviderDefinition">
-		<Id Type="MyObjectBuilder_DevelopmentReachabilityProviderDefinition" Subtype="Terra"/>
+		<Id Type="MyObjectBuilder_DevelopmentReachabilityProviderDefinition" Subtype="RoM"/>
 
 		<BlockCountThreshold>10</BlockCountThreshold>
 	</Definition>
