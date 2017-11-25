@@ -1,323 +1,58 @@
 <?xml version="1.0"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     
-	
-	
-	
-  <Definition xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+  <Definition xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">   <!-- Override to change grass density -->
     <Id>
       <TypeId>VoxelMaterialDefinition</TypeId>
-      <SubtypeId>COGGrass</SubtypeId>		<!--Edit for ore drops-->
+      <SubtypeId>COGSteppeYellowGrass</SubtypeId>
     </Id>
-    <MaterialTypeName>Grass</MaterialTypeName>
-	
-    <MinedOre>Stone</MinedOre>  <!--no droped ore for mining grass-->
-    <MinedOreRatio>0</MinedOreRatio>
-    <ColorKey Hex="#839154"/> <!--make grass look like vomit when over iron-->
-    <ColorMetalXZnY>Textures\Voxels\Grass_cm.dds</ColorMetalXZnY>
-    <ColorMetalY>Textures\Voxels\Grass_cm.dds</ColorMetalY>
-    <NormalGlossXZnY>Textures\Voxels\Grass_ng.dds</NormalGlossXZnY>
-    <NormalGlossY>Textures\Voxels\Grass_ng.dds</NormalGlossY>
+    <PhysicalMaterialName>Grass</PhysicalMaterialName>
+    <Hardness>100</Hardness>
+    <ColorKey Hex="#C3960C"/>
+    <ColorMetalXZnY>Textures\Voxels\COGSteppeYellowGrass_cm.dds</ColorMetalXZnY>
+    <ColorMetalY>Textures\Voxels\COGSteppeYellowGrass_cm.dds</ColorMetalY>
+    <NormalGlossXZnY>Textures\Voxels\SteppeYellowGrass_ng.dds</NormalGlossXZnY>
+    <NormalGlossY>Textures\Voxels\SteppeYellowGrass_ng.dds</NormalGlossY>
     <SpecularPower>24</SpecularPower>
     <SpecularShininess>0.364</SpecularShininess>
-    <ColorMetalXZnYFar1>Textures\Voxels\Grass_Far1_cm.dds</ColorMetalXZnYFar1>
-    <ColorMetalYFar1>Textures\Voxels\Grass_Far1_cm.dds</ColorMetalYFar1>
-    <NormalGlossXZnYFar1>Textures\Voxels\Grass_Far1_ng.dds</NormalGlossXZnYFar1>
-    <NormalGlossYFar1>Textures\Voxels\Grass_Far1_ng.dds</NormalGlossYFar1>
-    <ColorMetalXZnYFar2>Textures\Voxels\Grass_Far1_cm.dds</ColorMetalXZnYFar2>
-    <ColorMetalYFar2>Textures\Voxels\Grass_Far1_cm.dds</ColorMetalYFar2>
-    <NormalGlossXZnYFar2>Textures\Voxels\Grass_Far1_ng.dds</NormalGlossXZnYFar2>
-    <NormalGlossYFar2>Textures\Voxels\Grass_Far1_ng.dds</NormalGlossYFar2>
+    <Icon>Textures\GUI\Icons\Voxel\SteppeYellowGrass.png</Icon>
+    <ColorMetalXZnYFar1>Textures\Voxels\COGSteppeYellowGrass_far_cm.dds</ColorMetalXZnYFar1>
+    <ColorMetalYFar1>Textures\Voxels\COGSteppeYellowGrass_far_cm.dds</ColorMetalYFar1>
+    <NormalGlossXZnYFar1>Textures\Voxels\SteppeYellowGrass_far_ng.dds</NormalGlossXZnYFar1>
+    <NormalGlossYFar1>Textures\Voxels\SteppeYellowGrass_far_ng.dds</NormalGlossYFar1>
 
-    <ExtXZnY>Textures\Voxels\Grass_add.dds</ExtXZnY>
-    <ExtXZnYFar1>Textures\Voxels\Grass_Far1_add.dds</ExtXZnYFar1>
-    <ExtXZnYFar2>Textures\Voxels\Grass_Far1_add.dds</ExtXZnYFar2>
+    <ColorMetalXZnYFar2>Textures\Voxels\COGSteppeYellowGrass_far_cm.dds</ColorMetalXZnYFar2>
+    <ColorMetalYFar2>Textures\Voxels\COGSteppeYellowGrass_far_cm.dds</ColorMetalYFar2>
+    <NormalGlossXZnYFar2>Textures\Voxels\SteppeYellowGrass_far_ng.dds</NormalGlossXZnYFar2>
+    <NormalGlossYFar2>Textures\Voxels\SteppeYellowGrass_far_ng.dds</NormalGlossYFar2>
 
-    <!-- Far Distance -->
-    <Far1Distance>50</Far1Distance>
-    <Far2Distance>500</Far2Distance>
-    <ScaleFar1>500</ScaleFar1>
-    <ScaleFar2>200</ScaleFar2>
+    <ExtXZnY>Textures\Voxels\SteppeYellowGrass_add.dds</ExtXZnY>
+    <ExtXZnYFar1>Textures\Voxels\SteppeYellowGrass_far_add.dds</ExtXZnYFar1>
+    <ExtXZnYFar2>Textures\Voxels\SteppeYellowGrass_far_add.dds</ExtXZnYFar2>
 
-    <FoliageTextureArray1>Textures\Models\Environment\Grass\Grass_array.dds</FoliageTextureArray1>
-    <FoliageDensity>8</FoliageDensity>
-    <FoliageScale>
-      <X>0.6</X>
-      <Y>0.6</Y>
-    </FoliageScale>
-    <FoliageRandomRescaleMult>0.20</FoliageRandomRescaleMult>
-    <BiomeValueMin>255</BiomeValueMin>
-    <BiomeValueMax>255</BiomeValueMax>
+    <Foliage Density="1" Type="Grass">
+      <Size x="0.6" y="0.8"/>
+      <SizeVariation>.6</SizeVariation>
 
-    <DamageThreshold>0.1</DamageThreshold>
-    <DamagedMaterial>Soil</DamagedMaterial>
-  </Definition>
-  
- <Definition xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
-    <Id>
-      <TypeId>VoxelMaterialDefinition</TypeId>
-      <SubtypeId>COGRocks_moss</SubtypeId>		<!--Edit for ore drops-->
-    </Id>
-    <MaterialTypeName>Rock</MaterialTypeName>
-    <MinedOre>Stone</MinedOre>		<!--only one stone for mining rockgrass-->
-    <MinedOreRatio>1</MinedOreRatio>
-	<ColorKey Hex="#839154"/>
-    <ColorMetalXZnY>Textures\Voxels\Rocks_Grass_cm.dds</ColorMetalXZnY>
-    <ColorMetalY>Textures\Voxels\Rocks_Grass_cm.dds</ColorMetalY>
-    <NormalGlossXZnY>Textures\Voxels\Rocks_Grass_ng.dds</NormalGlossXZnY>
-    <NormalGlossY>Textures\Voxels\Rocks_Grass_ng.dds</NormalGlossY>
-    <SpecularPower>24</SpecularPower>
-    <SpecularShininess>0.364</SpecularShininess>
-    <ColorMetalXZnYFar1>Textures\Voxels\RocksGrass_Far1_cm.dds</ColorMetalXZnYFar1>
-    <ColorMetalYFar1>Textures\Voxels\RocksGrass_Far1_cm.dds</ColorMetalYFar1>
-    <NormalGlossXZnYFar1>Textures\Voxels\RocksGrass_Far1_ng.dds</NormalGlossXZnYFar1>
-    <NormalGlossYFar1>Textures\Voxels\RocksGrass_Far1_ng.dds</NormalGlossYFar1>
-    <ColorMetalXZnYFar2>Textures\Voxels\RocksGrass_Far1_cm.dds</ColorMetalXZnYFar2>
-    <ColorMetalYFar2>Textures\Voxels\RocksGrass_Far1_cm.dds</ColorMetalYFar2>
-    <NormalGlossXZnYFar2>Textures\Voxels\RocksGrass_Far1_ng.dds</NormalGlossXZnYFar2>
-    <NormalGlossYFar2>Textures\Voxels\RocksGrass_Far1_ng.dds</NormalGlossYFar2>
-
-    <ExtXZnY>Textures\Voxels\Rocks_Grass_add.dds</ExtXZnY>
-    <ExtXZnYFar1>Textures\Voxels\RocksGrass_Far1_add.dds</ExtXZnYFar1>
-    <ExtXZnYFar2>Textures\Voxels\RocksGrass_Far1_add.dds</ExtXZnYFar2>
+      <!-- <Variation Color="Textures\Models\Environment\Grass\SteppeYellowGrass_Grass_1_cm.dds" Normal="Textures\Models\Environment\Grass\SteppeYellowGrass_Grass_1_ng.dds" Frequency="1"/> -->
+	    <Variation Color="Textures\Models\Environment\Grass\SteppeYellowGrass_Grass_2_cm.dds" Normal="Textures\Models\Environment\Grass\SteppeYellowGrass_Grass_2_ng.dds" Frequency="1"/>
+	    <!-- <Variation Color="Textures\Models\Environment\Grass\SteppeYellowGrass_Grass_3_cm.dds" Normal="Textures\Models\Environment\Grass\SteppeYellowGrass_Grass_3_ng.dds" Frequency="3"/> -->
+	    <!-- <Variation Color="Textures\Models\Environment\Grass\SteppeYellowGrass_Grass_4_cm.dds" Normal="Textures\Models\Environment\Grass\SteppeYellowGrass_Grass_4_ng.dds" Frequency="1"/> 
+	    <Variation Color="Textures\Models\Environment\Grass\SteppeYellowGrass_Grass_5_cm.dds" Normal="Textures\Models\Environment\Grass\SteppeYellowGrass_Grass_5_ng.dds" Frequency="1"/> 
+	    <Variation Color="Textures\Models\Environment\Grass\SteppeYellowGrass_Grass_6_cm.dds" Normal="Textures\Models\Environment\Grass\SteppeYellowGrass_Grass_6_ng.dds" Frequency="1"/> -->
+    </Foliage>
 
     <!-- Far Distance -->
-    <Far1Distance>100</Far1Distance>
-    <Far2Distance>500</Far2Distance>
+    <InitialScale>5</InitialScale>
+    <ScaleMultiplier>5</ScaleMultiplier>
+    <InitialDistance>5</InitialDistance>
+    <DistanceMultiplier>5.2</DistanceMultiplier>
     
-    <ScaleFar1>30</ScaleFar1>
-    <ScaleFar2>130</ScaleFar2>
+    <Far1Distance>20</Far1Distance>
+    <Far2Distance>120</Far2Distance>
+    <Far1Scale>70</Far1Scale>
+    <Far2Scale>600</Far2Scale>
 
-    <DamageThreshold>0.1</DamageThreshold>
-    <DamagedMaterial>Soil</DamagedMaterial>
-  </Definition>
-	
-	 <Definition xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
-    <Id>
-      <TypeId>VoxelMaterialDefinition</TypeId>
-      <SubtypeId>COGRocks_grass</SubtypeId>		<!--Edit for ore drops-->
-    </Id>
-    <MaterialTypeName>Rock</MaterialTypeName>
-    <MinedOre>Stone</MinedOre>		<!--only one stone for mining rockgrass-->
-    <MinedOreRatio>1</MinedOreRatio>
-    <ColorKey Hex="#839154"/>
-    <DiffuseXZ>Textures\Voxels\Soil_ForAxisXZ_de.dds</DiffuseXZ>
-    <NormalXZ>Textures\Voxels\Soil_ForAxisXZ_ns.dds</NormalXZ>
-    <DiffuseY>Textures\Voxels\Soil_ForAxisY_de.dds</DiffuseY>
-    <NormalY>Textures\Voxels\Soil_ForAxisY_ns.dds</NormalY>
-    <ColorMetalXZnY>Textures\Voxels\Rocks_Grass_cm.dds</ColorMetalXZnY>
-    <ColorMetalY>Textures\Voxels\Rocks_Grass_cm.dds</ColorMetalY>
-    <NormalGlossXZnY>Textures\Voxels\Rocks_Grass_ng.dds</NormalGlossXZnY>
-    <NormalGlossY>Textures\Voxels\Rocks_Grass_ng.dds</NormalGlossY>
-    <SpecularPower>24</SpecularPower>
-    <SpecularShininess>0.364</SpecularShininess>
-    <ColorMetalXZnYFar1>Textures\Voxels\RocksGrass_Far1_cm.dds</ColorMetalXZnYFar1>
-    <ColorMetalYFar1>Textures\Voxels\RocksGrass_Far1_cm.dds</ColorMetalYFar1>
-    <NormalGlossXZnYFar1>Textures\Voxels\RocksGrass_Far1_ng.dds</NormalGlossXZnYFar1>
-    <NormalGlossYFar1>Textures\Voxels\RocksGrass_Far1_ng.dds</NormalGlossYFar1>
-    <ColorMetalXZnYFar2>Textures\Voxels\RocksGrass_Far1_cm.dds</ColorMetalXZnYFar2>
-    <ColorMetalYFar2>Textures\Voxels\RocksGrass_Far1_cm.dds</ColorMetalYFar2>
-    <NormalGlossXZnYFar2>Textures\Voxels\RocksGrass_Far1_ng.dds</NormalGlossXZnYFar2>
-    <NormalGlossYFar2>Textures\Voxels\RocksGrass_Far1_ng.dds</NormalGlossYFar2>
-    <!-- Far Distance -->
-
-    <ExtXZnY>Textures\Voxels\Rocks_Grass_add.dds</ExtXZnY>
-    <ExtXZnYFar1>Textures\Voxels\RocksGrass_Far1_add.dds</ExtXZnYFar1>
-    <ExtXZnYFar2>Textures\Voxels\RocksGrass_Far1_add.dds</ExtXZnYFar2>
-
-    <Far1Distance>70</Far1Distance>
-    <Far2Distance>500</Far2Distance>
-    <ScaleFar1>65</ScaleFar1>
-    <ScaleFar2>300</ScaleFar2>
-
-    <FoliageTextureArray1>Textures\Models\Environment\Grass\WoodsGrass_array.dds</FoliageTextureArray1>
-    <FoliageDensity>3</FoliageDensity>
-    <FoliageScale>
-      <X>0.65</X>
-      <Y>0.65</Y>
-    </FoliageScale>
-    <FoliageRandomRescaleMult>0.30</FoliageRandomRescaleMult>
-
-    <DamageThreshold>0.1</DamageThreshold>
-    <DamagedMaterial>Soil</DamagedMaterial>
-  </Definition>
-	
-	<Definition xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
-		<Id>
-		  <TypeId>VoxelMaterialDefinition</TypeId>
-		  <SubtypeId>COGSoil</SubtypeId>		<!--edited for ore drops-->
-		</Id>
-		<MaterialTypeName>Grass</MaterialTypeName>
-		<MinedOre>Stone</MinedOre>
-		<MinedOreRatio>0</MinedOreRatio>
-		<ColorKey Hex="#684700"/>
-		<ColorMetalXZnY>Textures\Voxels\Soil_cm.dds</ColorMetalXZnY>
-		<ColorMetalY>Textures\Voxels\Soil_cm.dds</ColorMetalY>
-		<NormalGlossXZnY>Textures\Voxels\Soil_ng.dds</NormalGlossXZnY>
-		<NormalGlossY>Textures\Voxels\Soil_ng.dds</NormalGlossY>
-		<SpecularPower>24</SpecularPower>
-		<SpecularShininess>0.364</SpecularShininess>
-		<ColorMetalXZnYFar1>Textures\Voxels\Soil_Far1_cm.dds</ColorMetalXZnYFar1>
-		<ColorMetalYFar1>Textures\Voxels\Soil_Far1_cm.dds</ColorMetalYFar1>
-		<NormalGlossXZnYFar1>Textures\Voxels\Soil_Far1_ng.dds</NormalGlossXZnYFar1>
-		<NormalGlossYFar1>Textures\Voxels\Soil_Far1_ng.dds</NormalGlossYFar1>
-
-		<ColorMetalXZnYFar2>Textures\Voxels\Soil_Far1_cm.dds</ColorMetalXZnYFar2>
-		<ColorMetalYFar2>Textures\Voxels\Soil_Far1_cm.dds</ColorMetalYFar2>
-		<NormalGlossXZnYFar2>Textures\Voxels\Soil_Far1_ng.dds</NormalGlossXZnYFar2>
-		<NormalGlossYFar2>Textures\Voxels\Soil_Far1_ng.dds</NormalGlossYFar2>
-
-
-
-
-		<!-- Far Distance -->
-		<Far1Distance>70</Far1Distance>
-		<Far2Distance>500</Far2Distance>
-		<ScaleFar1>65</ScaleFar1>
-		<ScaleFar2>300</ScaleFar2>
-		<BiomeValueMin>50</BiomeValueMin>
-		<BiomeValueMax>60</BiomeValueMax>
-	</Definition>
-	
-  <Definition xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
-    <Id>
-      <TypeId>VoxelMaterialDefinition</TypeId>
-      <SubtypeId>COGWoods</SubtypeId>		<!--Edit for ore drops-->
-    </Id>
-    <MaterialTypeName>Grass</MaterialTypeName>
-    <MinedOre>Stone</MinedOre>
-    <MinedOreRatio>0</MinedOreRatio><!--no mined ores-->
-    <ColorKey Hex="#7B7567"/>
-    <ColorMetalXZnY>Textures\Voxels\Woods_cm.dds</ColorMetalXZnY>
-    <ColorMetalY>Textures\Voxels\Woods_cm.dds</ColorMetalY>
-    <NormalGlossXZnY>Textures\Voxels\Woods_ng.dds</NormalGlossXZnY>
-    <NormalGlossY>Textures\Voxels\Woods_ng.dds</NormalGlossY>
-    <SpecularPower>24</SpecularPower>
-    <SpecularShininess>0.364</SpecularShininess>
-    <ColorMetalXZnYFar1>Textures\Voxels\Woods_Far1_cm.dds</ColorMetalXZnYFar1>
-    <ColorMetalYFar1>Textures\Voxels\Woods_Far1_cm.dds</ColorMetalYFar1>
-    <NormalGlossXZnYFar1>Textures\Voxels\Woods_Far1_ng.dds</NormalGlossXZnYFar1>
-    <NormalGlossYFar1>Textures\Voxels\Woods_Far1_ng.dds</NormalGlossYFar1>
-
-    <ColorMetalXZnYFar2>Textures\Voxels\Woods_Far1_cm.dds</ColorMetalXZnYFar2>
-    <ColorMetalYFar2>Textures\Voxels\Woods_Far1_cm.dds</ColorMetalYFar2>
-    <NormalGlossXZnYFar2>Textures\Voxels\Woods_Far1_ng.dds</NormalGlossXZnYFar2>
-    <NormalGlossYFar2>Textures\Voxels\Woods_Far1_ng.dds</NormalGlossYFar2>
-
-    <!-- Far Distance -->
-    <ExtXZnY>Textures\Voxels\Woods_add.dds</ExtXZnY>
-    <ExtXZnYFar1>Textures\Voxels\Woods_Far1_add.dds</ExtXZnYFar1>
-    <ExtXZnYFar2>Textures\Voxels\Woods_Far1_add.dds</ExtXZnYFar2>
-    <Far1Distance>70</Far1Distance>
-    <Far2Distance>500</Far2Distance>
-    <ScaleFar1>65</ScaleFar1>
-    <ScaleFar2>300</ScaleFar2>
-    <FoliageTextureArray1>Textures\Models\Environment\Grass\WoodsGrass_array.dds</FoliageTextureArray1>
-    <FoliageDensity>3</FoliageDensity>
-    <FoliageScale>
-      <X>0.85</X>
-      <Y>0.85</Y>
-    </FoliageScale>
-    <FoliageRandomRescaleMult>0.15</FoliageRandomRescaleMult>
-
-    <DamageThreshold>0.1</DamageThreshold>
-    <DamagedMaterial>Soil</DamagedMaterial>
-  </Definition>
-
-  <Definition xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
-    <Id>
-      <TypeId>VoxelMaterialDefinition</TypeId>
-      <SubtypeId>COGWoods_grass</SubtypeId>		<!--Edit for ore drops-->
-    </Id>
-    <MaterialTypeName>Grass</MaterialTypeName>
-    <MinedOre>Stone</MinedOre>
-    <MinedOreRatio>0</MinedOreRatio><!--no mined ores-->
-    <ColorKey Hex="#7B7567"/>
-    <ColorMetalXZnY>Textures\Voxels\Woods_grass_cm.dds</ColorMetalXZnY>
-    <ColorMetalY>Textures\Voxels\Woods_grass_cm.dds</ColorMetalY>
-    <NormalGlossXZnY>Textures\Voxels\Woods_grass_ng.dds</NormalGlossXZnY>
-    <NormalGlossY>Textures\Voxels\Woods_grass_ng.dds</NormalGlossY>
-    <SpecularPower>24</SpecularPower>
-    <SpecularShininess>0.364</SpecularShininess>
-    <ColorMetalXZnYFar1>Textures\Voxels\Woods_Grass_Far1_cm.dds</ColorMetalXZnYFar1>
-    <ColorMetalYFar1>Textures\Voxels\Woods_Grass_Far1_cm.dds</ColorMetalYFar1>
-    <NormalGlossXZnYFar1>Textures\Voxels\Woods_Grass_Far1_ng.dds</NormalGlossXZnYFar1>
-    <NormalGlossYFar1>Textures\Voxels\Woods_Grass_Far1_ng.dds</NormalGlossYFar1>
-
-    <ColorMetalXZnYFar2>Textures\Voxels\Woods_Grass_Far1_cm.dds</ColorMetalXZnYFar2>
-    <ColorMetalYFar2>Textures\Voxels\Woods_Grass_Far1_cm.dds</ColorMetalYFar2>
-    <NormalGlossXZnYFar2>Textures\Voxels\Woods_Grass_Far1_ng.dds</NormalGlossXZnYFar2>
-    <NormalGlossYFar2>Textures\Voxels\Woods_Grass_Far1_ng.dds</NormalGlossYFar2>
-
-    <ExtXZnY>Textures\Voxels\Woods_grass_add.dds</ExtXZnY>
-    <ExtXZnYFar1>Textures\Voxels\Woods_Grass_Far1_add.dds</ExtXZnYFar1>
-    <ExtXZnYFar2>Textures\Voxels\Woods_Grass_Far1_add.dds</ExtXZnYFar2>
-
-
-    <Far1Distance>70</Far1Distance>
-    <Far2Distance>500</Far2Distance>
-    <ScaleFar1>65</ScaleFar1>
-    <ScaleFar2>300</ScaleFar2>
-    
-    
-    <FoliageTextureArray1>Textures\Models\Environment\Grass\WoodsGrass_array.dds</FoliageTextureArray1>
-    <FoliageDensity>5</FoliageDensity>
-    <FoliageScale>
-      <X>0.85</X>
-      <Y>0.85</Y>
-    </FoliageScale>
-    <FoliageRandomRescaleMult>0.15</FoliageRandomRescaleMult>
-
-    <DamageThreshold>0.1</DamageThreshold>
-    <DamagedMaterial>Soil</DamagedMaterial>
-  </Definition>
-
-  <Definition xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
-    <Id>
-      <TypeId>VoxelMaterialDefinition</TypeId>
-      <SubtypeId>COGWoods_needles</SubtypeId>		<!--Edit for ore drops-->
-    </Id>
-    <MaterialTypeName>Grass</MaterialTypeName>
-    <MinedOre>Stone</MinedOre>
-    <MinedOreRatio>0</MinedOreRatio><!--no mined ores-->
-    <ColorKey Hex="#7B7567"/>
-    <ColorMetalXZnY>Textures\Voxels\Woods_needles_cm.dds</ColorMetalXZnY>
-    <ColorMetalY>Textures\Voxels\Woods_needles_cm.dds</ColorMetalY>
-    <NormalGlossXZnY>Textures\Voxels\Woods_needles_ng.dds</NormalGlossXZnY>
-    <NormalGlossY>Textures\Voxels\Woods_needles_ng.dds</NormalGlossY>
-    <SpecularPower>24</SpecularPower>
-    <SpecularShininess>0.364</SpecularShininess>
-    <ColorMetalXZnYFar1>Textures\Voxels\Woods_needles_Far1_cm.dds</ColorMetalXZnYFar1>
-    <ColorMetalYFar1>Textures\Voxels\Woods_needles_Far1_cm.dds</ColorMetalYFar1>
-    <NormalGlossXZnYFar1>Textures\Voxels\Woods_needles_Far1_ng.dds</NormalGlossXZnYFar1>
-    <NormalGlossYFar1>Textures\Voxels\Woods_needles_Far1_ng.dds</NormalGlossYFar1>
-
-    <ColorMetalXZnYFar2>Textures\Voxels\Woods_needles_Far1_cm.dds</ColorMetalXZnYFar2>
-    <ColorMetalYFar2>Textures\Voxels\Woods_needles_Far1_cm.dds</ColorMetalYFar2>
-    <NormalGlossXZnYFar2>Textures\Voxels\Woods_needles_Far1_ng.dds</NormalGlossXZnYFar2>
-    <NormalGlossYFar2>Textures\Voxels\Woods_needles_Far1_ng.dds</NormalGlossYFar2>
-
-    <ExtXZnY>Textures\Voxels\Woods_needles_add.dds</ExtXZnY>
-    <ExtXZnYFar1>Textures\Voxels\Woods_needles_Far1_add.dds</ExtXZnYFar1>
-    <ExtXZnYFar2>Textures\Voxels\Woods_needles_Far1_add.dds</ExtXZnYFar2>
-
-    <Far1Distance>70</Far1Distance>
-    <Far2Distance>500</Far2Distance>
-    <ScaleFar1>65</ScaleFar1>
-    <ScaleFar2>300</ScaleFar2>
-	
-	<FoliageTextureArray1>Textures\Models\Environment\Grass\WoodsGrass_array.dds</FoliageTextureArray1>
-    <FoliageDensity>4</FoliageDensity>
-    <FoliageScale>
-      <X>0.85</X>
-      <Y>0.85</Y>
-    </FoliageScale>
-    <FoliageRandomRescaleMult>0.10</FoliageRandomRescaleMult>
-    <BiomeValueMin>21</BiomeValueMin>
-    <BiomeValueMax>30</BiomeValueMax>
-
-    <DamageThreshold>0.1</DamageThreshold>
-    <DamagedMaterial>Soil</DamagedMaterial>
   </Definition>
 	
 	<!--snow for in forests replaces all Woods subtype in the mountians, can be removed completly--> 
@@ -326,14 +61,10 @@
 		  <TypeId>VoxelMaterialDefinition</TypeId>
 		  <SubtypeId>COGWoods_Snow</SubtypeId>		
 		</Id>
-		<MaterialTypeName>Grass</MaterialTypeName>
-		<MinedOre>Stone</MinedOre>
-		<MinedOreRatio>0</MinedOreRatio>
-		<ColorKey Hex="#c4c3c1"/>
-		<CanBeHarvested>true</CanBeHarvested>
-		<IsRare>false</IsRare>
+    <PhysicalMaterialName>Grass</PhysicalMaterialName>
+    <Hardness>100</Hardness>
+    <ColorKey Hex="#C69112"/>
 		<IsIndestructible>false</IsIndestructible>
-		<DamageRatio>1</DamageRatio>
 		<ColorMetalXZnY>Textures\Voxels\COGWoods_Snow_cm.dds</ColorMetalXZnY>
 		<ColorMetalY>Textures\Voxels\COGWoods_Snow_cm.dds</ColorMetalY>
 		<NormalGlossXZnY>Textures\Voxels\COGWoods_Snow_ng.dds</NormalGlossXZnY>
@@ -342,103 +73,42 @@
 		<SpecularShininess>0.364</SpecularShininess> 
 		
 		<FoliageTextureArray1>Textures\Models\Environment\Grass\WoodsGrass_array.dds</FoliageTextureArray1>
+    
+    <Foliage Density="0.4" Type="Grass">
+      <Size x=".6" y=".6"/>
+      <SizeVariation>0.2</SizeVariation>
+
+      <Variation Color="Textures\Models\Environment\Grass\Grass_Forest_01_cm.dds" Normal="Textures\Models\Environment\Grass\Grass_Forest_01_ng.dds" Frequency="20"/>
+      <Variation Color="Textures\Models\Environment\Grass\Grass_Forest_02_cm.dds" Normal="Textures\Models\Environment\Grass\Grass_Forest_02_ng.dds" Frequency="0.03"/>
+      <Variation Color="Textures\Models\Environment\Grass\Grass_Forest_03_cm.dds" Normal="Textures\Models\Environment\Grass\Grass_Forest_03_ng.dds" Frequency="0.03"/>
+      <Variation Color="Textures\Models\Environment\Grass\Grass_Forest_04_cm.dds" Normal="Textures\Models\Environment\Grass\Grass_Forest_04_ng.dds" Frequency="1"/>
+	  <!-- <Variation Color="Textures\Models\Environment\Grass\Grass_Forest_05_cm.dds" Normal="Textures\Models\Environment\Grass\Grass_Forest_05_ng.dds" Frequency="0.05"/> -->
+	  <!-- <Variation Color="Textures\Models\Environment\Grass\Grass_Forest_07_cm.dds" Normal="Textures\Models\Environment\Grass\Grass_Forest_07_ng.dds" Frequency="0.05"/> -->
+	  
+    </Foliage>
 		
-		<FoliageDensity>0.4</FoliageDensity>
 		<FoliageScale>
 		  <X>0.6</X>
 		  <Y>0.6</Y>
 		</FoliageScale>
 		<FoliageRandomRescaleMult>0.4</FoliageRandomRescaleMult>
 		
-		<ExtXZnY>Textures\Voxels\Grass_add.dds</ExtXZnY>
-		<ExtXZnYFar1>Textures\Voxels\Grass_Far1_add.dds</ExtXZnYFar1>
-		<ExtXZnYFar2>Textures\Voxels\Grass_Far1_add.dds</ExtXZnYFar2>
+		<ExtXZnY>Textures\Voxels\Woods_add.dds</ExtXZnY>
+    <ExtXZnYFar1>Textures\Voxels\Woods_Far1_add.dds</ExtXZnYFar1>
+    <ExtXZnYFar2>Textures\Voxels\Woods_Far1_add.dds</ExtXZnYFar2>
 		
-		<Scale>5</Scale>
-		<ScaleFar1>30</ScaleFar1>
-		<ScaleFar2>130</ScaleFar2>
-
-		<DamageThreashold>0.1</DamageThreashold>
+		<!-- Far Distance -->
+	  <InitialScale>2.5</InitialScale>
+	  <ScaleMultiplier>5</ScaleMultiplier>
+	  <InitialDistance>30</InitialDistance>
+	  <DistanceMultiplier>5</DistanceMultiplier>
+	
+    <Far1Distance>100</Far1Distance>
+	  <Far1Scale>30</Far1Scale>
+    
 		<DamagedMaterial>Soil</DamagedMaterial>
 	</Definition>
 
-	
-	<Definition xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
-		<Id>
-		  <TypeId>VoxelMaterialDefinition</TypeId>
-		  <SubtypeId>COGSnow</SubtypeId>	<!--default snow, needed.-->
-		</Id>
-		<MaterialTypeName>Grass</MaterialTypeName>
-		<MinedOre>Stone</MinedOre>
-		<MinedOreRatio>0</MinedOreRatio>
-		<ColorKey Hex="#ff0000"/><!--c4c3c1-->
-		<CanBeHarvested>true</CanBeHarvested>
-		<IsRare>false</IsRare>
-		<IsIndestructible>false</IsIndestructible>
-		<DamageRatio>1</DamageRatio>
-		<ColorMetalXZnY>Textures\Voxels\COGSnow_cm.dds</ColorMetalXZnY><!-- Check your texture file to see if there is a vanilla snow texture-->
-		<ColorMetalY>Textures\Voxels\COGSnow_cm.dds</ColorMetalY>
-		<NormalGlossXZnY>Textures\Voxels\COGSnow_ng.dds</NormalGlossXZnY>
-		<NormalGlossY>Textures\Voxels\COGSnow_ng.dds</NormalGlossY>
-		<SpecularPower>24</SpecularPower>
-		<SpecularShininess>0.364</SpecularShininess> 
-		
-		<ExtXZnY>Textures\Voxels\Grass_add.dds</ExtXZnY>
-		<ExtXZnYFar1>Textures\Voxels\Grass_Far1_add.dds</ExtXZnYFar1>
-		<ExtXZnYFar2>Textures\Voxels\Grass_Far1_add.dds</ExtXZnYFar2>
-		<Scale>5</Scale>
-		<ScaleFar1>30</ScaleFar1>
-		<ScaleFar2>130</ScaleFar2>
-
-		<DamageThreashold>0.1</DamageThreashold>
-		<DamagedMaterial>Soil</DamagedMaterial>
-	</Definition>
-	
-	
-	
-	
-	 <Definition xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
-		<Id>
-		  <TypeId>VoxelMaterialDefinition</TypeId>
-		  <SubtypeId>COGGrass_old</SubtypeId>	<!--do we want to switch this dry grass out for one of my new voxels?-->
-		</Id>
-		<MaterialTypeName>Grass</MaterialTypeName>
-		<MinedOre>Stone</MinedOre>
-		<MinedOreRatio>0</MinedOreRatio><!--no mined ores-->
-		<ColorKey Hex="#bfb654"/>
-		<ColorMetalXZnY>Textures\Voxels\Grass_old_cm.dds</ColorMetalXZnY>
-		<ColorMetalY>Textures\Voxels\Grass_old_cm.dds</ColorMetalY>
-		<NormalGlossXZnY>Textures\Voxels\Grass_old_ng.dds</NormalGlossXZnY>
-		<NormalGlossY>Textures\Voxels\Grass_old_ng.dds</NormalGlossY>
-		<SpecularPower>24</SpecularPower>
-		<SpecularShininess>0.364</SpecularShininess>
-		<ColorMetalXZnYFar1>Textures\Voxels\Grass_old_Far1_cm.dds</ColorMetalXZnYFar1>
-		<ColorMetalYFar1>Textures\Voxels\Grass_old_Far1_cm.dds</ColorMetalYFar1>
-		<NormalGlossXZnYFar1>Textures\Voxels\Grass_old_Far1_ng.dds</NormalGlossXZnYFar1>
-		<NormalGlossYFar1>Textures\Voxels\Grass_old_Far1_ng.dds</NormalGlossYFar1>
-		<ColorMetalXZnYFar2>Textures\Voxels\Grass_old_Far1_cm.dds</ColorMetalXZnYFar2>
-		<ColorMetalYFar2>Textures\Voxels\Grass_old_Far1_cm.dds</ColorMetalYFar2>
-		<NormalGlossXZnYFar2>Textures\Voxels\Grass_old_Far1_ng.dds</NormalGlossXZnYFar2>
-		<NormalGlossYFar2>Textures\Voxels\Grass_old_Far1_ng.dds</NormalGlossYFar2>
-
-		<ExtXZnY>Textures\Voxels\Grass_old_add.dds</ExtXZnY>
-		<ExtXZnYFar1>Textures\Voxels\Grass_old_Far1_add.dds</ExtXZnYFar1>
-		<ExtXZnYFar2>Textures\Voxels\Grass_old_Far1_add.dds</ExtXZnYFar2>
-
-
-		<Far1Distance>70</Far1Distance>
-		<Far2Distance>500</Far2Distance>
-		<ScaleFar1>65</ScaleFar1>
-		<ScaleFar2>300</ScaleFar2>
-		
-
-		<DamageThreshold>0.1</DamageThreshold>
-		<DamagedMaterial>Soil</DamagedMaterial>
-	  </Definition>
-	
-	
-	
-	
 	
 		<!--Might want to add some dry foliage let me know-->	
 	<Definition xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
@@ -446,31 +116,36 @@
 		  <TypeId>VoxelMaterialDefinition</TypeId>
 		  <SubtypeId>COGDesert_Soil</SubtypeId>
 		</Id>
-		<MaterialTypeName>Grass</MaterialTypeName>
-		<MinedOre>Stone</MinedOre>
-		<MinedOreRatio>0</MinedOreRatio>
-		<ColorKey Hex="#b0774d"/>
-		<CanBeHarvested>true</CanBeHarvested>
-		<IsRare>false</IsRare>
+    <PhysicalMaterialName>Grass</PhysicalMaterialName>
+    <Hardness>100</Hardness>
+    <ColorKey Hex="#B99832"/>
 		<IsIndestructible>false</IsIndestructible>
-		<DamageRatio>1</DamageRatio>
+    
 		<ColorMetalXZnY>Textures\Voxels\COGDesert_Soil_cm.dds</ColorMetalXZnY>
 		<ColorMetalY>Textures\Voxels\COGDesert_Soil_cm.dds</ColorMetalY>
 		<NormalGlossXZnY>Textures\Voxels\COGDesert_Soil_ng.dds</NormalGlossXZnY>
 		<NormalGlossY>Textures\Voxels\COGDesert_Soil_ng.dds</NormalGlossY>
+    
 		<SpecularPower>24</SpecularPower>
 		<SpecularShininess>0.364</SpecularShininess> 
 		
-		<ExtXZnY>Textures\Voxels\Grass_add.dds</ExtXZnY>
-		<ExtXZnYFar1>Textures\Voxels\Grass_Far1_add.dds</ExtXZnYFar1>
-		<ExtXZnYFar2>Textures\Voxels\Grass_Far1_add.dds</ExtXZnYFar2>
+		<ExtXZnY>Textures\Voxels\Soil_add.dds</ExtXZnY>
+    <ExtXZnYFar1>Textures\Voxels\Soil_Far1_add.dds</ExtXZnYFar1>
+    <ExtXZnYFar2>Textures\Voxels\Soil_Far1_add.dds</ExtXZnYFar2>
 	
 	
-		<Scale>5</Scale>
-		<ScaleFar1>30</ScaleFar1>
-		<ScaleFar2>130</ScaleFar2>
+		<!-- Far Far0 -->
+    <InitialScale>3.2</InitialScale>
+    <ScaleMultiplier>3.2</ScaleMultiplier>
+    <InitialDistance>3.2</InitialDistance>
+    <DistanceMultiplier>5.2</DistanceMultiplier>
 
-		<DamageThreashold>0.1</DamageThreashold>
+
+    <Far1Distance>45</Far1Distance>
+    <Far1Scale>35</Far1Scale>
+    <Far2Distance>135</Far2Distance>
+    <Far2Scale>130</Far2Scale>
+
 		<DamagedMaterial>Soil</DamagedMaterial>
 	</Definition>
 	
@@ -480,29 +155,32 @@
 		  <TypeId>VoxelMaterialDefinition</TypeId>
 		  <SubtypeId>COGDesert_Rubble</SubtypeId>
 		</Id>
-		<MaterialTypeName>Rock</MaterialTypeName>
-		<MinedOre>Stone</MinedOre>	<!--sand stone ore-->
-		<MinedOreRatio>1</MinedOreRatio>
-		<ColorKey Hex="#b0774d"/>
-		<CanBeHarvested>true</CanBeHarvested>
-		<IsRare>false</IsRare>
+    <PhysicalMaterialName>Rock</PhysicalMaterialName>
+    <Hardness>100</Hardness>
+    <ColorKey Hex="#C69090"/>
 		<IsIndestructible>false</IsIndestructible>
-		<DamageRatio>1</DamageRatio>
+    
 		<ColorMetalXZnY>Textures\Voxels\COGDesert_Rubble_cm.dds</ColorMetalXZnY>
 		<ColorMetalY>Textures\Voxels\COGDesert_Rubble_cm.dds</ColorMetalY>
 		<NormalGlossXZnY>Textures\Voxels\COGDesert_Rubble_ng.dds</NormalGlossXZnY>
 		<NormalGlossY>Textures\Voxels\COGDesert_Rubble_ng.dds</NormalGlossY>
-		<SpecularPower>24</SpecularPower>
-		<SpecularShininess>0.364</SpecularShininess> 
+		<SpecularPower>1</SpecularPower>
+		<SpecularShininess>0.1</SpecularShininess> 
 		
 		<ExtXZnY>Textures\Voxels\Grass_add.dds</ExtXZnY>
 		<ExtXZnYFar1>Textures\Voxels\Grass_Far1_add.dds</ExtXZnYFar1>
 		<ExtXZnYFar2>Textures\Voxels\Grass_Far1_add.dds</ExtXZnYFar2>
-		<Scale>5</Scale>
-		<ScaleFar1>30</ScaleFar1>
-		<ScaleFar2>130</ScaleFar2>
+    
+		<!-- Far Far0 -->
+    <InitialScale>2.5</InitialScale>
+    <ScaleMultiplier>5</ScaleMultiplier>
+    <InitialDistance>10</InitialDistance>
+    <DistanceMultiplier>5</DistanceMultiplier>
 
-		<DamageThreashold>0.1</DamageThreashold>
+
+    <Far1Distance>100</Far1Distance>
+    <Far1Scale>100</Far1Scale>
+    
 		<DamagedMaterial>Soil</DamagedMaterial>
 	</Definition>
 	
@@ -511,219 +189,39 @@
 		  <TypeId>VoxelMaterialDefinition</TypeId>
 		  <SubtypeId>COGSand_Stone</SubtypeId>	<!--texture can be switched for any red rock-->
 		</Id>
-		<MaterialTypeName>Rock</MaterialTypeName>
-		<MinedOre>Stone</MinedOre>		<!--sand stone ore-->
-		<MinedOreRatio>6</MinedOreRatio>	<!--Adjust number?-->
-		<CanBeHarvested>true</CanBeHarvested>
-		<IsRare>false</IsRare>
+    <PhysicalMaterialName>Rock</PhysicalMaterialName>
+    <Hardness>100</Hardness>
 		<IsIndestructible>false</IsIndestructible>
-		<DamageRatio>1</DamageRatio>
+    
 		<ColorMetalXZnY>Textures\Voxels\COGSand_Stone_cm.dds</ColorMetalXZnY>
 		<ColorMetalY>Textures\Voxels\COGSand_Stone_cm.dds</ColorMetalY>
 		<NormalGlossXZnY>Textures\Voxels\COGSand_Stone_ng.dds</NormalGlossXZnY>
 		<NormalGlossY>Textures\Voxels\COGSand_Stone_ng.dds</NormalGlossY>
-		<SpecularPower>24</SpecularPower>
-		<SpecularShininess>0.364</SpecularShininess> 
-		
-		
-		<Scale>5</Scale>
-		<ScaleFar1>30</ScaleFar1>
-		<ScaleFar2>130</ScaleFar2>
+		<SpecularPower>1</SpecularPower>
+		<SpecularShininess>0.1</SpecularShininess> 
+    
+    <!-- Far Distance -->
+	  <InitialScale>5</InitialScale>
+	  <ScaleMultiplier>5</ScaleMultiplier>
+	  <InitialDistance>5</InitialDistance>
+	  <DistanceMultiplier>5.2</DistanceMultiplier>
+	
+    <Far1Distance>70</Far1Distance>
+	  <Far1Scale>55</Far1Scale>
+	  <Far2Distance>150</Far2Distance>
+    <Far2Scale>180</Far2Scale>
 
-		<DamageThreashold>0.1</DamageThreashold>
 		<DamagedMaterial>Soil</DamagedMaterial>
 	</Definition>
 	
 	
-	<Definition xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
-    <Id>
-      <TypeId>VoxelMaterialDefinition</TypeId>
-      <SubtypeId>COGSand</SubtypeId>		<!--can be swaped out for sand 02 or sand 03, your choice-->
-    </Id>
-    <MaterialTypeName>Grass</MaterialTypeName>
-    <MinedOre>Stone</MinedOre>		<!--sand ore-->
-    <MinedOreRatio>1</MinedOreRatio>	<!-- #? -->
-	<ColorKey Hex="#c3a94c"/>
-    <CanBeHarvested>true</CanBeHarvested>
-    <IsRare>false</IsRare>
-    <IsIndestructible>false</IsIndestructible>
-    <DamageRatio>1</DamageRatio>
-    <ColorMetalXZnY>Textures\Voxels\COGSand_cm.dds</ColorMetalXZnY>
-    <ColorMetalY>Textures\Voxels\COGSand_cm.dds</ColorMetalY>
-    <NormalGlossXZnY>Textures\Voxels\COGSand_ng.dds</NormalGlossXZnY>
-    <NormalGlossY>Textures\Voxels\COGSand_ng.dds</NormalGlossY>
-    <SpecularPower>24</SpecularPower>
-    <SpecularShininess>0.364</SpecularShininess> 
 	
-    <ExtXZnY>Textures\Voxels\Grass_add.dds</ExtXZnY>
-    <ExtXZnYFar1>Textures\Voxels\Grass_Far1_add.dds</ExtXZnYFar1>
-    <ExtXZnYFar2>Textures\Voxels\Grass_Far1_add.dds</ExtXZnYFar2>	
-	
-    <Scale>5</Scale>
-    <ScaleFar1>30</ScaleFar1>
-    <ScaleFar2>130</ScaleFar2>
-
-    <DamageThreashold>0.1</DamageThreashold>
-    <DamagedMaterial>Soil</DamagedMaterial>
-  </Definition>
-	
-	
-	
-  <Definition xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
-    <Id>
-      <TypeId>VoxelMaterialDefinition</TypeId>
-      <SubtypeId>PlowedSoil</SubtypeId>		<!--edited for ore drops-->
-    </Id>
-    <MaterialTypeName>Grass</MaterialTypeName>
-    <MinedOre>Stone</MinedOre>
-    <MinedOreRatio>0</MinedOreRatio>
-    <ColorMetalXZnY>Textures\Voxels\PlowedSoil_cm.dds</ColorMetalXZnY>
-    <ColorMetalY>Textures\Voxels\PlowedSoil_cm.dds</ColorMetalY>
-    <NormalGlossXZnY>Textures\Voxels\PlowedSoil_ng.dds</NormalGlossXZnY>
-    <NormalGlossY>Textures\Voxels\PlowedSoil_ng.dds</NormalGlossY>
-    <SpecularPower>24</SpecularPower>
-    <SpecularShininess>0.364</SpecularShininess>
-    <ColorMetalXZnYFar1>Textures\Voxels\PlowedSoil_Far1_cm.dds</ColorMetalXZnYFar1>
-    <ColorMetalYFar1>Textures\Voxels\PlowedSoil_Far1_cm.dds</ColorMetalYFar1>
-    <NormalGlossXZnYFar1>Textures\Voxels\PlowedSoil_Far1_ng.dds</NormalGlossXZnYFar1>
-    <NormalGlossYFar1>Textures\Voxels\PlowedSoil_Far1_ng.dds</NormalGlossYFar1>
-
-    <ColorMetalXZnYFar2>Textures\Voxels\PlowedSoil_Far1_cm.dds</ColorMetalXZnYFar2>
-    <ColorMetalYFar2>Textures\Voxels\PlowedSoil_Far1_cm.dds</ColorMetalYFar2>
-    <NormalGlossXZnYFar2>Textures\Voxels\PlowedSoil_Far1_ng.dds</NormalGlossXZnYFar2>
-    <NormalGlossYFar2>Textures\Voxels\PlowedSoil_Far1_ng.dds</NormalGlossYFar2>
-
-    <ExtXZnY>Textures\Voxels\PlowedSoil_add.dds</ExtXZnY>
-    <ExtXZnYFar1>Textures\Voxels\PlowedSoil_Far1_add.dds</ExtXZnYFar1>
-    <ExtXZnYFar2>Textures\Voxels\PlowedSoil_Far1_add.dds</ExtXZnYFar2>
-
-    <!-- Far Distance -->
-    <Far1Distance>70</Far1Distance>
-    <Far2Distance>500</Far2Distance>
-    <ScaleFar1>65</ScaleFar1>
-    <ScaleFar2>300</ScaleFar2>
-    <BiomeValueMin>50</BiomeValueMin>
-    <BiomeValueMax>60</BiomeValueMax>
-  </Definition>
-	
-	<Definition xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
-    <Id>
-      <TypeId>VoxelMaterialDefinition</TypeId>
-      <SubtypeId>PlantedSoil</SubtypeId>		<!--Edit for ore drops-->
-    </Id>
-    <MaterialTypeName>Grass</MaterialTypeName>
-    <MinedOre>Stone</MinedOre>
-    <MinedOreRatio>0</MinedOreRatio>
-    <ColorMetalXZnY>Textures\Voxels\PlantedSoil_cm.dds</ColorMetalXZnY>
-    <ColorMetalY>Textures\Voxels\PlantedSoil_cm.dds</ColorMetalY>
-    <NormalGlossXZnY>Textures\Voxels\PlantedSoil_ng.dds</NormalGlossXZnY>
-    <NormalGlossY>Textures\Voxels\PlantedSoil_ng.dds</NormalGlossY>
-    <SpecularPower>24</SpecularPower>
-    <SpecularShininess>0.364</SpecularShininess>
-    <ColorMetalXZnYFar1>Textures\Voxels\PlantedSoil_Far1_cm.dds</ColorMetalXZnYFar1>
-    <ColorMetalYFar1>Textures\Voxels\PlantedSoil_Far1_cm.dds</ColorMetalYFar1>
-    <NormalGlossXZnYFar1>Textures\Voxels\PlantedSoil_Far1_ng.dds</NormalGlossXZnYFar1>
-    <NormalGlossYFar1>Textures\Voxels\PlantedSoil_Far1_ng.dds</NormalGlossYFar1>
-
-    <ColorMetalXZnYFar2>Textures\Voxels\PlantedSoil_Far1_cm.dds</ColorMetalXZnYFar2>
-    <ColorMetalYFar2>Textures\Voxels\PlantedSoil_Far1_cm.dds</ColorMetalYFar2>
-    <NormalGlossXZnYFar2>Textures\Voxels\PlantedSoil_Far1_ng.dds</NormalGlossXZnYFar2>
-    <NormalGlossYFar2>Textures\Voxels\PlantedSoil_Far1_ng.dds</NormalGlossYFar2>
-
-    <ExtXZnY>Textures\Voxels\PlowedSoil_add.dds</ExtXZnY>
-    <ExtXZnYFar1>Textures\Voxels\PlantedSoil_Far1_add.dds</ExtXZnYFar1>
-    <ExtXZnYFar2>Textures\Voxels\PlantedSoil_Far1_add.dds</ExtXZnYFar2>
-
-
-    <FoliageColorTextureArray>
-      <Color>Textures\Models\Environment\Grass\Grass_PlantedSoil_cm.dds</Color>
-      <Color>Textures\Models\Environment\Grass\Grass_PlantedSoil_2_cm.dds</Color>
-      <Color>Textures\Models\Environment\Grass\Grass_PlantedSoil_3_cm.dds</Color>
-    </FoliageColorTextureArray>
-
-    <FoliageNormalTextureArray>
-      <Normal>Textures\Models\Environment\Grass\Grass_PlantedSoil_ng.dds</Normal>
-      <Normal>Textures\Models\Environment\Grass\Grass_PlantedSoil_2_ng.dds</Normal>
-      <Normal>Textures\Models\Environment\Grass\Grass_PlantedSoil_3_ng.dds</Normal>
-    </FoliageNormalTextureArray>
-    
-    <FoliageDensity>6</FoliageDensity>
-    <FoliageScale>
-      <X>0.09</X>
-      <Y>0.09</Y>
-    </FoliageScale>
-    <FoliageRandomRescaleMult>0.01</FoliageRandomRescaleMult>
-
-    <!-- Far Distance -->
-    <Far1Distance>70</Far1Distance>
-    <Far2Distance>500</Far2Distance>
-    <ScaleFar1>65</ScaleFar1>
-    <ScaleFar2>300</ScaleFar2>
-    <BiomeValueMin>50</BiomeValueMin>
-    <BiomeValueMax>60</BiomeValueMax>
-  </Definition>
-
-  <Definition xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
-    <Id>
-      <TypeId>VoxelMaterialDefinition</TypeId>
-      <SubtypeId>ExhaustedSoil</SubtypeId>  	<!--Edit for ore drops-->
-    </Id>
-    <MaterialTypeName>Grass</MaterialTypeName>
-    <MinedOre>Stone</MinedOre>
-    <MinedOreRatio>0</MinedOreRatio>
-    <ColorMetalXZnY>Textures\Voxels\ExhaustedSoil_cm.dds</ColorMetalXZnY>
-    <ColorMetalY>Textures\Voxels\ExhaustedSoil_cm.dds</ColorMetalY>
-    <NormalGlossXZnY>Textures\Voxels\ExhaustedSoil_ng.dds</NormalGlossXZnY>
-    <NormalGlossY>Textures\Voxels\ExhaustedSoil_ng.dds</NormalGlossY>
-    <SpecularPower>24</SpecularPower>
-    <SpecularShininess>0.364</SpecularShininess>
-    <ColorMetalXZnYFar1>Textures\Voxels\ExhaustedSoil_Far1_cm.dds</ColorMetalXZnYFar1>
-    <ColorMetalYFar1>Textures\Voxels\ExhaustedSoil_Far1_cm.dds</ColorMetalYFar1>
-    <NormalGlossXZnYFar1>Textures\Voxels\ExhaustedSoil_Far1_ng.dds</NormalGlossXZnYFar1>
-    <NormalGlossYFar1>Textures\Voxels\ExhaustedSoil_Far1_ng.dds</NormalGlossYFar1>
-
-    <ColorMetalXZnYFar2>Textures\Voxels\ExhaustedSoil_Far1_cm.dds</ColorMetalXZnYFar2>
-    <ColorMetalYFar2>Textures\Voxels\ExhaustedSoil_Far1_cm.dds</ColorMetalYFar2>
-    <NormalGlossXZnYFar2>Textures\Voxels\ExhaustedSoil_Far1_ng.dds</NormalGlossXZnYFar2>
-    <NormalGlossYFar2>Textures\Voxels\ExhaustedSoil_Far1_ng.dds</NormalGlossYFar2>
-
-    <ExtXZnY>Textures\Voxels\ExhaustedSoil_add.dds</ExtXZnY>
-    <ExtXZnYFar1>Textures\Voxels\ExhaustedSoil_Far1_add.dds</ExtXZnYFar1>
-    <ExtXZnYFar2>Textures\Voxels\ExhaustedSoil_Far1_add.dds</ExtXZnYFar2>
-
-
-    <FoliageColorTextureArray>
-      <Color>Textures\Models\Environment\Grass\Grass_PlantedSoil_2_cm.dds</Color>
-    </FoliageColorTextureArray>
-
-    <FoliageNormalTextureArray>
-      <Normal>Textures\Models\Environment\Grass\Grass_PlantedSoil_2_ng.dds</Normal>
-    </FoliageNormalTextureArray>
-
-    <FoliageDensity>6</FoliageDensity>
-    <FoliageScale>
-      <X>0.09</X>
-      <Y>0.09</Y>
-    </FoliageScale>
-    <FoliageRandomRescaleMult>0.01</FoliageRandomRescaleMult>
-
-    <!-- Far Distance -->
-    <Far1Distance>70</Far1Distance>
-    <Far2Distance>500</Far2Distance>
-    <ScaleFar1>65</ScaleFar1>
-    <ScaleFar2>300</ScaleFar2>
-    <BiomeValueMin>50</BiomeValueMin>
-    <BiomeValueMax>60</BiomeValueMax>
-  </Definition>
-  
   <Definition xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
     <Id>
       <TypeId>VoxelMaterialDefinition</TypeId>
       <SubtypeId>COGFakeOre</SubtypeId>
     </Id>
     <MaterialTypeName>Enchanted_Soil</MaterialTypeName>
-    <MinedOre>None</MinedOre>
-    <MinedOreRatio>0</MinedOreRatio>
     <ParticleEffect>Collision_Meteor</ParticleEffect>
     <SpecularPower>8</SpecularPower>
     <SpecularShininess>0.23</SpecularShininess>

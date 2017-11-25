@@ -12,196 +12,204 @@
     <!--!!!Important!! Read if you want to mod Planets! -->
     <!--Following tag switches off loading from certain color channels. Its performance measure in cases where channels are not used-->
     <!--Make sure you are not modding a switched off channel-->
-    <PlanetMaps Material="true" Ores="true" Biome="true" Occlusion="false"/>
+    <PlanetMaps Occlusion="false" Biome="true" Ores="true" Material="true"/>
 	
     <!-- Rules that define where materials are generated -->
     <ComplexMaterials>
       <MaterialGroup Name="grass" Value="10">
-            <Rule>
-              <Layers>
-                <Layer Material="COGGrass" Depth="1"/>
-                <Layer Material="COGSoil" Depth="10"/>
-                <Layer Material="Stone" Depth="100"/>
-              </Layers>
-            </Rule>
-
+        <Rule>
+          <Layers>
+            <Layer Material="Grass" Depth="1"/>
+            <Layer Material="Soil" Depth="10"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+        </Rule>
       </MaterialGroup>
       
       <MaterialGroup Name="drygrass" Value="20">
-            <Rule>
-              <Layers>
-                <Layer Material="COGGrass_old" Depth="1"/>
-          <Layer Material="COGDesert_Rubble" Depth="6"/>
-                <Layer Material="COGSand_Stone" Depth="500"/>
-              </Layers>
-            </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="COGSteppeYellowGrass" Depth="1"/>
+            <Layer Material="COGDesert_Rubble" Depth="6"/>
+            <Layer Material="Sandstone" Depth="500"/>
+          </Layers>
+        </Rule>
       </MaterialGroup>
       
       <MaterialGroup Name="desert Soil" Value="30">
-            <Rule>
-              <Layers>
-          <Layer Material="COGDesert_Soil" Depth="2"/>	
-          <Layer Material="COGDesert_Rubble" Depth="5"/>
-                <Layer Material="COGSand_Stone" Depth="500"/>
-              </Layers>
-            </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="COGDesert_Soil" Depth="2"/>	
+            <Layer Material="COGDesert_Rubble" Depth="5"/>
+            <Layer Material="Sandstone" Depth="500"/>
+          </Layers>
+        </Rule>
       </MaterialGroup>
       
       <MaterialGroup Name="Rock Grass" Value="40">
-            <Rule>
-              <Layers>
-                <Layer Material="COGRocks_grass" Depth="1"/>
-                <Layer Material="COGSoil" Depth="5"/>
-                <Layer Material="Stone" Depth="100"/>
-              </Layers>
-            </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="Rocks_grass" Depth="1"/>
+            <Layer Material="Soil" Depth="5"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+        </Rule>
       </MaterialGroup>
       
       <MaterialGroup Name="Sand" Value="50">
-            <Rule>
-              <Layers>
-                <Layer Material="COGSand" Depth="1"/>
-          <Layer Material="COGDesert_Soil" Depth="2"/>
-                <Layer Material="COGDesert_Rubble" Depth="5"/>
-                <Layer Material="COGSand_Stone" Depth="500"/>
-              </Layers>
-            </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="SandDark" Depth="1"/>
+            <Layer Material="COGDesert_Soil" Depth="2"/>
+            <Layer Material="COGDesert_Rubble" Depth="5"/>
+            <Layer Material="Sandstone" Depth="500"/>
+          </Layers>
+        </Rule>
       </MaterialGroup>
       
       <MaterialGroup Name="Road" Value="67">
-            <Rule>
-              <Layers>
-                <Layer Material="COGSoil" Depth="30"/>
-                <Layer Material="Stone" Depth="100"/>
-              </Layers>
-            </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="Soil" Depth="30"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+        </Rule>
+      </MaterialGroup>
+      
+      <MaterialGroup Name="SteppeRoad" Value="68">
+        <Rule>
+          <Layers>
+            <Layer Material="DirtSteppe" Depth="30"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+        </Rule>
       </MaterialGroup>
       
       <MaterialGroup Name="Desert Rubble" Value="70">
-            <Rule>
-              <Layers>
-          <Layer Material="COGDesert_Rubble" Depth="3"/>
-              <Layer Material="COGSand_Stone" Depth="500"/>
-              </Layers>
-            </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="COGDesert_Rubble" Depth="3"/>
+            <Layer Material="Sandstone" Depth="500"/>
+          </Layers>
+        </Rule>
       </MaterialGroup>
       
       <MaterialGroup Name="Stone" Value="80">
-            <Rule>
-              <Layers>
-                <Layer Material="Stone" Depth="100"/>
-              </Layers>
-            </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+        </Rule>
       </MaterialGroup>
       
       <MaterialGroup Name="Sand Stone" Value="100">
-            <Rule>
-              <Layers>
-                <Layer Material="COGSand_Stone" Depth="500"/>
-              </Layers>
-            </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="Sandstone" Depth="500"/>
+          </Layers>
+        </Rule>
       </MaterialGroup>
       
       <MaterialGroup Name="Edge Nordic Forest" Value="120">
-            <Rule>
-              <Layers>
-                <Layer Material="COGWoods_needles" Depth="1"/>
-                <Layer Material="COGSoil" Depth="20"/>
-                <Layer Material="Stone" Depth="100"/>
-              </Layers>
-            </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="Woods_needles" Depth="1"/>
+            <Layer Material="Soil" Depth="20"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+        </Rule>
       </MaterialGroup>
       
       <MaterialGroup Name="Middle Nordic Forest" Value="130">
-            <Rule>
-              <Layers>
-                <Layer Material="COGWoods_grass" Depth="2"/>
-                <Layer Material="COGSoil" Depth="20"/>
-                <Layer Material="Stone" Depth="100"/>
-              </Layers>
-            </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="Woods_grass" Depth="2"/>
+            <Layer Material="Soil" Depth="20"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+        </Rule>
       </MaterialGroup>
       
       <MaterialGroup Name="Dense Nordic Forest" Value="140">
-            <Rule>
-              <Layers>
-                <Layer Material="COGWoods" Depth="2"/>
-                <Layer Material="COGSoil" Depth="20"/>
-                <Layer Material="Stone" Depth="100"/>
-              </Layers>
-            </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="Woods" Depth="2"/>
+            <Layer Material="Soil" Depth="20"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+        </Rule>
       </MaterialGroup>
       
       <MaterialGroup Name="Edge Mountain forest" Value="150">
-            <Rule>
-              <Layers>
-                <Layer Material="COGGrass" Depth="1"/>
-                <Layer Material="COGSoil" Depth="10"/>
-                <Layer Material="Stone" Depth="100"/>
-              </Layers>
-            </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="Grass" Depth="1"/>
+            <Layer Material="Soil" Depth="10"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+        </Rule>
       </MaterialGroup>
       
       <MaterialGroup Name="Middle Mountain Forest" Value="160">
-            <Rule>
-              <Layers>
-                <Layer Material="COGWoods_needles" Depth="1"/>
-                <Layer Material="COGSoil" Depth="10"/>
-                <Layer Material="Stone" Depth="100"/>
-              </Layers>
-            </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="Woods_needles" Depth="1"/>
+            <Layer Material="Soil" Depth="10"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+        </Rule>
       </MaterialGroup>
       
       <MaterialGroup Name="Dense Mountain Forest" Value="170">
-            <Rule>
-              <Layers>
-                <Layer Material="COGWoods_grass" Depth="1"/>
-                <Layer Material="COGSoil" Depth="10"/>
-                <Layer Material="Stone" Depth="100"/>
-              </Layers>
-            </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="Woods_grass" Depth="1"/>
+            <Layer Material="Soil" Depth="10"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+        </Rule>
       </MaterialGroup>
       
       <MaterialGroup Name="Snow" Value="180">
-            <Rule>
-              <Layers>
-                <Layer Material="COGSnow" Depth="1"/>
-          <Layer Material="COGRocks_moss" Depth="1"/>
-                <Layer Material="COGSoil" Depth="5"/>
-                <Layer Material="Stone" Depth="100"/>
-              </Layers>
-            </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="Snow" Depth="1"/>
+            <Layer Material="Rocks_moss" Depth="1"/>
+            <Layer Material="Soil" Depth="5"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+        </Rule>
       </MaterialGroup>
       
       <MaterialGroup Name="Edge Mountain Snow Forest" Value="190">
-            <Rule>
-              <Layers>
-                <Layer Material="COGSnow" Depth="1"/>
-          <Later Material="COGRocks_grass" Depth="1"/>
-                <Layer Material="COGSoil" Depth="5"/>
-                <Layer Material="Stone" Depth="100"/>
-              </Layers>
-            </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="Snow" Depth="1"/>
+            <Later Material="Rocks_grass" Depth="1"/>
+            <Layer Material="Soil" Depth="5"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+        </Rule>
       </MaterialGroup>
       
       <MaterialGroup Name="Middle Mountain Snow Forest" Value="200">
-            <Rule>
-              <Layers>
-                <Layer Material="COGWoods_Snow" Depth="1"/>
-                <Layer Material="COGSoil" Depth="5"/>
-                <Layer Material="Stone" Depth="100"/>
-              </Layers>
-            </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="COGWoods_Snow" Depth="1"/>
+            <Layer Material="Soil" Depth="5"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+        </Rule>
       </MaterialGroup>
       
       <MaterialGroup Name="Dense Mountain Snow Forest" Value="210">
-            <Rule>
-              <Layers>
-                <Layer Material="COGWoods_Snow" Depth="1"/>
-                <Layer Material="COGSoil" Depth="5"/>
-                <Layer Material="Stone" Depth="100"/>
-              </Layers>
-            </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="COGWoods_Snow" Depth="1"/>
+            <Layer Material="Soil" Depth="5"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+        </Rule>
       </MaterialGroup>
       
     </ComplexMaterials>
@@ -340,7 +348,7 @@
     <OreMappings>
       <!--!INSERT ONLY IN BLUE CHANNEL on MaterialTexture -->
 	  <Ore Value="80" Type="COGFakeOre" 				Start="20" 	Depth="5" TargetColor="#9999ff" ColorInfluence="80"/><!--1fake ore for color change elf forest-->
-	  <Ore Value="90" Type="COGGold" 					Start="10" 	Depth="10" TargetColor="#c8b036" ColorInfluence="0"/><!--1deep-->
+	  <Ore Value="90" Type="GoldOre" 					Start="10" 	Depth="10" TargetColor="#c8b036" ColorInfluence="0"/><!--1deep-->
 	  <Ore Value="100" Type="COGMithril" 				Start="60" 	Depth="40" TargetColor="#000000" ColorInfluence="0"/><!--0-->
       <Ore Value="120" Type="IronOre_RichYield"	 		Start="20" 	Depth="10" TargetColor="#b7340a" ColorInfluence="0"/><!--10-->
       <Ore Value="130" Type="IronOre_PoorYield" 		Start="5" 	Depth="10" TargetColor="#a76a41" ColorInfluence="0" /><!--5-->
@@ -348,11 +356,11 @@
 	  <Ore Value="150" Type="IronOre_RegularYield" 		Start="10"	Depth="10" TargetColor="#b7340a" ColorInfluence="0"/><!--0deep-->
 	  <Ore Value="160" Type="COGCoal" 					Start="10" 	Depth="6" TargetColor="#121212" ColorInfluence="0"/><!--5-->
 	  <Ore Value="170" Type="COGCoal" 					Start="20"	Depth="25" TargetColor="#121212" ColorInfluence="0"/><!--0deep-->
-	  <Ore Value="190" Type="COGGold" 					Start="40"	Depth="20" TargetColor="#c8b036" ColorInfluence="0"/><!--1-->
+	  <Ore Value="190" Type="GoldOre" 					Start="40"	Depth="20" TargetColor="#c8b036" ColorInfluence="0"/><!--1-->
 	  <Ore Value="200" Type="COGSalt" 					Start="15" 	Depth="6" TargetColor="#ffffff" ColorInfluence="0"/><!--5-->
 	  <Ore Value="210" Type="COGSalt" 					Start="25" 	Depth="15" TargetColor="#ffffff" ColorInfluence="0"/><!--0deep-->
-	  <Ore Value="220" Type="COGCopper" 				Start="10" 	Depth="6" TargetColor="#42ae6d" ColorInfluence="0"/><!--0-->
-	  <Ore Value="230" Type="COGCopper" 				Start="20" 	Depth="6" TargetColor="#42ae6d" ColorInfluence="0"/><!--0-->
+	  <Ore Value="220" Type="CopperOre" 				Start="10" 	Depth="6" TargetColor="#42ae6d" ColorInfluence="0"/><!--0-->
+	  <Ore Value="230" Type="CopperOre" 				Start="20" 	Depth="6" TargetColor="#42ae6d" ColorInfluence="0"/><!--0-->
 	  <Ore Value="240" Type="COGFuture_Nordic_Ore" 		Start="20" 	Depth="6" TargetColor="#000000" ColorInfluence="0"/><!--0-->
 	  <Ore Value="250" Type="COGFuture_Desert_Ore" 		Start="20" 	Depth="6" TargetColor="#000000" ColorInfluence="0"/><!--0-->
 	  <Ore Value="255" Type="COGFuture_Mountain_Ore" 	Start="20" 	Depth="6" TargetColor="#000000" ColorInfluence="0"/><!--0-->
@@ -360,7 +368,7 @@
 
     <MaximumOxygen>1.0</MaximumOxygen>
     <SurfaceGravity>1.0</SurfaceGravity>
-    <DefaultSurfaceMaterial Material="COGGrass" MaxDepth="1"/>
+    <DefaultSurfaceMaterial Material="Grass" MaxDepth="1"/>
     <DefaultSubSurfaceMaterial Material="Stone"/>
     <HasAtmosphere>true</HasAtmosphere>
     
