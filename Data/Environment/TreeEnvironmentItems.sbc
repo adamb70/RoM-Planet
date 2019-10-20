@@ -1,75 +1,75 @@
-<?xml version="1.0"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 
   <Definition xsi:type="VR.EI.GrowableEnvironmentItem">
-    <Id Subtype="HazelSmallBranchless" Type="MyObjectBuilder_GrowableEnvironmentItemDefinition" />
+    <Id Type="MyObjectBuilder_GrowableEnvironmentItemDefinition" Subtype="HazelSmallBranchless"/>
     <GrowthSteps>
       <GrowthStep Name="Dead" StartingProbability="0.1">
         <NextStep>HazelFull</NextStep>
-        <TimeToNextStep Hours="4" />
+        <TimeToNextStep Hours="4"/>
       </GrowthStep>
       <GrowthStep Name="HazelFull" StartingProbability="0.9">
         <ModelCollectionSubtypeId>HazelSmall</ModelCollectionSubtypeId>
         <Actions>
           <Action Name="Gather" NextStep="Dead">
-            <Id Subtype="Sticks" Type="LootTableDefinition" />
+            <Id Type="LootTableDefinition" Subtype="Sticks"/>
           </Action>
         </Actions>
       </GrowthStep>
       <GrowthStep Name="Roots" StartingProbability="0">
         <ModelCollectionSubtypeId>Roots</ModelCollectionSubtypeId>
         <NextStep>Dead</NextStep>
-        <TimeToNextStep Hours="4" />
+        <TimeToNextStep Hours="4"/>
         <Actions>
           <Action Name="Gather" NextStep="Dead">
-            <Id Subtype="Roots" Type="LootTableDefinition" />
+            <Id Type="LootTableDefinition" Subtype="Roots"/>
           </Action>
         </Actions>
       </GrowthStep>
     </GrowthSteps>
   </Definition>
-
+  
   <Definition xsi:type="VR.EI.GrowableEnvironmentItem">
-    <Id Subtype="DeadTree1" Type="MyObjectBuilder_GrowableEnvironmentItemDefinition" />
+    <Id Type="MyObjectBuilder_GrowableEnvironmentItemDefinition" Subtype="DeadTree1"/>
     <GrowthSteps>
       <GrowthStep Name="TreeFull" StartingProbability="1">
         <ModelCollectionSubtypeId>DeadTree1</ModelCollectionSubtypeId>
       </GrowthStep>
     </GrowthSteps>
   </Definition>
-
+  
   <Definition xsi:type="VR.EI.GrowableEnvironmentItem">
-    <Id Subtype="DeadTree2" Type="MyObjectBuilder_GrowableEnvironmentItemDefinition" />
+    <Id Type="MyObjectBuilder_GrowableEnvironmentItemDefinition" Subtype="DeadTree2"/>
     <GrowthSteps>
       <GrowthStep Name="TreeFull" StartingProbability="1">
         <ModelCollectionSubtypeId>DeadTree2</ModelCollectionSubtypeId>
       </GrowthStep>
     </GrowthSteps>
   </Definition>
-
+  
   <Definition xsi:type="VR.EI.GrowableEnvironmentItem">
-    <Id Subtype="DeadTree3" Type="MyObjectBuilder_GrowableEnvironmentItemDefinition" />
+    <Id Type="MyObjectBuilder_GrowableEnvironmentItemDefinition" Subtype="DeadTree3"/>
     <GrowthSteps>
       <GrowthStep Name="TreeFull" StartingProbability="1">
         <ModelCollectionSubtypeId>DeadTree3</ModelCollectionSubtypeId>
       </GrowthStep>
     </GrowthSteps>
   </Definition>
-
+  
   <Definition xsi:type="VR.EI.GrowableEnvironmentItem">
-    <Id Subtype="DreadOakTree10" Type="MyObjectBuilder_GrowableEnvironmentItemDefinition" />
+    <Id Type="MyObjectBuilder_GrowableEnvironmentItemDefinition" Subtype="DreadOakTree10"/>
     <GrowthSteps>
       <GrowthStep Name="Dead" StartingProbability="0.05">
         <NextStep>TreeSapling</NextStep>
-        <TimeToNextStep Days="3" />
+        <TimeToNextStep Days="3"/>
       </GrowthStep>
       <GrowthStep Name="TreeSapling" StartingProbability="0.1">
         <ModelCollectionSubtypeId>OakTreeSapling</ModelCollectionSubtypeId>
         <NextStep>OakTree25</NextStep>
-        <TimeToNextStep Hours="36" />
+        <TimeToNextStep Hours="36"/>
         <Actions>
           <Action Name="Gather" NextStep="Dead">
-            <Id Subtype="BranchesBroadleaf" Type="InventoryItem" />
+            <Id Type="InventoryItem" Subtype="BranchesBroadleaf"/>
             <Min>2</Min>
             <Max>4</Max>
           </Action>
@@ -78,30 +78,30 @@
       <GrowthStep Name="OakTree25" StartingProbability="0.05">
         <ModelCollectionSubtypeId>OakTree25</ModelCollectionSubtypeId>
         <NextStep>OakTree5</NextStep>
-        <TimeToNextStep Hours="24" />
+        <TimeToNextStep Hours="24"/>
         <Actions>
           <Action Name="Cut" NextStep="Stump">
-            <Id Subtype="OakTree25" Type="MyObjectBuilder_TreeDefinition" />
+            <Id Type="MyObjectBuilder_TreeDefinition" Subtype="OakTree25"/>
           </Action>
         </Actions>
       </GrowthStep>
       <GrowthStep Name="OakTree5" StartingProbability="0.15">
         <ModelCollectionSubtypeId>OakTree5</ModelCollectionSubtypeId>
         <NextStep>OakTree75</NextStep>
-        <TimeToNextStep Hours="18" />
+        <TimeToNextStep Hours="18"/>
         <Actions>
           <Action Name="Cut" NextStep="Stump">
-            <Id Subtype="OakTree5" Type="MyObjectBuilder_TreeDefinition" />
+            <Id Type="MyObjectBuilder_TreeDefinition" Subtype="OakTree5"/>
           </Action>
         </Actions>
       </GrowthStep>
       <GrowthStep Name="OakTree75" StartingProbability="0.25">
         <ModelCollectionSubtypeId>OakTree75</ModelCollectionSubtypeId>
         <NextStep>DreadOakTree10</NextStep>
-        <TimeToNextStep Hours="12" />
+        <TimeToNextStep Hours="12"/>
         <Actions>
           <Action Name="Cut" NextStep="Stump">
-            <Id Subtype="OakTree75" Type="MyObjectBuilder_TreeDefinition" />
+            <Id Type="MyObjectBuilder_TreeDefinition" Subtype="OakTree75"/>
           </Action>
         </Actions>
       </GrowthStep>
@@ -109,20 +109,18 @@
         <ModelCollectionSubtypeId>DreadOakTree10</ModelCollectionSubtypeId>
         <Actions>
           <Action Name="Cut" NextStep="Stump">
-            <Id Subtype="DreadOakTree10" Type="MyObjectBuilder_TreeDefinition" />
+            <Id Type="MyObjectBuilder_TreeDefinition" Subtype="DreadOakTree10"/>
           </Action>
         </Actions>
       </GrowthStep>
       <GrowthStep Name="Stump" StartingProbability="0">
         <NextStep>TreeSapling</NextStep>
-        <TimeToNextStep Days="3" />
+        <TimeToNextStep Days="3"/>
         <Actions>
-          <Action Name="Cut" NextStep="PermaDead">
-            <Id Subtype="" Type="" />
-          </Action>
+          <Action Name="Cut" NextStep="PermaDead"/>
         </Actions>
       </GrowthStep>
-      <GrowthStep Name="PermaDead" StartingProbability="0" />
+      <GrowthStep Name="PermaDead" StartingProbability="0"/>
     </GrowthSteps>
   </Definition>
 </Definitions>
