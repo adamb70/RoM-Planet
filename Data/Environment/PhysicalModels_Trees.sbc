@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id Type="TreeDefinition" Subtype="DeadTree1" />
+    <Model>Models\Environment\Trees\dead_tree1.mwm</Model>
+    <PhysicalMaterial>TreeTall</PhysicalMaterial>
+    <HitPoints>100</HitPoints>
+    <CutEffect>ParticleToolWoodCutting</CutEffect>
+    <FallSound>ImpTreeShortFallImpact</FallSound>
+    <BreakSound>ImpTreeShortFallSqueak</BreakSound>
+    <MinColorShift Hue="0" Saturation="0" Value="0" />
+    <MaxColorShift Hue="0" Saturation="0" Value="0" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id Type="TreeDefinition" Subtype="DeadTree2" />
+    <Model>Models\Environment\Trees\dead_tree2.mwm</Model>
+    <PhysicalMaterial>TreeTall</PhysicalMaterial>
+    <HitPoints>100</HitPoints>
+    <CutEffect>ParticleToolWoodCutting</CutEffect>
+    <FallSound>ImpTreeShortFallImpact</FallSound>
+    <BreakSound>ImpTreeShortFallSqueak</BreakSound>
+    <MinColorShift Hue="0" Saturation="0" Value="0" />
+    <MaxColorShift Hue="0" Saturation="0" Value="0" />
+  </Definition>
+
+
+
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id Type="TreeDefinition" Subtype="DeadTree3" />
+    <Model>Models\Environment\Trees\dead_tree3.mwm</Model>
+    <PhysicalMaterial>TreeTall</PhysicalMaterial>
+    <HitPoints>100</HitPoints>
+    <CutEffect>ParticleToolWoodCutting</CutEffect>
+    <FallSound>ImpTreeShortFallImpact</FallSound>
+    <BreakSound>ImpTreeShortFallSqueak</BreakSound>
+    <MinColorShift Hue="0" Saturation="0" Value="0" />
+    <MaxColorShift Hue="0" Saturation="0" Value="0" />
+  </Definition>
+
+
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id Type="TreeDefinition" Subtype="DreadOakTree10" />
+    <Model>Models\Environment\Trees\Oak\DreadOakTree10m.mwm</Model>
+    <PhysicalMaterial>TreeShort</PhysicalMaterial>
+    <HitPoints>100</HitPoints>
+    <CutEffect>ParticleToolWoodCutting</CutEffect>
+    <FallSound>ImpTreeTallFallImpact</FallSound>
+    <BreakSound>ImpTreeTallFallSqueak</BreakSound>
+    <MinColorShift Hue="4" Saturation="10" Value="5" />
+    <MaxColorShift Hue="0" Saturation="0" Value="0" />
+  </Definition>
+
+
+</Definitions>

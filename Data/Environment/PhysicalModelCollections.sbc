@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <Definition xsi:type="VR.PhysicalModelCollectionDefinition">
+    <Id Type="PhysicalModelCollectionDefinition" Subtype="DeadTree1" />
+    <Items>
+      <Item TypeId="TreeDefinition" SubtypeId="DeadTree1" Weight="1" />
+    </Items>
+  </Definition>
+
+  <Definition xsi:type="VR.PhysicalModelCollectionDefinition">
+    <Id Type="PhysicalModelCollectionDefinition" Subtype="DeadTree2" />
+    <Items>
+      <Item TypeId="TreeDefinition" SubtypeId="DeadTree2" Weight="1" />
+    </Items>
+  </Definition>
+
+  <Definition xsi:type="VR.PhysicalModelCollectionDefinition">
+    <Id Type="PhysicalModelCollectionDefinition" Subtype="DeadTree3" />
+    <Items>
+      <Item TypeId="TreeDefinition" SubtypeId="DeadTree3" Weight="1" />
+    </Items>
+  </Definition>
+
+  <Definition xsi:type="VR.PhysicalModelCollectionDefinition">
+    <Id Type="PhysicalModelCollectionDefinition" Subtype="DreadOakTree10" />
+    <Items>
+      <Item TypeId="TreeDefinition" SubtypeId="DreadOakTree10" Weight="1" />
+    </Items>
+  </Definition>
+
+</Definitions>

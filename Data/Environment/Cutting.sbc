@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+
+  <Definition xsi:type="MyObjectBuilder_CuttingDefinition">
+    <Id Type="CuttingDefinition" Subtype="DreadOakTree10_cutdef" />
+    <EntityId Type="MyObjectBuilder_TreeDefinition" Subtype="DreadOakTree10" />
+    <Group Name="Root"  IsRoot="true">
+      <SourceShape>DakTree20m_root</SourceShape>
+      <SpawnCondition>Destruction</SpawnCondition>
+    </Group>
+    <!--<Group Name="Link0">
+      <SourceShape>OakTree20m_link0</SourceShape>
+      <SpawnCondition>Split</SpawnCondition>
+    </Group>-->
+    <Group Name="Trunk1_1">
+      <SourceShape>DakTree20m_fracture1_1</SourceShape>
+      <SpawnCondition>Split</SpawnCondition>
+      <SpawnPrefab>
+        <Item Type="InventoryItem" Subtype="LogOakQuarter" />
+        <Amount>1</Amount>
+      </SpawnPrefab>
+    </Group>
+    <Group Name="Trunk1_2">
+      <SourceShape>DakTree20m_fracture1_2</SourceShape>
+      <SpawnCondition>Split</SpawnCondition>
+      <SpawnPrefab>
+        <Item Type="InventoryItem" Subtype="LogOakQuarter" />
+        <Amount>1</Amount>
+      </SpawnPrefab>
+    </Group>
+    <Group Name="Trunk1_3">
+      <SourceShape>DakTree20m_fracture1_3</SourceShape>
+      <SpawnCondition>Split</SpawnCondition>
+      <SpawnPrefab>
+        <Item Type="InventoryItem" Subtype="LogOakQuarter" />
+        <Amount>1</Amount>
+      </SpawnPrefab>
+    </Group>
+    <Group Name="Trunk1_4">
+      <SourceShape>DakTree20m_fracture1_4</SourceShape>
+      <SpawnCondition>Split</SpawnCondition>
+      <SpawnPrefab>
+        <Item Type="InventoryItem" Subtype="LogOakQuarter" />
+        <Amount>1</Amount>
+      </SpawnPrefab>
+    </Group>
+    <!--<Group Name="Link1">
+      <SourceShape>OakTree20m_link1</SourceShape>
+      <SpawnCondition>Split</SpawnCondition>
+    </Group>-->
+    <Group Name="Trunk2_1">
+      <SourceShape>DakTree20m_fracture2_1</SourceShape>
+      <SpawnCondition>Split</SpawnCondition>
+      <SpawnPrefab>
+        <Item Type="InventoryItem" Subtype="LogOakQuarter" />
+        <Amount>1</Amount>
+      </SpawnPrefab>
+    </Group>
+    <Group Name="Trunk2_1_B1">
+      <SourceShape>DakTree20m_fracture2_1_B1</SourceShape>
+      <SpawnCondition>Split</SpawnCondition>
+      <SpawnPrefab>
+        <Item Type="InventoryItem" Subtype="LogOakBranch" />
+        <Amount>1</Amount>
+      </SpawnPrefab>
+    </Group>
+    <Group Name="Trunk2_1_B2">
+      <SourceShape>DakTree20m_fracture2_1_B2</SourceShape>
+      <SpawnCondition>Split</SpawnCondition>
+      <SpawnPrefab>
+        <Item Type="InventoryItem" Subtype="LogOakBranch" />
+        <Amount>1</Amount>
+      </SpawnPrefab>
+    </Group>
+    <Group Name="Trunk2_1_B3">
+      <SourceShape>DakTree20m_fracture2_1_B3</SourceShape>
+      <SpawnCondition>Split</SpawnCondition>
+      <SpawnPrefab>
+        <Item Type="InventoryItem" Subtype="LogOakBranch" />
+        <Amount>1</Amount>
+      </SpawnPrefab>
+    </Group>
+    <Group Name="Trunk2_2">
+      <SourceShape>DakTree20m_fracture2_2</SourceShape>
+      <SpawnCondition>Split</SpawnCondition>
+      <SpawnPrefab>
+        <Item Type="InventoryItem" Subtype="LogOakQuarter" />
+        <Amount>1</Amount>
+      </SpawnPrefab>
+    </Group>
+    <Group Name="Trunk2_2_B1">
+      <SourceShape>DakTree20m_fracture2_2_B1</SourceShape>
+      <SpawnCondition>Split</SpawnCondition>
+      <SpawnPrefab>
+        <Item Type="InventoryItem" Subtype="LogOakBranch" />
+        <Amount>1</Amount>
+      </SpawnPrefab>
+    </Group>
+    <Group Name="Trunk2_3">
+      <SourceShape>DakTree20m_fracture2_3</SourceShape>
+      <SpawnCondition>Split</SpawnCondition>
+      <SpawnPrefab>
+        <Item Type="InventoryItem" Subtype="LogOakQuarter" />
+        <Amount>1</Amount>
+      </SpawnPrefab>
+    </Group>
+    <Group Name="Trunk2_3_B1">
+      <SourceShape>DakTree20m_fracture2_3_B1</SourceShape>
+      <SpawnCondition>Split</SpawnCondition>
+      <SpawnPrefab>
+        <Item Type="InventoryItem" Subtype="LogOakBranch" />
+        <Amount>1</Amount>
+      </SpawnPrefab>
+    </Group>
+    <Group Name="Trunk2_3_B2">
+      <SourceShape>DakTree20m_fracture2_3_B2</SourceShape>
+      <SpawnCondition>Split</SpawnCondition>
+      <SpawnPrefab>
+        <Item Type="InventoryItem" Subtype="LogOakBranch" />
+        <Amount>1</Amount>
+      </SpawnPrefab>
+    </Group>
+    <Group Name="Trunk2_3_B3">
+      <SourceShape>DakTree20m_fracture2_3_B3</SourceShape>
+      <SpawnCondition>Split</SpawnCondition>
+      <SpawnPrefab>
+        <Item Type="InventoryItem" Subtype="LogOakBranch" />
+        <Amount>1</Amount>
+      </SpawnPrefab>
+    </Group>
+    <Group Name="Trunk2_3_B4">
+      <SourceShape>DakTree20m_fracture2_3_B4</SourceShape>
+      <SpawnCondition>Split</SpawnCondition>
+      <SpawnPrefab>
+        <Item Type="InventoryItem" Subtype="LogOakBranch" />
+        <Amount>1</Amount>
+      </SpawnPrefab>
+    </Group>
+    <!--<Group Name="Link2">
+      <SourceShape>OakTree20m_link2</SourceShape>
+      <SpawnCondition>Split</SpawnCondition>
+    </Group>-->
+    <Group Name="Trunk3_1">
+      <SourceShape>DakTree20m_fracture3_1</SourceShape>
+      <SpawnCondition>Split</SpawnCondition>
+      <SpawnPrefab>
+        <Item Type="InventoryItem" Subtype="LogOakHalf" />
+        <Amount>1</Amount>
+      </SpawnPrefab>
+    </Group>
+    <Group Name="Trunk3_1_B1">
+      <SourceShape>DakTree20m_fracture3_1_B1</SourceShape>
+      <SpawnCondition>Split</SpawnCondition>
+      <SpawnPrefab>
+        <Item Type="InventoryItem" Subtype="BranchesBroadleaf" />
+        <Amount>1</Amount>
+      </SpawnPrefab>
+    </Group>
+    <Group Name="Trunk3_1_B2">
+      <SourceShape>DakTree20m_fracture3_1_B2</SourceShape>
+      <SpawnCondition>Split</SpawnCondition>
+      <SpawnPrefab>
+        <Item Type="InventoryItem" Subtype="BranchesBroadleaf" />
+        <Amount>1</Amount>
+      </SpawnPrefab>
+    </Group>
+    <Group Name="Trunk3_1_B3">
+      <SourceShape>DakTree20m_fracture3_1_B3</SourceShape>
+      <SpawnCondition>Split</SpawnCondition>
+      <SpawnPrefab>
+        <Item Type="InventoryItem" Subtype="BranchesBroadleaf" />
+        <Amount>1</Amount>
+      </SpawnPrefab>
+    </Group>
+    <Group Name="Trunk3_2">
+      <SourceShape>DakTree20m_fracture3_2</SourceShape>
+      <SpawnCondition>Split</SpawnCondition>
+      <SpawnPrefab>
+        <Item Type="InventoryItem" Subtype="LogOakHalf" />
+        <Amount>1</Amount>
+      </SpawnPrefab>
+    </Group>
+  <Group Name="Trunk3_2_B1">
+      <SourceShape>DakTree20m_fracture3_2_B1</SourceShape>
+      <SpawnCondition>Split</SpawnCondition>
+      <SpawnPrefab>
+        <Item Type="InventoryItem" Subtype="BranchesBroadleaf" />
+        <Amount>1</Amount>
+      </SpawnPrefab>
+    </Group>
+    <Group Name="Trunk3_2_B2">
+      <SourceShape>DakTree20m_fracture3_2_B2</SourceShape>
+      <SpawnCondition>Split</SpawnCondition>
+      <SpawnPrefab>
+        <Item Type="InventoryItem" Subtype="BranchesBroadleaf" />
+        <Amount>1</Amount>
+      </SpawnPrefab>
+    </Group>
+    <Group Name="Trunk3_2_B3">
+      <SourceShape>DakTree20m_fracture3_2_B3</SourceShape>
+      <SpawnCondition>Split</SpawnCondition>
+      <SpawnPrefab>
+        <Item Type="InventoryItem" Subtype="BranchesBroadleaf" />
+        <Amount>1</Amount>
+      </SpawnPrefab>
+    </Group>
+    <Group Name="Trunk3_2_B4">
+      <SourceShape>DakTree20m_fracture3_2_B4</SourceShape>
+      <SpawnCondition>Split</SpawnCondition>
+      <SpawnPrefab>
+        <Item Type="InventoryItem" Subtype="BranchesBroadleaf" />
+        <Amount>1</Amount>
+      </SpawnPrefab>
+    </Group>
+    <!--<Group Name="Link3">
+      <SourceShape>OakTree20m_link3</SourceShape>
+      <SpawnCondition>Split</SpawnCondition>
+    </Group>-->
+  <Group Name="Trunk4">
+      <SourceShape>DakTree20m_fracture4</SourceShape>
+      <SpawnCondition>Split</SpawnCondition>
+      <SpawnPrefab>
+        <Item Type="InventoryItem" Subtype="LogOakBranch" />
+        <Amount>1</Amount>
+      </SpawnPrefab>
+    </Group>
+    <!--<GroupConnection GroupA="Root" GroupB="Link0" />-->
+    <GroupConnection GroupA="Trunk1_1" GroupB="Root" BoostPriority="4"/>
+    <GroupConnection GroupA="Trunk1_1" GroupB="Trunk1_2" />
+    <GroupConnection GroupA="Trunk1_1" GroupB="Trunk1_3" />
+    <GroupConnection GroupA="Trunk1_1" GroupB="Trunk1_4" />
+    <!--<GroupConnection GroupA="Trunk1_2" GroupB="Trunk1_3" />
+    <GroupConnection GroupA="Trunk1_2" GroupB="Trunk1_4" />
+    <GroupConnection GroupA="Trunk1_3" GroupB="Trunk1_4" />-->
+    <!--<GroupConnection GroupA="Trunk1_1" GroupB="Link1" />
+    <GroupConnection GroupA="Trunk1_2" GroupB="Link1" />
+    <GroupConnection GroupA="Trunk1_3" GroupB="Link1" />
+    <GroupConnection GroupA="Trunk1_3" GroupB="Link1" />
+    <GroupConnection GroupA="Trunk2_1" GroupB="Link1" />
+    <GroupConnection GroupA="Trunk2_2" GroupB="Link1" />
+    <GroupConnection GroupA="Trunk2_3" GroupB="Link1" />-->
+    <GroupConnection GroupA="Trunk1_1" GroupB="Trunk2_1" BoostPriority="2"/>
+    <GroupConnection GroupA="Trunk2_1" GroupB="Trunk2_2" />
+    <GroupConnection GroupA="Trunk2_1" GroupB="Trunk2_3" />
+    <GroupConnection GroupA="Trunk2_1" GroupB="Trunk2_1_B1" />
+    <GroupConnection GroupA="Trunk2_1" GroupB="Trunk2_1_B2" />
+    <GroupConnection GroupA="Trunk2_1" GroupB="Trunk2_1_B3" />
+    <!--<GroupConnection GroupA="Trunk2_2" GroupB="Trunk2_3" />-->
+    <GroupConnection GroupA="Trunk2_2" GroupB="Trunk2_2_B1" />
+    <GroupConnection GroupA="Trunk2_3" GroupB="Trunk2_3_B1" />
+    <GroupConnection GroupA="Trunk2_3" GroupB="Trunk2_3_B2" />
+    <GroupConnection GroupA="Trunk2_3" GroupB="Trunk2_3_B3" />
+    <GroupConnection GroupA="Trunk2_3" GroupB="Trunk2_3_B4" />
+    <!--<GroupConnection GroupA="Trunk2_1" GroupB="Link2" />
+    <GroupConnection GroupA="Trunk2_2" GroupB="Link2" />
+    <GroupConnection GroupA="Trunk2_3" GroupB="Link2" />
+    <GroupConnection GroupA="Trunk3_1" GroupB="Link2" />
+    <GroupConnection GroupA="Trunk3_2" GroupB="Link2" />-->
+    <GroupConnection GroupA="Trunk3_1" GroupB="Trunk2_1" />
+    <GroupConnection GroupA="Trunk3_1" GroupB="Trunk3_2" />
+    <GroupConnection GroupA="Trunk3_1" GroupB="Trunk3_1_B1" />
+    <GroupConnection GroupA="Trunk3_1" GroupB="Trunk3_1_B2" />
+    <GroupConnection GroupA="Trunk3_1" GroupB="Trunk3_1_B3" />
+    <GroupConnection GroupA="Trunk3_2" GroupB="Trunk3_2_B1" />
+    <GroupConnection GroupA="Trunk3_2" GroupB="Trunk3_2_B2" />
+    <GroupConnection GroupA="Trunk3_2" GroupB="Trunk3_2_B3" />
+    <GroupConnection GroupA="Trunk3_2" GroupB="Trunk3_2_B4" />
+    <!--<GroupConnection GroupA="Trunk3_1" GroupB="Link3" />
+    <GroupConnection GroupA="Trunk3_2" GroupB="Link3" />-->
+    <GroupConnection GroupA="Trunk4" GroupB="Trunk3_1" />
+  </Definition>
+  
+
+</Definitions>
