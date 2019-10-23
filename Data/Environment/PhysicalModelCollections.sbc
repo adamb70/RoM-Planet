@@ -63,4 +63,44 @@
     </Items>
   </Definition>
 
+  <!-- Elven oaks -->
+  
+  <Definition xsi:type="VR.PhysicalModelCollectionDefinition">
+    <Id Type="PhysicalModelCollectionDefinition" Subtype="ElvenOakTreeSapling" />
+    <Items>
+      <Item TypeId="TreeDefinition" SubtypeId="ElvenOakTreeSapling" Weight="1" />
+    </Items>
+  </Definition>
+  
+  <Definition xsi:type="VR.PhysicalModelCollectionDefinition">
+    <Id Type="PhysicalModelCollectionDefinition" Subtype="ElvenOakTree5" />
+    <Items>
+      <Item TypeId="TreeDefinition" SubtypeId="ElvenOakTree5" Weight="1" />
+      <Item TypeId="TreeDefinition" SubtypeId="ElvenOakTree5_var2" Weight="1" />
+    </Items>
+  </Definition>
+
+  <Definition xsi:type="VR.PhysicalModelCollectionDefinition">
+    <Id Type="PhysicalModelCollectionDefinition" Subtype="ElvenOakTree10" />
+    <Items>
+      <Item TypeId="TreeDefinition" SubtypeId="ElvenOakTree10" Weight="1" />
+      <Item TypeId="TreeDefinition" SubtypeId="ElvenOakTree10_var2" Weight="1" />
+    </Items>
+  </Definition>
+
+  <Definition xsi:type="VR.PhysicalModelCollectionDefinition">
+    <Id Type="PhysicalModelCollectionDefinition" Subtype="ElvenOakTree25" />
+    <Items>
+      <Item TypeId="TreeDefinition" SubtypeId="ElvenOakTree25" Weight="1" />
+      <Item TypeId="TreeDefinition" SubtypeId="ElvenOakTree25_var2" Weight="1" />
+    </Items>
+  </Definition>
+
+  <Definition xsi:type="VR.PhysicalModelCollectionDefinition">
+    <Id Type="PhysicalModelCollectionDefinition" Subtype="ElvenOakTree75" />
+    <Items>
+      <Item TypeId="TreeDefinition" SubtypeId="ElvenOakTree75" Weight="1" />
+      <Item TypeId="TreeDefinition" SubtypeId="ElvenOakTree75_var2" Weight="1" />
+    </Items>
+  </Definition>
 </Definitions>

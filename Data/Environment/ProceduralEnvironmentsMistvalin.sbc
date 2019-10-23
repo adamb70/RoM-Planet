@@ -174,10 +174,7 @@
         <Height Min="0" Max="10" />
         <Slope Min="0" Max="25" />
         
-        <Item Type="Tree" Subtype="OakTree25" Density="0.007" />
-        <Item Type="Tree" Subtype="OakTree5" Density="0.01" />
-        <Item Type="Tree" Subtype="OakTree75" Density="0.016" />
-        <Item Type="Tree" Subtype="OakTree10" Density="0.01" />
+        <Item Type="Tree" Subtype="ElvenOakTree10" Density="0.3" />
       </Mapping>
       
       

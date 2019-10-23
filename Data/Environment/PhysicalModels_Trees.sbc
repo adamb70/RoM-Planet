@@ -150,4 +150,115 @@
   </Definition>
 
 
+
+  <!-- Elven oaks -->
+
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id Type="TreeDefinition" Subtype="ElvenOakTreeSapling" />
+    <Model>Models\Environment\Trees\Eak\EakTreeSapling.mwm</Model>
+    <PhysicalMaterial>TreeShort</PhysicalMaterial>
+    <HitPoints>100</HitPoints>
+    <CutEffect>ParticleToolWoodCutting</CutEffect>
+    <FallSound>ImpTreeShortFallImpact</FallSound>
+    <BreakSound>ImpTreeShortFallSqueak</BreakSound>
+    <MinColorShift Hue="4" Saturation="10" Value="5" />
+    <MaxColorShift Hue="0" Saturation="0" Value="0" />
+  </Definition>
+  
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id Type="TreeDefinition" Subtype="ElvenOakTree5" />
+    <Model>Models\Environment\Trees\Eak\EakTree5m.mwm</Model>
+    <PhysicalMaterial>TreeShort</PhysicalMaterial>
+    <HitPoints>100</HitPoints>
+    <CutEffect>ParticleToolWoodCutting</CutEffect>
+    <FallSound>ImpTreeShortFallImpact</FallSound>
+    <BreakSound>ImpTreeShortFallSqueak</BreakSound>
+    <MinColorShift Hue="4" Saturation="10" Value="5" />
+    <MaxColorShift Hue="0" Saturation="0" Value="0" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id Type="TreeDefinition" Subtype="ElvenOakTree5_var2" />
+    <Model>Models\Environment\Trees\Eak\EakTree5m.mwm</Model>
+    <PhysicalMaterial>TreeShort</PhysicalMaterial>
+    <HitPoints>100</HitPoints>
+    <CutEffect>ParticleToolWoodCutting</CutEffect>
+    <FallSound>ImpTreeShortFallImpact</FallSound>
+    <BreakSound>ImpTreeShortFallSqueak</BreakSound>
+    <MinColorShift Hue="0" Saturation="-5" Value="0" />
+    <MaxColorShift Hue="0" Saturation="30" Value="-10" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id Type="TreeDefinition" Subtype="ElvenOakTree10" />
+    <Model>Models\Environment\Trees\Eak\EakTree10m.mwm</Model>
+    <PhysicalMaterial>TreeShort</PhysicalMaterial>
+    <HitPoints>100</HitPoints>
+    <CutEffect>ParticleToolWoodCutting</CutEffect>
+    <FallSound>ImpTreeTallFallImpact</FallSound>
+    <BreakSound>ImpTreeTallFallSqueak</BreakSound>
+    <MinColorShift Hue="4" Saturation="10" Value="5" />
+    <MaxColorShift Hue="0" Saturation="0" Value="0" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id Type="TreeDefinition" Subtype="ElvenOakTree10_var2" />
+    <Model>Models\Environment\Trees\Eak\EakTree10m.mwm</Model>
+    <PhysicalMaterial>TreeShort</PhysicalMaterial>
+    <HitPoints>100</HitPoints>
+    <CutEffect>ParticleToolWoodCutting</CutEffect>
+    <FallSound>ImpTreeTallFallImpact</FallSound>
+    <BreakSound>ImpTreeTallFallSqueak</BreakSound>
+    <MinColorShift Hue="0" Saturation="-5" Value="0" />
+    <MaxColorShift Hue="0" Saturation="30" Value="-10" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id Type="TreeDefinition" Subtype="ElvenOakTree25" />
+    <Model>Models\Environment\Trees\Eak\EakTree25m.mwm</Model>
+    <PhysicalMaterial>TreeShort</PhysicalMaterial>
+    <HitPoints>100</HitPoints>
+    <CutEffect>ParticleToolWoodCutting</CutEffect>
+    <FallSound>ImpTreeTallFallImpact</FallSound>
+    <BreakSound>ImpTreeTallFallSqueak</BreakSound>
+    <MinColorShift Hue="4" Saturation="10" Value="5" />
+    <MaxColorShift Hue="0" Saturation="0" Value="0" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id Type="TreeDefinition" Subtype="ElvenOakTree25_var2" />
+    <Model>Models\Environment\Trees\Eak\EakTree25m.mwm</Model>
+    <PhysicalMaterial>TreeShort</PhysicalMaterial>
+    <HitPoints>100</HitPoints>
+    <CutEffect>ParticleToolWoodCutting</CutEffect>
+    <FallSound>ImpTreeTallFallImpact</FallSound>
+    <BreakSound>ImpTreeTallFallSqueak</BreakSound>
+    <MinColorShift Hue="0" Saturation="-5" Value="0" />
+    <MaxColorShift Hue="0" Saturation="30" Value="-10" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id Type="TreeDefinition" Subtype="ElvenOakTree75" />
+    <Model>Models\Environment\Trees\Eak\EakTree75m.mwm</Model>
+    <PhysicalMaterial>TreeShort</PhysicalMaterial>
+    <HitPoints>100</HitPoints>
+    <CutEffect>ParticleToolWoodCutting</CutEffect>
+    <FallSound>ImpTreeTallFallImpact</FallSound>
+    <BreakSound>ImpTreeTallFallSqueak</BreakSound>
+    <MinColorShift Hue="4" Saturation="10" Value="5" />
+    <MaxColorShift Hue="0" Saturation="0" Value="0" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id Type="TreeDefinition" Subtype="ElvenOakTree75_var2" />
+    <Model>Models\Environment\Trees\Eak\EakTree75m.mwm</Model>
+    <PhysicalMaterial>TreeShort</PhysicalMaterial>
+    <HitPoints>100</HitPoints>
+    <CutEffect>ParticleToolWoodCutting</CutEffect>
+    <FallSound>ImpTreeTallFallImpact</FallSound>
+    <BreakSound>ImpTreeTallFallSqueak</BreakSound>
+    <MinColorShift Hue="0" Saturation="-5" Value="0" />
+    <MaxColorShift Hue="0" Saturation="30" Value="-10" />
+  </Definition>
+
 </Definitions>
