@@ -26,8 +26,6 @@
     <MaxColorShift Hue="0" Saturation="0" Value="0" />
   </Definition>
 
-
-
   <Definition xsi:type="MyObjectBuilder_TreeDefinition">
     <Id Type="TreeDefinition" Subtype="DeadTree3" />
     <Model>Models\Environment\Trees\dead_tree3.mwm</Model>
@@ -41,9 +39,47 @@
   </Definition>
 
 
+  <!-- Dread oaks -->
+
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id Type="TreeDefinition" Subtype="DreadOakTreeSapling" />
+    <Model>Models\Environment\Trees\Dak\DakTreeSapling.mwm</Model>
+    <PhysicalMaterial>TreeShort</PhysicalMaterial>
+    <HitPoints>100</HitPoints>
+    <CutEffect>ParticleToolWoodCutting</CutEffect>
+    <FallSound>ImpTreeShortFallImpact</FallSound>
+    <BreakSound>ImpTreeShortFallSqueak</BreakSound>
+    <MinColorShift Hue="4" Saturation="10" Value="5" />
+    <MaxColorShift Hue="0" Saturation="0" Value="0" />
+  </Definition>
+  
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id Type="TreeDefinition" Subtype="DreadOakTree5" />
+    <Model>Models\Environment\Trees\Dak\DakTree5m.mwm</Model>
+    <PhysicalMaterial>TreeShort</PhysicalMaterial>
+    <HitPoints>100</HitPoints>
+    <CutEffect>ParticleToolWoodCutting</CutEffect>
+    <FallSound>ImpTreeShortFallImpact</FallSound>
+    <BreakSound>ImpTreeShortFallSqueak</BreakSound>
+    <MinColorShift Hue="4" Saturation="10" Value="5" />
+    <MaxColorShift Hue="0" Saturation="0" Value="0" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id Type="TreeDefinition" Subtype="DreadOakTree5_var2" />
+    <Model>Models\Environment\Trees\Dak\DakTree5m.mwm</Model>
+    <PhysicalMaterial>TreeShort</PhysicalMaterial>
+    <HitPoints>100</HitPoints>
+    <CutEffect>ParticleToolWoodCutting</CutEffect>
+    <FallSound>ImpTreeShortFallImpact</FallSound>
+    <BreakSound>ImpTreeShortFallSqueak</BreakSound>
+    <MinColorShift Hue="0" Saturation="-5" Value="0" />
+    <MaxColorShift Hue="0" Saturation="30" Value="-10" />
+  </Definition>
+
   <Definition xsi:type="MyObjectBuilder_TreeDefinition">
     <Id Type="TreeDefinition" Subtype="DreadOakTree10" />
-    <Model>Models\Environment\Trees\Oak\DreadOakTree10m.mwm</Model>
+    <Model>Models\Environment\Trees\Dak\DakTree10m.mwm</Model>
     <PhysicalMaterial>TreeShort</PhysicalMaterial>
     <HitPoints>100</HitPoints>
     <CutEffect>ParticleToolWoodCutting</CutEffect>
@@ -51,6 +87,66 @@
     <BreakSound>ImpTreeTallFallSqueak</BreakSound>
     <MinColorShift Hue="4" Saturation="10" Value="5" />
     <MaxColorShift Hue="0" Saturation="0" Value="0" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id Type="TreeDefinition" Subtype="DreadOakTree10_var2" />
+    <Model>Models\Environment\Trees\Dak\DakTree10m.mwm</Model>
+    <PhysicalMaterial>TreeShort</PhysicalMaterial>
+    <HitPoints>100</HitPoints>
+    <CutEffect>ParticleToolWoodCutting</CutEffect>
+    <FallSound>ImpTreeTallFallImpact</FallSound>
+    <BreakSound>ImpTreeTallFallSqueak</BreakSound>
+    <MinColorShift Hue="0" Saturation="-5" Value="0" />
+    <MaxColorShift Hue="0" Saturation="30" Value="-10" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id Type="TreeDefinition" Subtype="DreadOakTree25" />
+    <Model>Models\Environment\Trees\Dak\DakTree25m.mwm</Model>
+    <PhysicalMaterial>TreeShort</PhysicalMaterial>
+    <HitPoints>100</HitPoints>
+    <CutEffect>ParticleToolWoodCutting</CutEffect>
+    <FallSound>ImpTreeTallFallImpact</FallSound>
+    <BreakSound>ImpTreeTallFallSqueak</BreakSound>
+    <MinColorShift Hue="4" Saturation="10" Value="5" />
+    <MaxColorShift Hue="0" Saturation="0" Value="0" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id Type="TreeDefinition" Subtype="DreadOakTree25_var2" />
+    <Model>Models\Environment\Trees\Dak\DakTree25m.mwm</Model>
+    <PhysicalMaterial>TreeShort</PhysicalMaterial>
+    <HitPoints>100</HitPoints>
+    <CutEffect>ParticleToolWoodCutting</CutEffect>
+    <FallSound>ImpTreeTallFallImpact</FallSound>
+    <BreakSound>ImpTreeTallFallSqueak</BreakSound>
+    <MinColorShift Hue="0" Saturation="-5" Value="0" />
+    <MaxColorShift Hue="0" Saturation="30" Value="-10" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id Type="TreeDefinition" Subtype="DreadOakTree75" />
+    <Model>Models\Environment\Trees\Dak\DakTree75m.mwm</Model>
+    <PhysicalMaterial>TreeShort</PhysicalMaterial>
+    <HitPoints>100</HitPoints>
+    <CutEffect>ParticleToolWoodCutting</CutEffect>
+    <FallSound>ImpTreeTallFallImpact</FallSound>
+    <BreakSound>ImpTreeTallFallSqueak</BreakSound>
+    <MinColorShift Hue="4" Saturation="10" Value="5" />
+    <MaxColorShift Hue="0" Saturation="0" Value="0" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id Type="TreeDefinition" Subtype="DreadOakTree75_var2" />
+    <Model>Models\Environment\Trees\Dak\DakTree75m.mwm</Model>
+    <PhysicalMaterial>TreeShort</PhysicalMaterial>
+    <HitPoints>100</HitPoints>
+    <CutEffect>ParticleToolWoodCutting</CutEffect>
+    <FallSound>ImpTreeTallFallImpact</FallSound>
+    <BreakSound>ImpTreeTallFallSqueak</BreakSound>
+    <MinColorShift Hue="0" Saturation="-5" Value="0" />
+    <MaxColorShift Hue="0" Saturation="30" Value="-10" />
   </Definition>
 
 

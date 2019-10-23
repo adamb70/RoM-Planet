@@ -21,11 +21,45 @@
       <Item TypeId="TreeDefinition" SubtypeId="DeadTree3" Weight="1" />
     </Items>
   </Definition>
+  
+  <!-- Dread oaks -->
+  
+  <Definition xsi:type="VR.PhysicalModelCollectionDefinition">
+    <Id Type="PhysicalModelCollectionDefinition" Subtype="DreadOakTreeSapling" />
+    <Items>
+      <Item TypeId="TreeDefinition" SubtypeId="DreadOakTreeSapling" Weight="1" />
+    </Items>
+  </Definition>
+  
+  <Definition xsi:type="VR.PhysicalModelCollectionDefinition">
+    <Id Type="PhysicalModelCollectionDefinition" Subtype="DreadOakTree5" />
+    <Items>
+      <Item TypeId="TreeDefinition" SubtypeId="DreadOakTree5" Weight="1" />
+      <Item TypeId="TreeDefinition" SubtypeId="DreadOakTree5_var2" Weight="1" />
+    </Items>
+  </Definition>
 
   <Definition xsi:type="VR.PhysicalModelCollectionDefinition">
     <Id Type="PhysicalModelCollectionDefinition" Subtype="DreadOakTree10" />
     <Items>
       <Item TypeId="TreeDefinition" SubtypeId="DreadOakTree10" Weight="1" />
+      <Item TypeId="TreeDefinition" SubtypeId="DreadOakTree10_var2" Weight="1" />
+    </Items>
+  </Definition>
+
+  <Definition xsi:type="VR.PhysicalModelCollectionDefinition">
+    <Id Type="PhysicalModelCollectionDefinition" Subtype="DreadOakTree25" />
+    <Items>
+      <Item TypeId="TreeDefinition" SubtypeId="DreadOakTree25" Weight="1" />
+      <Item TypeId="TreeDefinition" SubtypeId="DreadOakTree25_var2" Weight="1" />
+    </Items>
+  </Definition>
+
+  <Definition xsi:type="VR.PhysicalModelCollectionDefinition">
+    <Id Type="PhysicalModelCollectionDefinition" Subtype="DreadOakTree75" />
+    <Items>
+      <Item TypeId="TreeDefinition" SubtypeId="DreadOakTree75" Weight="1" />
+      <Item TypeId="TreeDefinition" SubtypeId="DreadOakTree75_var2" Weight="1" />
     </Items>
   </Definition>
 
