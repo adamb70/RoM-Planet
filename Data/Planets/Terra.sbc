@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+<Definition xsi:type="MyObjectBuilder_MedievalMapBackgroundComponentDefinition">
+    <Id Type="MedievalMapBackgroundComponentDefinition" Subtype="Terra" />
+
+    <!-- Settings for heightmap drawing, unused,
+          You can play arround with this but be ware that the
+          mmheightmap only works when the resolutions match at the moment. -->
+    <!--<LightDirection x="-1" y="-1" z="-1"/>
+    <TintColor R="170" G="124" B="74" A="255"/> -->
+    <DrawHeightmap>false</DrawHeightmap>
+
+    <!-- Resolution of the generated texture, going much higher than
+         the resolution of the heightmap will not be super helpful -->
+    <Resolution>4096</Resolution>
+
+    <Features>
+
+      <!-- NEW PLANET -->
+      
+      <!-- Road -->
+      <Feature Material="30">
+        <Color R="75" G="30" B="0" A="255" />
+      </Feature>
+      <Feature Material="60">
+        <Color R="75" G="30" B="0" A="255" />
+      </Feature>
+      <Feature Material="117">
+        <Color R="75" G="30" B="0" A="255" />
+      </Feature>
+      <Feature Material="180 ">
+        <Color R="75" G="30" B="0" A="255" />
+      </Feature>
+      <Feature Material="183">
+        <Color R="75" G="30" B="0" A="255" />
+      </Feature>
+      <Feature Material="207">
+        <Color R="75" G="30" B="0" A="255" />
+      </Feature>
+      <Feature Material="240">
+        <Color R="75" G="30" B="0" A="255" />
+      </Feature>
+      <Feature Material="255">
+        <Color R="75" G="30" B="0" A="255" />
+      </Feature>
+      
+      
+    </Features>
+
+    <SpriteSheet Texture="Textures\GUI\Map\BackgroundSprites.png" BaseSize="64">
+      <SpriteCount>100</SpriteCount>
+      <Sprite Name="HillSmall" X="768" Y="192" Width="127" Height="64" />
+      <Sprite Name="HillSmall_v2" X="895" Y="192" Width="64" Height="64" />
+      <Sprite Name="HillMedium" X="512" Y="256" Width="127" Height="64" />
+      <Sprite Name="MountainSmall" X="512" Y="192" Width="64" Height="64" />
+      <Sprite Name="MountainSmall_v2" X="576" Y="192" Width="64" Height="64" />
+      <Sprite Name="MountainSmall_v3" X="640" Y="192" Width="64" Height="64" />
+      <Sprite Name="MountainSmall_v4" X="704" Y="192" Width="64" Height="64" />
+      <Sprite Name="MountainMedium" X="0" Y="192" Width="128" Height="128" />
+      <Sprite Name="MountainMedium_v2" X="128" Y="192" Width="128" Height="128" />
+      <Sprite Name="MountainMedium_v3" X="256" Y="192" Width="128" Height="128" />
+      <Sprite Name="MountainMedium_v4" X="384" Y="192" Width="128" Height="128" />
+      <Sprite Name="MountainLarge" X="0" Y="0" Width="256" Height="192" />
+      <Sprite Name="MountainLarge_v2" X="256" Y="0" Width="256" Height="192" />
+      <Sprite Name="MountainLarge_v3" X="512" Y="0" Width="256" Height="192" />
+      <Sprite Name="MountainLarge_v4" X="768" Y="0" Width="256" Height="192" />
+      <Sprite Name="ForestSparse" X="0" Y="320" Width="64" Height="64" />
+      <Sprite Name="ForestSparse_v2" X="64" Y="320" Width="64" Height="64" />
+      <Sprite Name="PineTreeBundle" X="0" Y="384" Width="128" Height="128" />
+      <Sprite Name="PineTreeBundle_v2" X="128" Y="384" Width="128" Height="128" />
+      <Sprite Name="PineTreeBundle_v3" X="256" Y="384" Width="128" Height="128" />
+      <Sprite Name="PineTreeBundle_v4" X="384" Y="384" Width="128" Height="128" />
+      <Sprite Name="PineTreeBundle_v5" X="512" Y="384" Width="128" Height="128" />
+      <Sprite Name="PalmTreeSparse" X="640" Y="320" Width="64" Height="64" />
+      <Sprite Name="PalmTreeSparse_v2" X="704" Y="320" Width="64" Height="64" />
+      <Sprite Name="PalmTreeBundle" X="640" Y="384" Width="128" Height="128" />
+      <Sprite Name="PalmTreeBundle_v2" X="768" Y="384" Width="128" Height="128" />
+
+      <HeightSprite AltitudeDiff=".09" Altitude=".20" Priority="1">
+        <Sprite>HillSmall</Sprite>
+        <Sprite>HillSmall_v2</Sprite>
+      </HeightSprite>
+      <HeightSprite AltitudeDiff=".09" Altitude=".35" Priority="1">
+        <Sprite>HillMedium</Sprite>
+      </HeightSprite>
+
+      <HeightSprite AltitudeDiff=".11" Altitude=".25" Priority="10">
+        <Sprite>MountainSmall</Sprite>
+        <Sprite>MountainSmall_v2</Sprite>
+        <Sprite>MountainSmall_v3</Sprite>
+        <Sprite>MountainSmall_v4</Sprite>
+      </HeightSprite>
+      <HeightSprite AltitudeDiff=".11" Altitude=".40" Priority="10">
+        <Sprite>MountainMedium</Sprite>
+        <Sprite>MountainMedium_v2</Sprite>
+        <Sprite>MountainMedium_v3</Sprite>
+        <Sprite>MountainMedium_v4</Sprite>
+      </HeightSprite>
+      <HeightSprite AltitudeDiff=".11" Altitude=".55" Priority="10">
+        <Sprite>MountainLarge</Sprite>
+        <Sprite>MountainLarge_v2</Sprite>
+        <Sprite>MountainLarge_v3</Sprite>
+        <Sprite>MountainLarge_v4</Sprite>
+      </HeightSprite>
+
+      <BiomeSprite Biome="60" Density=".1" Priority="6">
+        <Sprite>ForestSparse</Sprite>
+        <Sprite>ForestSparse_v2</Sprite>
+      </BiomeSprite>
+      <BiomeSprite Biome="60" Density=".8" Priority="5">
+        <Sprite>PineTreeBundle</Sprite>
+        <Sprite>PineTreeBundle_v2</Sprite>
+        <Sprite>PineTreeBundle_v3</Sprite>
+        <Sprite>PineTreeBundle_v4</Sprite>
+        <Sprite>PineTreeBundle_v5</Sprite>
+      </BiomeSprite>
+      <BiomeSprite Biome="70" Density=".8" Priority="4">
+        <Sprite>PineTreeBundle</Sprite>
+        <Sprite>PineTreeBundle_v2</Sprite>
+        <Sprite>PineTreeBundle_v3</Sprite>
+        <Sprite>PineTreeBundle_v4</Sprite>
+        <Sprite>PineTreeBundle_v5</Sprite>
+      </BiomeSprite>
+      <BiomeSprite Biome="152" Density=".01" Priority="6">
+        <Sprite>ForestSparse</Sprite>
+        <Sprite>ForestSparse_v2</Sprite>
+      </BiomeSprite>
+      <BiomeSprite Biome="152" Density=".8" Priority="5">
+        <Sprite>PineTreeBundle</Sprite>
+        <Sprite>PineTreeBundle_v2</Sprite>
+        <Sprite>PineTreeBundle_v3</Sprite>
+        <Sprite>PineTreeBundle_v4</Sprite>
+        <Sprite>PineTreeBundle_v5</Sprite>
+      </BiomeSprite>
+      <BiomeSprite Biome="153" Density=".01" Priority="6">
+        <Sprite>ForestSparse</Sprite>
+        <Sprite>ForestSparse_v2</Sprite>
+      </BiomeSprite>
+      <BiomeSprite Biome="153" Density=".8" Priority="5">
+        <Sprite>PineTreeBundle</Sprite>
+        <Sprite>PineTreeBundle_v2</Sprite>
+        <Sprite>PineTreeBundle_v3</Sprite>
+        <Sprite>PineTreeBundle_v4</Sprite>
+        <Sprite>PineTreeBundle_v5</Sprite>
+      </BiomeSprite>
+      <BiomeSprite Biome="154" Density=".8" Priority="4">
+        <Sprite>PineTreeBundle</Sprite>
+        <Sprite>PineTreeBundle_v2</Sprite>
+        <Sprite>PineTreeBundle_v3</Sprite>
+        <Sprite>PineTreeBundle_v4</Sprite>
+        <Sprite>PineTreeBundle_v5</Sprite>
+      </BiomeSprite>
+      <BiomeSprite Biome="164" Density=".01" Priority="6">
+        <Sprite>ForestSparse</Sprite>
+        <Sprite>ForestSparse_v2</Sprite>
+      </BiomeSprite>
+      <BiomeSprite Biome="164" Density=".8" Priority="5">
+        <Sprite>PineTreeBundle</Sprite>
+        <Sprite>PineTreeBundle_v2</Sprite>
+        <Sprite>PineTreeBundle_v3</Sprite>
+        <Sprite>PineTreeBundle_v4</Sprite>
+        <Sprite>PineTreeBundle_v5</Sprite>
+      </BiomeSprite>
+      <BiomeSprite Biome="142" Density=".4" Priority="5">
+        <Sprite>ForestSparse</Sprite>
+        <Sprite>ForestSparse_v2</Sprite>
+        <Sprite>PineTreeBundle_v5</Sprite>
+      </BiomeSprite>
+      <BiomeSprite Biome="135" Density=".4" Priority="5">
+        <Sprite>ForestSparse</Sprite>
+        <Sprite>ForestSparse_v2</Sprite>
+        <Sprite>PineTreeBundle_v5</Sprite>
+      </BiomeSprite>
+      <BiomeSprite Biome="192" Density=".01" Priority="6">
+        <Sprite>PalmTreeSparse</Sprite>
+        <Sprite>PalmTreeSparse_v2</Sprite>
+      </BiomeSprite>
+      <BiomeSprite Biome="192" Density=".6" Priority="5">
+        <Sprite>PalmTreeBundle</Sprite>
+        <Sprite>PalmTreeBundle_v2</Sprite>
+      </BiomeSprite>
+      <BiomeSprite Biome="175" Density=".01" Priority="6">
+        <Sprite>PalmTreeSparse</Sprite>
+        <Sprite>PalmTreeSparse_v2</Sprite>
+      </BiomeSprite>
+      <BiomeSprite Biome="175" Density=".6" Priority="5">
+        <Sprite>PalmTreeBundle</Sprite>
+        <Sprite>PalmTreeBundle_v2</Sprite>
+      </BiomeSprite>
+    </SpriteSheet>
+  </Definition>
+
+
+
+</Definitions>

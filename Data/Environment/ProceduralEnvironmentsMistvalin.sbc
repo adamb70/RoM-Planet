@@ -4,7 +4,7 @@
   <!-- NEW PLANET ENVIRONMENT-->
 
   <Definition xsi:type="MyObjectBuilder_ProceduralWorldEnvironment">
-    <Id Type="MyObjectBuilder_ProceduralWorldEnvironment" Subtype="Mistvalin" />
+    <Id Type="MyObjectBuilder_ProceduralWorldEnvironment" Subtype="fold" />
 
     <!-- Maximum lod until sectors are synchronized -->
     <MaxSyncLod>1</MaxSyncLod>
@@ -14,8 +14,30 @@
 
     <ItemTypes Type="MyObjectBuilder_EnvironmentItemTypesDefinition" Subtype="Default"/>
 
+
+    <ItemGroup Density="1" LodEnd="1" LodStart="-1" Name="SuperHighDensity">
+        <Mapping>
+          <!-- NPC Wheat Norden -->
+          <Biome>1</Biome>
+          <Material>PlowedSoil</Material>
+          <Item Density="0.7" Subtype="WildWheat" Type="Gatherable" />
+        </Mapping>
+        
+    </ItemGroup>
     
 <ItemGroup Density="0.2" LodEnd="1" LodStart="-1" Name="HighDensity">
+      <Mapping>
+        <Biome>210</Biome>
+        <Item Type="Bot" Subtype="Undead" Density="0.6" />
+      </Mapping>
+      <Mapping>
+        <Material>Woods_Elven</Material>
+        <Material>Woods_Needles_Elven</Material>
+        <Item Type="Bot" Subtype="Ent" Density="0.6" />
+      </Mapping>
+      
+    
+    
     <Mapping>
       <Material>Snow_Gravel</Material>
       <Height Max="0.7" Min="0" />
@@ -152,15 +174,18 @@
         <Item Type="Tree" Subtype="DreadOakTree10" Density="0.3" />
       </Mapping>
       
+      
+      
+      
       <Mapping>
         <Material>Woods_Needles_Elven</Material>
         <Height Min="0" Max="10" />
         <Slope Min="0" Max="25" />
 
         <Item Type="Tree" Subtype="PineTree22m" Density="0.01" />
-        <Item Type="Tree" Subtype="TreePine10Southern" Density="0.01" />
-        <Item Type="Tree" Subtype="TreePine15Southern" Density="0.01" />
-        <Item Type="Tree" Subtype="TreePine175Southern" />
+        <!-- <Item Type="Tree" Subtype="TreePine10Southern" Density="0.01" /> -->
+        <!-- <Item Type="Tree" Subtype="TreePine15Southern" Density="0.01" /> -->
+        <!-- <Item Type="Tree" Subtype="TreePine175Southern" /> -->
       </Mapping>
       <Mapping>
         <Material>Woods_Elven</Material>
@@ -179,12 +204,6 @@
       
       
       
-      
-      <Mapping>
-        <Biome>210</Biome>
-        <Item Type="Bot" Subtype="Undead" Density="0.6" />
-      </Mapping>
-    
   </ItemGroup>
 
   </Definition>
