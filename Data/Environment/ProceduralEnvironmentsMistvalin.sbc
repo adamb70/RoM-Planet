@@ -20,7 +20,7 @@
           <!-- NPC Wheat Norden -->
           <Biome>1</Biome>
           <Material>PlowedSoil</Material>
-          <Item Density="0.7" Subtype="WildWheat" Type="Gatherable" />
+          <Item Density="1" Subtype="WildWheat_Farmed" Type="Gatherable" />
         </Mapping>
         
     </ItemGroup>
@@ -28,7 +28,7 @@
 <ItemGroup Density="0.2" LodEnd="1" LodStart="-1" Name="HighDensity">
       <Mapping>
         <Biome>210</Biome>
-        <Item Type="Bot" Subtype="Undead" Density="0.6" />
+        <Item Type="Bot" Subtype="Undead" Density="0.8" />
       </Mapping>
       <Mapping>
         <Material>Woods_Elven</Material>
