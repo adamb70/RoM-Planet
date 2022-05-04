@@ -5,9 +5,9 @@
     <Id Type="EnvironmentRuleDefinition" Subtype="DreadlandsFog" />
     <Planet Type="PlanetGeneratorDefinition" Subtype="Mistvalin" />
     <Biome Type="BiomeDefinition" Subtype="Dreadlands" />
-    <!-- <Result Urgency="3" Type="MyObjectBuilder_DynamicFogDefinition" Subtype="Dreadlands" /> -->
-    <!-- <Result Urgency="3" Type="MyObjectBuilder_DynamicAtmosphereDefinition" Subtype="Dreadlands" /> -->
-    <!-- <Result Urgency="3" Type="MyObjectBuilder_DynamicSunDefinition" Subtype="Dreadlands" /> -->
+    <Result Urgency="3" Type="MyObjectBuilder_DynamicFogDefinition" Subtype="Dreadlands" />
+    <Result Urgency="3" Type="MyObjectBuilder_DynamicAtmosphereDefinition" Subtype="Dreadlands" />
+    <Result Urgency="3" Type="MyObjectBuilder_DynamicSunDefinition" Subtype="Dreadlands" />
   </Definition>
   
   <Definition xsi:type="MyObjectBuilder_DynamicFogDefinition">

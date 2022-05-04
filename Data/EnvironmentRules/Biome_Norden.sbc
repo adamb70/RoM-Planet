@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <!-- Music rules -->
+  <Definition xsi:type="MyObjectBuilder_EnvironmentRuleDefinition">
+    <Id Type="EnvironmentRuleDefinition" Subtype="MusicForestDay" />
+    <Biome Type="BiomeDefinition" Subtype="Norden_ForestGrassland" />
+    <HeightRatio Min="0.0" Max="0.5" />
+    <TimeOfDay>NotNight</TimeOfDay>
+    <DistanceToSurface Min="-5" Max="5000" />
+    <Music Urgency="0" Track="MusicForestDay" />
+  </Definition>
+  
+  <Definition xsi:type="MyObjectBuilder_EnvironmentRuleDefinition" Copy="Append">
+    <Id Type="EnvironmentRuleDefinition" Subtype="MusicForestDenseDay" />
+    <CopyFrom Type="EnvironmentRuleDefinition" Subtype="MusicForestDay" />
+    <Biome Type="BiomeDefinition" Subtype="Norden_ForestDense" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_EnvironmentRuleDefinition">
+    <Id Type="EnvironmentRuleDefinition" Subtype="MusicForestNight" />
+    <Biome Type="BiomeDefinition" Subtype="Norden_ForestGrassland" />
+    <HeightRatio Min="0.0" Max="0.5" />
+    <TimeOfDay>NotDay</TimeOfDay>
+    <DistanceToSurface Min="-5" Max="5000" />
+    <Music Urgency="0" Track="MusicForestNight" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_EnvironmentRuleDefinition" Copy="Append">
+    <Id Type="EnvironmentRuleDefinition" Subtype="MusicForestDenseNight" />
+    <CopyFrom Type="EnvironmentRuleDefinition" Subtype="MusicForestNight" />
+    <Biome Type="BiomeDefinition" Subtype="Norden_ForestDense" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_EnvironmentRuleDefinition">
+    <Id Type="EnvironmentRuleDefinition" Subtype="MusicForestUnderground" />
+    <Biome Type="BiomeDefinition" Subtype="Norden_ForestGrassland" />
+    <DistanceToSurface Min="-500" Max="-5" />
+    <Music Urgency="0" Track="MusicUndergroundTemperate" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_EnvironmentRuleDefinition" Copy="Append">
+    <Id Type="EnvironmentRuleDefinition" Subtype="MusicForestDenseUnderground" />
+    <CopyFrom Type="EnvironmentRuleDefinition" Subtype="MusicForestUnderground" />
+    <Biome Type="BiomeDefinition" Subtype="Norden_ForestDense" />
+  </Definition>
+  
+  <Definition xsi:type="MyObjectBuilder_EnvironmentRuleDefinition">
+    <Id Type="EnvironmentRuleDefinition" Subtype="MusicForestMountainsDay" />
+    <Biome Type="BiomeDefinition" Subtype="Norden_ForestGrassland" />
+    <HeightRatio Min="0.5" Max="1" />
+    <TimeOfDay>NotNight</TimeOfDay>
+    <Music Urgency="0" Track="MusicTundraDay" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_EnvironmentRuleDefinition" Copy="Append">
+    <Id Type="EnvironmentRuleDefinition" Subtype="MusicForestDenseMountainsDay" />
+    <CopyFrom Type="EnvironmentRuleDefinition" Subtype="MusicForestMountainsDay" />
+    <Biome Type="BiomeDefinition" Subtype="Norden_ForestDense" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_EnvironmentRuleDefinition">
+    <Id Type="EnvironmentRuleDefinition" Subtype="MusicForestMountainsNight" />
+    <Biome Type="BiomeDefinition" Subtype="Norden_ForestGrassland" />
+    <HeightRatio Min="0.5" Max="1" />
+    <TimeOfDay>NotDay</TimeOfDay>
+    <Music Urgency="0" Track="MusicTundraNight" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_EnvironmentRuleDefinition">
+    <Id Type="EnvironmentRuleDefinition" Subtype="MusicForestDenseMountainsNight" />
+    <Biome Type="BiomeDefinition" Subtype="Norden_ForestDense" />
+    <HeightRatio Min="0.5" Max="1" />
+    <TimeOfDay>NotDay</TimeOfDay>
+    <Music Urgency="0" Track="MusicTundraNight" />
+  </Definition>
+
+	<!-- Sound rules -->
+	<Definition xsi:type="MyObjectBuilder_EnvironmentRuleDefinition">
+		<Id Type="EnvironmentRuleDefinition" Subtype="SoundForestDay" />
+		<Biome Type="BiomeDefinition" Subtype="Norden_ForestGrassland" />
+		<TimeOfDay>NotNight</TimeOfDay>
+    <Ambience Urgency="1" Track="AmbForestDay" />
+	</Definition>
+  
+  <Definition xsi:type="MyObjectBuilder_EnvironmentRuleDefinition" Copy="Append">
+    <Id Type="EnvironmentRuleDefinition" Subtype="SoundForestDayIndoor" />
+    <CopyFrom Type="EnvironmentRuleDefinition" Subtype="SoundForestDay" />
+    <Inside>true</Inside>
+    <Result Urgency="2" Type="AudioFxDefinition" Subtype="FilterIndoor" />
+  </Definition>
+
+	<Definition xsi:type="MyObjectBuilder_EnvironmentRuleDefinition">
+		<Id Type="EnvironmentRuleDefinition" Subtype="SoundForestNight" />
+		<Biome Type="BiomeDefinition" Subtype="Norden_ForestGrassland" />
+		<TimeOfDay>NotDay</TimeOfDay>
+    <Ambience Urgency="1" Track="AmbForestNight" />
+	</Definition>
+  
+  <Definition xsi:type="MyObjectBuilder_EnvironmentRuleDefinition" Copy="Append">
+    <Id Type="EnvironmentRuleDefinition" Subtype="SoundForestNightIndoor" />
+    <CopyFrom Type="EnvironmentRuleDefinition" Subtype="SoundForestNight" />
+    <Inside>true</Inside>
+    <Result Urgency="2" Type="AudioFxDefinition" Subtype="FilterIndoor" />
+  </Definition>
+  
+  <Definition xsi:type="MyObjectBuilder_EnvironmentRuleDefinition">
+    <Id Type="EnvironmentRuleDefinition" Subtype="SoundForestDenseDay" />
+    <Biome Type="BiomeDefinition" Subtype="Norden_ForestDense" />
+    <TimeOfDay>NotNight</TimeOfDay>
+    <Ambience Urgency="1" Track="AmbForestDay" />
+    <Result Urgency="1" Type="AudioFxDefinition" Subtype="FilterForestDense" />
+  </Definition>
+  
+  <Definition xsi:type="MyObjectBuilder_EnvironmentRuleDefinition" Copy="Append">
+    <Id Type="EnvironmentRuleDefinition" Subtype="SoundForestDenseDayIndoor" />
+    <CopyFrom Type="EnvironmentRuleDefinition" Subtype="SoundForestDenseDay" />
+    <Inside>true</Inside>
+    <Result Urgency="2" Type="AudioFxDefinition" Subtype="FilterIndoor" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_EnvironmentRuleDefinition">
+    <Id Type="EnvironmentRuleDefinition" Subtype="SoundForestDenseNight" />
+    <Biome Type="BiomeDefinition" Subtype="Norden_ForestDense" />
+    <TimeOfDay>NotDay</TimeOfDay>
+    <Ambience Urgency="1" Track="AmbForestNight" />
+    <Result Urgency="1" Type="AudioFxDefinition" Subtype="FilterForestDense" />
+  </Definition>
+  
+  <Definition xsi:type="MyObjectBuilder_EnvironmentRuleDefinition" Copy="Append">
+    <Id Type="EnvironmentRuleDefinition" Subtype="SoundForestDenseNightIndoor" />
+    <CopyFrom Type="EnvironmentRuleDefinition" Subtype="SoundForestDenseNight" />
+    <Inside>true</Inside>
+    <Result Urgency="2" Type="AudioFxDefinition" Subtype="FilterIndoor" />
+  </Definition>
+	
+</Definitions>

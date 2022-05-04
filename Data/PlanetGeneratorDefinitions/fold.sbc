@@ -2771,8 +2771,17 @@
 
     <BiomeMapping>
       <Biome Type="BiomeDefinition" Subtype="Dreadlands">
-        <Value>210</Value>
+        <Value>198</Value>
+		<Value>210</Value>
+		<Value>213</Value>
       </Biome>
+	  <Biome Type="BiomeDefinition" Subtype="Norden_ForestDense">
+        <Value>216</Value>
+        <Value>222</Value>
+      </Biome>
+      <Biome Type="BiomeDefinition" Subtype="Norden_ForestGrassland">
+        <Value>228</Value>
+     </Biome>
     </BiomeMapping>
     <!-- Biomes: END-->
 
@@ -2828,7 +2837,7 @@
       <!-- Mountain wind - AMB High -->
 
       <SoundRule>
-        <Height Max="1" Min="0.5"/>
+        <Height Max="1" Min="0.45"/>
         <Latitude Max="90" Min="0"/>
         <SunAngleFromZenith Max="180" Min="0"/>
         <EnvironmentSound>AmbHigh</EnvironmentSound>
@@ -2857,7 +2866,7 @@
 
       <!-- Day -->
       <SoundRule>
-        <Height Max="0.5" Min="0"/>
+        <Height Max="10" Min="0"/>
         <Latitude Max="0" Min="-45"/>
         <Longitude Max="-15" Min="155"/>
         <SunAngleFromZenith Max="90" Min="0"/>
@@ -2866,7 +2875,7 @@
 
 
       <SoundRule>
-        <Height Max="0.5" Min="0"/>
+        <Height Max="10" Min="0"/>
         <Latitude Max="-45" Min="-60"/>
         <SunAngleFromZenith Max="90" Min="0"/>
         <EnvironmentSound>AmbDayForestB</EnvironmentSound>
@@ -2875,7 +2884,7 @@
       <!-- Night -->
 
       <SoundRule>
-        <Height Max="0.5" Min="0"/>
+        <Height Max="10" Min="0"/>
         <Latitude Max="0" Min="-45"/>
         <Longitude Max="-15" Min="155"/>
         <SunAngleFromZenith Max="180" Min="90"/>
@@ -2884,7 +2893,7 @@
 
 
       <SoundRule>
-        <Height Max="0.5" Min="0"/>
+        <Height Max="10" Min="0"/>
         <Latitude Max="-45" Min="-60"/>
         <SunAngleFromZenith Max="180" Min="90"/>
         <EnvironmentSound>AmbNightB</EnvironmentSound>
@@ -2893,7 +2902,7 @@
       <!-- Mountain wind - AMB High -->
 
       <SoundRule>
-        <Height Max="1" Min="0.5"/>
+        <Height Max="1" Min="0.45"/>
         <Latitude Max="0" Min="-90"/>
         <SunAngleFromZenith Max="180" Min="0"/>
         <EnvironmentSound>AmbHigh</EnvironmentSound>

@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  
+  <!-- ============================================= Step effects region: Humanoid ============================================= -->
+
+  <Definition xsi:type="MyObjectBuilder_StepComponentDefinition" Merge="Append">
+    <Id Type="MyObjectBuilder_StepComponent" Subtype="Humanoid" />
+    <!-- Grass, rock, wood, sand, snow, clay, stone floor, metal, ceramic, cloth -->
+    <!-- Possible character movement states: None, Crouch, Walk, Run, Sprint, JumpRequest -->
+    <Bone Name="ME_RigLR_Foot_tip1" Postfix="L" IsLeftFoot="true" />
+    <Bone Name="ME_RigRR_Foot_tip1" Postfix="R" />
+    <MaterialToEffects>
+      
+      <!-- CharacterStepGrass -->
+      <Entry>
+        <VoxelMaterial>Grass</VoxelMaterial>
+        <VoxelMaterial>SteppeYellowGrass</VoxelMaterial>
+        <VoxelMaterial>Woods</VoxelMaterial>
+        <VoxelMaterial>Woods_grass</VoxelMaterial>
+        <VoxelMaterial>Woods_needles</VoxelMaterial>
+        <PhysicalMaterial>Grass</PhysicalMaterial>
+        <StepEffect CharacterMovementState="Walk" EventName="StepGrassRun" />
+        <StepEffect CharacterMovementState="Run" EventName="StepGrassRun" />
+        <StepEffect CharacterMovementState="Sprint" EventName="StepGrassSprint" />
+      </Entry>
+      
+      <!-- CharacterStepSand -->
+      <Entry>
+        <VoxelMaterial>Sand</VoxelMaterial>
+        <VoxelMaterial>SandDark</VoxelMaterial>
+        <VoxelMaterial>SandGrass</VoxelMaterial>
+        <VoxelMaterial>SandGrassGreen</VoxelMaterial>
+        <VoxelMaterial>Soil</VoxelMaterial>
+        <VoxelMaterial>DirtSteppe</VoxelMaterial>
+        <VoxelMaterial>PlowedSoil</VoxelMaterial>
+        <VoxelMaterial>ExhaustedSoil</VoxelMaterial>
+        <PhysicalMaterial>Soil</PhysicalMaterial>
+        <PhysicalMaterial>Sand</PhysicalMaterial>
+        <StepEffect CharacterMovementState="Walk" EventName="StepSandWalk" />
+        <StepEffect CharacterMovementState="Run" EventName="StepSandRun" />
+        <StepEffect CharacterMovementState="Sprint" EventName="StepSandSprint" />
+      </Entry>
+
+      <!-- CharacterStepSnow -->
+      <Entry>
+        <VoxelMaterial>Snow</VoxelMaterial>
+        <PhysicalMaterial>Snow</PhysicalMaterial>
+        <StepEffect CharacterMovementState="Walk" EventName="StepSnowRun" />
+        <StepEffect CharacterMovementState="Run" EventName="StepSnowRun" />
+        <StepEffect CharacterMovementState="Sprint" EventName="StepSnowSprint" />
+      </Entry>
+
+      <!-- CharacterStepClay -->
+      <Entry>
+        <VoxelMaterial>PlantedSoil</VoxelMaterial>
+        <VoxelMaterial>Clay</VoxelMaterial>
+        <PhysicalMaterial>Clay</PhysicalMaterial>
+        <StepEffect CharacterMovementState="Walk" EventName="StepClayRun" />
+        <StepEffect CharacterMovementState="Run" EventName="StepClayRun" />
+        <StepEffect CharacterMovementState="Sprint" EventName="StepClaySprint" />
+      </Entry>
+      
+      <!-- CharacterStepRock -->
+      <Entry>
+        <VoxelMaterial>Rocks_moss</VoxelMaterial>
+        <VoxelMaterial>Rocks_grass</VoxelMaterial>
+        <VoxelMaterial>Stone</VoxelMaterial>
+        <VoxelMaterial>Limestone</VoxelMaterial>
+        <VoxelMaterial>Sandstone</VoxelMaterial>
+        <VoxelMaterial>IronOre_RegularYield</VoxelMaterial>
+        <VoxelMaterial>IronOre_PoorYield</VoxelMaterial>
+        <VoxelMaterial>GoldOre</VoxelMaterial>
+        <VoxelMaterial>SilverOre</VoxelMaterial>
+        <VoxelMaterial>TinOre</VoxelMaterial>
+        <VoxelMaterial>CopperOre</VoxelMaterial>
+        <VoxelMaterial>CopperOreRegular</VoxelMaterial>
+        <PhysicalMaterial>AxeStone</PhysicalMaterial>
+        <PhysicalMaterial>Gravel</PhysicalMaterial>
+        <StepEffect CharacterMovementState="Walk" EventName="StepRockRun" />
+        <StepEffect CharacterMovementState="Run" EventName="StepRockRun" />
+        <StepEffect CharacterMovementState="Sprint" EventName="StepRockSprint" />
+      </Entry>
+      
+      <!-- CharacterStepStoneFloor -->
+      <Entry>
+        <PhysicalMaterial>None</PhysicalMaterial>
+        <PhysicalMaterial>Stone</PhysicalMaterial>
+        <PhysicalMaterial>StoneLight</PhysicalMaterial>
+        <PhysicalMaterial>StoneHeavy</PhysicalMaterial>
+        <PhysicalMaterial>StoneSoft</PhysicalMaterial>
+        <PhysicalMaterial>ProjectileStone</PhysicalMaterial>
+        <StepEffect CharacterMovementState="Walk" EventName="StepStoneFloorRun" />
+        <StepEffect CharacterMovementState="Run" EventName="StepStoneFloorRun" />
+        <StepEffect CharacterMovementState="Sprint" EventName="StepStoneFloorSprint" />
+      </Entry>
+
+      <!-- CharacterStepWood -->
+      <Entry>
+        <PhysicalMaterial>ClubWood</PhysicalMaterial>
+        <PhysicalMaterial>ClubStudded</PhysicalMaterial>
+        <PhysicalMaterial>FloorWood</PhysicalMaterial>
+        <PhysicalMaterial>RoofHay</PhysicalMaterial>
+        <PhysicalMaterial>RoofWood</PhysicalMaterial>
+        <PhysicalMaterial>WallClay</PhysicalMaterial>
+        <PhysicalMaterial>TreeShort</PhysicalMaterial>
+        <PhysicalMaterial>TreeTall</PhysicalMaterial>
+        <PhysicalMaterial>Wood</PhysicalMaterial>
+        <PhysicalMaterial>WoodLight</PhysicalMaterial>
+        <PhysicalMaterial>WoodHeavy</PhysicalMaterial>
+        <PhysicalMaterial>WoodHard</PhysicalMaterial>
+        <PhysicalMaterial>WoodSoft</PhysicalMaterial>
+        <PhysicalMaterial>HammerWood</PhysicalMaterial>
+        <PhysicalMaterial>ShovelWood</PhysicalMaterial>
+        <PhysicalMaterial>ShieldWood</PhysicalMaterial>
+        <PhysicalMaterial>LandscapeStake</PhysicalMaterial>
+        <StepEffect CharacterMovementState="Walk" EventName="StepWoodRun" />
+        <StepEffect CharacterMovementState="Run" EventName="StepWoodRun" />
+        <StepEffect CharacterMovementState="Sprint" EventName="StepWoodSprint" />
+      </Entry>
+
+      <!-- CharacterStepCeramic -->
+      <Entry>
+        <PhysicalMaterial>Ceramic</PhysicalMaterial>
+        <PhysicalMaterial>RoofTile</PhysicalMaterial>
+        <StepEffect CharacterMovementState="Walk" EventName="StepCeramicRun" />
+        <StepEffect CharacterMovementState="Run" EventName="StepCeramicRun" />
+        <StepEffect CharacterMovementState="Sprint" EventName="StepCeramicSprint" />
+      </Entry>
+
+      <!-- CharacterStepMetal -->
+      <Entry>
+        <PhysicalMaterial>Metal</PhysicalMaterial>
+        <PhysicalMaterial>Axe</PhysicalMaterial>
+        <PhysicalMaterial>Arrow</PhysicalMaterial>
+        <PhysicalMaterial>Hammer</PhysicalMaterial>
+        <PhysicalMaterial>HammerCombat</PhysicalMaterial>
+        <PhysicalMaterial>ShovelMetal</PhysicalMaterial>
+        <PhysicalMaterial>ShovelFill</PhysicalMaterial>
+        <PhysicalMaterial>Mace</PhysicalMaterial>
+        <PhysicalMaterial>Pickaxe</PhysicalMaterial>
+        <PhysicalMaterial>Plow</PhysicalMaterial>
+        <PhysicalMaterial>Sword</PhysicalMaterial>
+        <StepEffect CharacterMovementState="Walk" EventName="StepMetalRun" />
+        <StepEffect CharacterMovementState="Run" EventName="StepMetalRun" />
+        <StepEffect CharacterMovementState="Sprint" EventName="StepMetalSprint" />
+      </Entry>
+
+      <!-- CharacterStepCloth -->
+      <Entry>
+        <PhysicalMaterial>Cloth</PhysicalMaterial>
+        <PhysicalMaterial>Paper</PhysicalMaterial>
+        <PhysicalMaterial>Flesh</PhysicalMaterial>
+        <PhysicalMaterial>Generic</PhysicalMaterial>
+        <PhysicalMaterial>Food</PhysicalMaterial>
+        <PhysicalMaterial>Pumpkin</PhysicalMaterial>
+        <PhysicalMaterial>Seedbag</PhysicalMaterial>
+        <StepEffect CharacterMovementState="Walk" EventName="StepClothRun" />
+        <StepEffect CharacterMovementState="Run" EventName="StepClothRun" />
+        <StepEffect CharacterMovementState="Sprint" EventName="StepClothSprint" />
+      </Entry>
+      
+    </MaterialToEffects>
+    <LowerStepThreshold>0.045</LowerStepThreshold>
+    <HigherStepThreshold>0.065</HigherStepThreshold>
+    <!-- Footprint voxel to decal mapping, LeftFootDecal and RightFootDecal are the Source values for the decal, as defined in Decals.sbc -->
+    <FootprintsMapping>
+      <Footprint VoxelMaterial="Soil" LeftFootDecal="FootStepLeftDirt" RightFootDecal="FootStepRightDirt" />
+      <Footprint VoxelMaterial="Clay" LeftFootDecal="FootStepLeftDirt" RightFootDecal="FootStepRightDirt" />
+      <Footprint VoxelMaterial="DirtSteppe" LeftFootDecal="FootStepLeftDirt" RightFootDecal="FootStepRightDirt" />
+      <Footprint VoxelMaterial="ExhaustedSoil" LeftFootDecal="FootStepLeftDirt" RightFootDecal="FootStepRightDirt" />
+      <Footprint VoxelMaterial="PlantedSoil" LeftFootDecal="FootStepLeftDirt" RightFootDecal="FootStepRightDirt" />
+      <Footprint VoxelMaterial="PlowedSoil" LeftFootDecal="FootStepLeftDirt" RightFootDecal="FootStepRightDirt" />
+      <Footprint VoxelMaterial="Sand" LeftFootDecal="FootStepLeftSand" RightFootDecal="FootStepRightSand" />
+      <Footprint VoxelMaterial="SandDark" LeftFootDecal="FootStepLeftSand" RightFootDecal="FootStepRightSand" />
+      <Footprint VoxelMaterial="SandGrass" LeftFootDecal="FootStepLeftSand" RightFootDecal="FootStepRightSand" />
+      <Footprint VoxelMaterial="SandGrassGreen" LeftFootDecal="FootStepLeftSand" RightFootDecal="FootStepRightSand" />
+      <Footprint VoxelMaterial="Snow" LeftFootDecal="FootStepLeftSnow" RightFootDecal="FootStepRightSnow" />
+    </FootprintsMapping>
+    <!-- Maximum number of decals stored per character. Higher is worse for performance. -->
+    <MaxFootprintsCount>25</MaxFootprintsCount>
+  </Definition>
+
+  <!-- END ========================================== Step effects region: Humanoid ========================================== END -->
+
+</Definitions>

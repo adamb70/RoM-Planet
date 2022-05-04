@@ -188,6 +188,29 @@
         <Sprite>PalmTreeBundle</Sprite>
         <Sprite>PalmTreeBundle_v2</Sprite>
       </BiomeSprite>
+
+	  
+	  <!-- RoM -->
+	  
+	  <!-- Norden Forest -->
+	  <!-- <BiomeSprite Biome="228" Density=".01" Priority="6">
+        <Sprite>ForestSparse</Sprite>
+        <Sprite>ForestSparse_v2</Sprite>
+      </BiomeSprite> -->
+	  <BiomeSprite Biome="216" Density=".4" Priority="5">
+        <Sprite>ForestSparse</Sprite>
+        <Sprite>PineTreeBundle_v5</Sprite>
+      </BiomeSprite>
+	  <BiomeSprite Biome="222" Density=".8" Priority="5">
+        <Sprite>PineTreeBundle</Sprite>
+        <Sprite>PineTreeBundle_v2</Sprite>
+        <Sprite>PineTreeBundle_v3</Sprite>
+        <Sprite>PineTreeBundle_v4</Sprite>
+        <Sprite>PineTreeBundle_v5</Sprite>
+      </BiomeSprite>
+	  
+	  
+	  
     </SpriteSheet>
   </Definition>
 
