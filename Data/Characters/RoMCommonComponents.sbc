@@ -3,7 +3,7 @@
   
   <!-- ============================================= Step effects region: Humanoid ============================================= -->
 
-  <Definition xsi:type="MyObjectBuilder_StepComponentDefinition" Merge="Append">
+  <Definition xsi:type="MyObjectBuilder_StepComponentDefinition">
     <Id Type="MyObjectBuilder_StepComponent" Subtype="Humanoid" />
     <!-- Grass, rock, wood, sand, snow, clay, stone floor, metal, ceramic, cloth -->
     <!-- Possible character movement states: None, Crouch, Walk, Run, Sprint, JumpRequest -->
@@ -18,6 +18,29 @@
         <VoxelMaterial>Woods</VoxelMaterial>
         <VoxelMaterial>Woods_grass</VoxelMaterial>
         <VoxelMaterial>Woods_needles</VoxelMaterial>
+		<VoxelMaterial>Clay_Grass</VoxelMaterial>
+		<VoxelMaterial>Grass_Alkaline</VoxelMaterial>
+		<VoxelMaterial>Grass_Dread</VoxelMaterial>
+		<VoxelMaterial>Grass_Elven</VoxelMaterial>
+		<VoxelMaterial>Grass_Kharid</VoxelMaterial>
+		<VoxelMaterial>Gravel_Grass_Mount</VoxelMaterial>
+		<VoxelMaterial>Grass_Norden</VoxelMaterial>
+		<VoxelMaterial>Green_Tall_Yellow_Grass</VoxelMaterial>
+		<VoxelMaterial>Rock_Grass_Dwarven</VoxelMaterial>
+		<VoxelMaterial>Rock_Grass_Elven</VoxelMaterial>
+		<VoxelMaterial>Rock_Grass_Norden</VoxelMaterial>
+		<VoxelMaterial>Veg_Detail_Gravel_Dwarven</VoxelMaterial>
+		<VoxelMaterial>Veg_Detail_Gravel_Kharid</VoxelMaterial>
+		<VoxelMaterial>Veg_Detail_Gravel_Norden</VoxelMaterial>
+		<VoxelMaterial>Veg_Detail_Pediment</VoxelMaterial>
+		<VoxelMaterial>Woods_Dread</VoxelMaterial>
+		<VoxelMaterial>Woods_Elven</VoxelMaterial>
+		<VoxelMaterial>Woods_Grass_Dread</VoxelMaterial>
+		<VoxelMaterial>Woods_Grass_Elven</VoxelMaterial>
+		<VoxelMaterial>Woods_Needles_Dread</VoxelMaterial>
+		<VoxelMaterial>Woods_Needles_Elven</VoxelMaterial>
+		<VoxelMaterial>Yellow_Tall_Green_Grass</VoxelMaterial>
+		
         <PhysicalMaterial>Grass</PhysicalMaterial>
         <StepEffect CharacterMovementState="Walk" EventName="StepGrassRun" />
         <StepEffect CharacterMovementState="Run" EventName="StepGrassRun" />
@@ -34,6 +57,22 @@
         <VoxelMaterial>DirtSteppe</VoxelMaterial>
         <VoxelMaterial>PlowedSoil</VoxelMaterial>
         <VoxelMaterial>ExhaustedSoil</VoxelMaterial>
+		<VoxelMaterial>Gravel_Dwarven</VoxelMaterial>
+		<VoxelMaterial>Gravel_Kharid</VoxelMaterial>
+		<VoxelMaterial>Gravel_Norden</VoxelMaterial>
+		<VoxelMaterial>Gravel_Soil_Dwarven</VoxelMaterial>
+		<VoxelMaterial>Gravel_Soil_Norden</VoxelMaterial>
+		<VoxelMaterial>Mar</VoxelMaterial>
+		<VoxelMaterial>Pediment</VoxelMaterial>
+		<VoxelMaterial>Sand_Alkaline</VoxelMaterial>
+		<VoxelMaterial>Soil_Surface</VoxelMaterial>
+		<VoxelMaterial>Soil_Alkaline</VoxelMaterial>
+		<VoxelMaterial>Soil_Dread</VoxelMaterial>
+		<VoxelMaterial>Soil_Dread_Surface</VoxelMaterial>
+		<VoxelMaterial>DirtSteppe_Surface</VoxelMaterial>
+		<VoxelMaterial>Soil_Grass</VoxelMaterial>
+		<VoxelMaterial>Soil_Grass_Hill</VoxelMaterial>
+		
         <PhysicalMaterial>Soil</PhysicalMaterial>
         <PhysicalMaterial>Sand</PhysicalMaterial>
         <StepEffect CharacterMovementState="Walk" EventName="StepSandWalk" />
@@ -44,6 +83,14 @@
       <!-- CharacterStepSnow -->
       <Entry>
         <VoxelMaterial>Snow</VoxelMaterial>
+		<VoxelMaterial>Snow_Gravel</VoxelMaterial>
+		<VoxelMaterial>Snow_Grass</VoxelMaterial>
+		<VoxelMaterial>Snow_Rock_Grass_Dwarven</VoxelMaterial>
+		<VoxelMaterial>Snow_Soil</VoxelMaterial>
+		<VoxelMaterial>Snow_Stone</VoxelMaterial>
+		<VoxelMaterial>Snow_Woods</VoxelMaterial>
+		<VoxelMaterial>Snow_Woods_Needles</VoxelMaterial>
+		
         <PhysicalMaterial>Snow</PhysicalMaterial>
         <StepEffect CharacterMovementState="Walk" EventName="StepSnowRun" />
         <StepEffect CharacterMovementState="Run" EventName="StepSnowRun" />
@@ -74,6 +121,25 @@
         <VoxelMaterial>TinOre</VoxelMaterial>
         <VoxelMaterial>CopperOre</VoxelMaterial>
         <VoxelMaterial>CopperOreRegular</VoxelMaterial>
+		<VoxelMaterial>Coal</VoxelMaterial>
+		<VoxelMaterial>Ennerite_Stone</VoxelMaterial>
+		<VoxelMaterial>Galena_Ore</VoxelMaterial>
+		<VoxelMaterial>Kaolin_Ore</VoxelMaterial>
+		<VoxelMaterial>Mithril_Ore</VoxelMaterial>
+		<VoxelMaterial>Moss_Stone_Elven</VoxelMaterial>
+		<VoxelMaterial>Moss_Stone_Hills</VoxelMaterial>
+		<VoxelMaterial>Moss_Stone_Norden</VoxelMaterial>
+		<VoxelMaterial>Saltpeter_Ore</VoxelMaterial>
+		<VoxelMaterial>Rock_Moss_Mount</VoxelMaterial>
+		<VoxelMaterial>Stone_Dread</VoxelMaterial>
+		<VoxelMaterial>Stone_Elven</VoxelMaterial>
+		<VoxelMaterial>Stone_Hills</VoxelMaterial>
+		<VoxelMaterial>Stone_Mount</VoxelMaterial>
+		<VoxelMaterial>Stone_Norden</VoxelMaterial>
+		<VoxelMaterial>Tarberite_Ore</VoxelMaterial>
+		<VoxelMaterial>Tin_Ore</VoxelMaterial>
+		<VoxelMaterial>Halite</VoxelMaterial>
+		
         <PhysicalMaterial>AxeStone</PhysicalMaterial>
         <PhysicalMaterial>Gravel</PhysicalMaterial>
         <StepEffect CharacterMovementState="Walk" EventName="StepRockRun" />
