@@ -91,8 +91,8 @@
         <Item Type="Gatherable" Subtype="HazelSmall" Density="0.04" />
         <Item Type="Gatherable" Subtype="Berries" Density="0.08" />
         <Item Type="Gatherable" Subtype="Mushrooms" Density="0.08" />
-        <Item Type="Gatherable" Subtype="StonePile" Density="0.01" />
-        <Item Type="Gatherable" Subtype="SingleStone" Density="0.02" />
+        <Item Type="Gatherable" Subtype="StonePile" Density="0.02" />
+        <Item Type="Gatherable" Subtype="SingleStone" Density="0.04" />
       </Mapping>
 	  <!-- Nordic Forst -->
 	  <Mapping>
@@ -110,8 +110,8 @@
         <Item Type="Static" Subtype="Fern" Density="0.25" MaxRoll="35" />
         <Item Type="Gatherable" Subtype="Berries" Density="0.05" />
         <Item Type="Gatherable" Subtype="Mushrooms" Density="0.10" />
-        <Item Type="Gatherable" Subtype="StonePile" Density="0.01" />
-        <Item Type="Gatherable" Subtype="SingleStone" Density="0.02" />
+        <Item Type="Gatherable" Subtype="StonePile" Density="0.02" />
+        <Item Type="Gatherable" Subtype="SingleStone" Density="0.04" />
       </Mapping>
 	  <!-- Nordic Dense Forest -->
 	  <Mapping>
@@ -158,8 +158,8 @@
         <Item Type="Gatherable" Subtype="HazelSmall" Density="0.07" />
         <Item Type="Gatherable" Subtype="Berries" Density="0.08" />
         <Item Type="Gatherable" Subtype="Mushrooms" Density="0.08" />
-        <Item Type="Gatherable" Subtype="StonePile" Density="0.01" />
-        <Item Type="Gatherable" Subtype="SingleStone" Density="0.02" />
+        <Item Type="Gatherable" Subtype="StonePile" Density="0.02" />
+        <Item Type="Gatherable" Subtype="SingleStone" Density="0.04" />
       </Mapping>
 	  <!-- Nordic Dense Forest -->
 	  <Mapping>
@@ -174,8 +174,8 @@
         <Item Type="Static" Subtype="Fern" Density="0.25" MaxRoll="35" />
         <Item Type="Gatherable" Subtype="Berries" Density="0.03" />
         <Item Type="Gatherable" Subtype="Mushrooms" Density="0.15" />
-        <Item Type="Gatherable" Subtype="StonePile" Density="0.01" />
-        <Item Type="Gatherable" Subtype="SingleStone" Density="0.02" />
+        <Item Type="Gatherable" Subtype="StonePile" Density="0.02" />
+        <Item Type="Gatherable" Subtype="SingleStone" Density="0.04" />
       </Mapping>
 	  
 	  <!-- End of Test Biome -->
