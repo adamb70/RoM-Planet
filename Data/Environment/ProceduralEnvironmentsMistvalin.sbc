@@ -78,6 +78,7 @@
 		<Material>Gravel_Norden</Material>
 		<Material>Veg_Detail_Gravel_Norden</Material>
 		<Material>Soil</Material>
+		<Material>Snow_Rock_Moss_Mount</Material>
         <Height Min="0" Max="10" />
         <Slope Min="0" Max="50" />
 
@@ -148,6 +149,7 @@
 		<Material>Gravel_Norden</Material>
 		<Material>Veg_Detail_Gravel_Norden</Material>
 		<Material>Soil</Material>
+		<Material>Snow_Rock_Moss_Mount</Material>
         <Height Min="0" Max="10" />
         <Slope Min="0" Max="50" />
 		
@@ -209,6 +211,7 @@
 		<Material>Gravel_Norden</Material>
 		<Material>Veg_Detail_Gravel_Norden</Material>
 		<Material>Soil</Material>
+		<Material>Snow_Rock_Moss_Mount</Material>
         <Height Min="0" Max="10" />
         <Slope Min="0" Max="50" />
 
@@ -276,6 +279,7 @@
 		<Material>Gravel_Norden</Material>
 		<Material>Veg_Detail_Gravel_Norden</Material>
 		<Material>Soil</Material>
+		<Material>Snow_Rock_Moss_Mount</Material>
         <Height Min="0" Max="10" />
         <Slope Min="0" Max="50" />
 
@@ -335,6 +339,7 @@
 		<Material>Gravel_Norden</Material>
 		<Material>Veg_Detail_Gravel_Norden</Material>
 		<Material>Soil</Material>
+		<Material>Snow_Rock_Moss_Mount</Material>
         <Height Min="0" Max="10" />
         <Slope Min="0" Max="50" />
 
@@ -348,8 +353,8 @@
         <Item Type="Gatherable" Subtype="HazelLarge" Density="0.07" />
         <Item Type="Gatherable" Subtype="HazelMedium" Density="0.09" />
         <Item Type="Gatherable" Subtype="HazelSmall" Density="0.04" />
-        <Item Type="Gatherable" Subtype="Berries" Density="0.08" />
-        <Item Type="Gatherable" Subtype="Mushrooms" Density="0.08" />
+        <Item Type="Gatherable" Subtype="Blue_Berry" Density="0.08" />
+        <Item Type="Gatherable" Subtype="HighlandCaps" Density="0.08" />
         <Item Type="Gatherable" Subtype="StonePile" Density="0.02" />
         <Item Type="Gatherable" Subtype="SingleStone" Density="0.04" />
       </Mapping>
@@ -367,8 +372,8 @@
         <Item Type="Tree" Subtype="PineTree22m" Density="0.25" />
         <Item Type="Tree" Subtype="SpruceTree225m" Density="0.05" />
         <Item Type="Static" Subtype="Fern" Density="0.25" MaxRoll="35" />
-        <Item Type="Gatherable" Subtype="Berries" Density="0.05" />
-        <Item Type="Gatherable" Subtype="Mushrooms" Density="0.10" />
+        <Item Type="Gatherable" Subtype="Blue_Berry" Density="0.05" />
+        <Item Type="Gatherable" Subtype="HighlandCaps" Density="0.10" />
         <Item Type="Gatherable" Subtype="StonePile" Density="0.02" />
         <Item Type="Gatherable" Subtype="SingleStone" Density="0.04" />
       </Mapping>
@@ -396,6 +401,7 @@
 		<Material>Gravel_Norden</Material>
 		<Material>Veg_Detail_Gravel_Norden</Material>
 		<Material>Soil</Material>
+		<Material>Snow_Rock_Moss_Mount</Material>
         <Height Min="0" Max="10" />
         <Slope Min="0" Max="50" />
 
@@ -409,8 +415,8 @@
         <Item Type="Gatherable" Subtype="HazelLarge" Density="0.03" />
         <Item Type="Gatherable" Subtype="HazelMedium" Density="0.05" />
         <Item Type="Gatherable" Subtype="HazelSmall" Density="0.07" />
-        <Item Type="Gatherable" Subtype="Berries" Density="0.08" />
-        <Item Type="Gatherable" Subtype="Mushrooms" Density="0.08" />
+        <Item Type="Gatherable" Subtype="Blue_Berry" Density="0.08" />
+        <Item Type="Gatherable" Subtype="HighlandCaps" Density="0.08" />
         <Item Type="Gatherable" Subtype="StonePile" Density="0.02" />
         <Item Type="Gatherable" Subtype="SingleStone" Density="0.04" />
       </Mapping>
@@ -425,8 +431,8 @@
         <Item Type="Tree" Subtype="PineTree22m" Density="0.01" />
         <Item Type="Tree" Subtype="SpruceTree225m" Density="0.8" />
         <Item Type="Static" Subtype="Fern" Density="0.25" MaxRoll="35" />
-        <Item Type="Gatherable" Subtype="Berries" Density="0.03" />
-        <Item Type="Gatherable" Subtype="Mushrooms" Density="0.15" />
+        <Item Type="Gatherable" Subtype="Blue_Berry" Density="0.03" />
+        <Item Type="Gatherable" Subtype="HighlandCaps" Density="0.15" />
         <Item Type="Gatherable" Subtype="StonePile" Density="0.02" />
         <Item Type="Gatherable" Subtype="SingleStone" Density="0.04" />
       </Mapping>
@@ -437,9 +443,10 @@
         <Biome>186</Biome>
         <Material>Snow</Material>
         <Material>Snow_Rock_Grass_Dwarven</Material>
-		<Material>Snow_Woods</Material>
 		<Material>Snow_Grass</Material>
 		<Material>Snow_Soil</Material>
+		<Material>Snow_Gravel</Material>
+		<Material>Snow_Rock_Moss_Mount</Material>
         <Height Min="0" Max="10" />
         <Slope Min="0" Max="50" />
 
@@ -460,6 +467,7 @@
 	  <Mapping>
         <Biome>186</Biome>
 		<Material>Snow_Woods_Needles</Material>
+		<Material>Snow_Woods</Material>
         <Height Min="0" Max="10" />
         <Slope Min="0" Max="50" />
 
@@ -480,9 +488,10 @@
         <Biome>189</Biome>
         <Material>Snow</Material>
         <Material>Snow_Rock_Grass_Dwarven</Material>
-		<Material>Snow_Woods</Material>
 		<Material>Snow_Grass</Material>
 		<Material>Snow_Soil</Material>
+		<Material>Snow_Gravel</Material>
+		<Material>Snow_Rock_Moss_Mount</Material>
         <Height Min="0" Max="10" />
         <Slope Min="0" Max="50" />
 
@@ -503,6 +512,7 @@
 	  <Mapping>
         <Biome>189</Biome>
 		<Material>Snow_Woods_Needles</Material>
+		<Material>Snow_Woods</Material>
         <Height Min="0" Max="10" />
         <Slope Min="0" Max="50" />
         <Item Type="Tree" Subtype="SpruceTree25m_Snowy" Density="0.02" />
@@ -511,6 +521,72 @@
         <Item Type="Static" Subtype="Fern" Density="0.25" MaxRoll="35" />
         <Item Type="Gatherable" Subtype="Blue_Berry" Density="0.03" />
         <Item Type="Gatherable" Subtype="HighlandCaps" Density="0.15" />
+        <Item Type="Gatherable" Subtype="StonePile" Density="0.02" />
+        <Item Type="Gatherable" Subtype="SingleStone" Density="0.04" />
+      </Mapping>
+	  
+	  <!-- Highland Plains Snowy -->
+	  <Mapping>
+        <Biome>183</Biome>
+        <Material>Snow</Material>
+        <Material>Snow_Rock_Grass_Dwarven</Material>
+		<Material>Snow_Woods_Needles</Material>
+		<Material>Snow_Gravel</Material>
+		<Material>Snow_Woods</Material>
+		<Material>Snow_Grass</Material>
+		<Material>Snow_Soil</Material>
+		<Material>Snow_Rock_Moss_Mount</Material>
+        <Height Min="0" Max="10" />
+        <Slope Min="0" Max="50" />
+
+        <Item Type="Tree" Subtype="SpruceTreeMedium4m_Snowy" Density="0.11" />
+        <Item Type="Tree" Subtype="TreePine10Snowy" Density="0.1" />
+        <Item Type="Tree" Subtype="TreePine15Snowy" Density="0.07" />
+        <Item Type="Tree" Subtype="SpruceTree25m_Snowy" Density="0.05" />
+        <Item Type="Gatherable" Subtype="StoneLargeSnowy" Density="0.023" />
+		<Item Type="Gatherable" Subtype="HazelBranchlessSnowy" Density="0.1" />
+        <Item Type="Gatherable" Subtype="Blue_Berry" Density="0.06" />
+        <Item Type="Gatherable" Subtype="HighlandCaps" Density="0.03" />
+        <Item Type="Gatherable" Subtype="StonePile" Density="0.02" />
+        <Item Type="Gatherable" Subtype="SingleStone" Density="0.04" />
+      </Mapping>
+	  
+	  <!-- Highland Plains -->
+	  <Mapping>
+        <Biome>183</Biome>
+        <Material>Grass</Material>
+        <Material>SteppeYellowGrass</Material>
+        <Material>SandGrass</Material>
+        <Material>SandGrassGreen</Material>
+        <Material>Woods</Material>
+        <Material>Woods_grass</Material>
+        <Material>Sand</Material>
+        <Material>Sandstone</Material>
+        <Material>Limestone</Material>
+        <Material>Rocks_grass</Material>
+		<Material>Rock_Grass_Dwarven</Material>
+        <Material>Gravel_Soil_Dwarven</Material>
+        <Material>Rock_Moss_Mount</Material>
+		<Material>Gravel_Dwarven</Material>
+		<Material>Woods_needles</Material>
+		<Material>Gravel_Grass_Mount</Material>
+		<Material>Veg_Detail_Gravel_Dwarven</Material>
+		<Material>Grass_Norden</Material>
+		<Material>Gravel_Soil_Norden</Material>
+		<Material>Gravel_Norden</Material>
+		<Material>Veg_Detail_Gravel_Norden</Material>
+		<Material>Soil</Material>
+        <Height Min="0" Max="10" />
+        <Slope Min="0" Max="50" />
+
+        <Item Type="Tree" Subtype="SpruceTreeMedium4m" Density="0.11" />
+        <Item Type="Tree" Subtype="TreePine10" Density="0.1" />
+        <Item Type="Tree" Subtype="TreePine15" Density="0.07" />
+        <Item Type="Tree" Subtype="SpruceTree25m" Density="0.05" />
+		<Item Type="Gatherable" Subtype="HazelLargeBranchless" Density="0.05" />
+        <Item Type="Gatherable" Subtype="HazelMediumBranchless" Density="0.07" />
+        <Item Type="Gatherable" Subtype="Blue_Berry" Density="0.06" />
+        <Item Type="Gatherable" Subtype="HighlandCaps" Density="0.03" />
         <Item Type="Gatherable" Subtype="StonePile" Density="0.02" />
         <Item Type="Gatherable" Subtype="SingleStone" Density="0.04" />
       </Mapping>
@@ -536,6 +612,7 @@
 		<Material>Gravel_Dwarven</Material>
 		<Material>Woods_needles</Material>
 		<Material>Snow_Woods_Needles</Material>
+		<Material>Snow_Gravel</Material>
 		<Material>Snow_Woods</Material>
 		<Material>Snow_Grass</Material>
 		<Material>Gravel_Grass_Mount</Material>
@@ -546,6 +623,7 @@
 		<Material>Gravel_Norden</Material>
 		<Material>Veg_Detail_Gravel_Norden</Material>
 		<Material>Soil</Material>
+		<Material>Snow_Rock_Moss_Mount</Material>
         <Height Min="0" Max="10" />
         <Slope Min="0" Max="50" />
 
@@ -600,6 +678,7 @@
 		<Material>Soil</Material>
 		<Material>Bitumen_Soil</Material>
 		<Material>Bitumen_Grass</Material>
+		<Material>Snow_Rock_Moss_Mount</Material>
         <Slope Min="0" Max="35" />
 		<Height Min="0" Max="10" />
 
@@ -643,6 +722,7 @@
 		<Material>Soil</Material>
 		<Material>Bitumen_Soil</Material>
 		<Material>Bitumen_Grass</Material>
+		<Material>Snow_Rock_Moss_Mount</Material>
         <Slope Min="0" Max="35" />
 		<Height Min="0" Max="10" />
 
@@ -686,6 +766,7 @@
 		<Material>Soil</Material>
 		<Material>Bitumen_Soil</Material>
 		<Material>Bitumen_Grass</Material>
+		<Material>Snow_Rock_Moss_Mount</Material>
         <Slope Min="0" Max="35" />
 		<Height Min="0" Max="10" />
 
@@ -729,6 +810,7 @@
 		<Material>Soil</Material>
 		<Material>Bitumen_Soil</Material>
 		<Material>Bitumen_Grass</Material>
+		<Material>Snow_Rock_Moss_Mount</Material>
         <Slope Min="0" Max="35" />
 		<Height Min="0" Max="10" />
 
@@ -772,6 +854,7 @@
 		<Material>Soil</Material>
 		<Material>Bitumen_Soil</Material>
 		<Material>Bitumen_Grass</Material>
+		<Material>Snow_Rock_Moss_Mount</Material>
 		
         <Slope Min="0" Max="35" />
 		<Height Min="0" Max="10" />
@@ -822,6 +905,7 @@
 		<Material>Soil</Material>
 		<Material>Bitumen_Soil</Material>
 		<Material>Bitumen_Grass</Material>
+		<Material>Snow_Rock_Moss_Mount</Material>
         <Slope Min="0" Max="35" />
 		<Height Min="0" Max="10" />
 
@@ -865,6 +949,7 @@
 		<Material>Soil</Material>
 		<Material>Bitumen_Soil</Material>
 		<Material>Bitumen_Grass</Material>
+		<Material>Snow_Rock_Moss_Mount</Material>
         <Slope Min="0" Max="35" />
 		<Height Min="0" Max="10" />
 
@@ -914,6 +999,7 @@
 		<Material>Soil</Material>
 		<Material>Bitumen_Soil</Material>
 		<Material>Bitumen_Grass</Material>
+		<Material>Snow_Rock_Moss_Mount</Material>
         <Slope Min="0" Max="35" />
 		<Height Min="0" Max="10" />
 
@@ -966,6 +1052,7 @@
 		<Material>Bitumen_Soil</Material>
 		<Material>Bitumen_Grass</Material>
         <Material>TinOre</Material>
+		<Material>Snow_Rock_Moss_Mount</Material>
         <Slope Min="0" Max="35" />
 		<Height Min="0" Max="10" />
 
@@ -1010,6 +1097,7 @@
 		<Material>Bitumen_Soil</Material>
 		<Material>Bitumen_Grass</Material>
         <Material>TinOre</Material>
+		<Material>Snow_Rock_Moss_Mount</Material>
         <Slope Min="0" Max="35" />
 		<Height Min="0" Max="10" />
 

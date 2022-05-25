@@ -197,6 +197,22 @@
         <Sprite>ForestSparse</Sprite>
         <Sprite>ForestSparse_v2</Sprite>
       </BiomeSprite> -->
+	  <BiomeSprite Biome="183" Density=".4" Priority="5">
+        <Sprite>ForestSparse</Sprite>
+        <Sprite>PineTreeBundle_v5</Sprite>
+      </BiomeSprite>
+	  <BiomeSprite Biome="186" Density=".4" Priority="5">
+        <Sprite>ForestSparse</Sprite>
+        <Sprite>PineTreeBundle_v5</Sprite>
+      </BiomeSprite>
+	  <BiomeSprite Biome="189" Density=".8" Priority="5">
+        <Sprite>PineTreeBundle</Sprite>
+        <Sprite>PineTreeBundle_v2</Sprite>
+        <Sprite>PineTreeBundle_v3</Sprite>
+        <Sprite>PineTreeBundle_v4</Sprite>
+        <Sprite>PineTreeBundle_v5</Sprite>
+      </BiomeSprite>
+	  
 	  <BiomeSprite Biome="216" Density=".4" Priority="5">
         <Sprite>ForestSparse</Sprite>
         <Sprite>PineTreeBundle_v5</Sprite>

@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  
+	<!-- Music rules -->
+	<Definition xsi:type="MyObjectBuilder_EnvironmentRuleDefinition">
+		<Id Type="EnvironmentRuleDefinition" Subtype="MusicTundraDay" />
+		<Biome Type="BiomeDefinition" Subtype="Highland_Tundra" />
+		<TimeOfDay>NotNight</TimeOfDay>
+    <DistanceToSurface Min="-5" Max="5000" />
+		<Music Urgency="0" Track="MusicTundraDay" />
+	</Definition>
+
+  <Definition xsi:type="MyObjectBuilder_EnvironmentRuleDefinition">
+    <Id Type="EnvironmentRuleDefinition" Subtype="MusicTundraNight" />
+    <Biome Type="BiomeDefinition" Subtype="Highland_Tundra" />
+    <TimeOfDay>NotDay</TimeOfDay>
+    <DistanceToSurface Min="-5" Max="5000" />
+    <Music Urgency="0" Track="MusicTundraNight" />
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_EnvironmentRuleDefinition">
+    <Id Type="EnvironmentRuleDefinition" Subtype="MusicTundraUnderground" />
+    <Biome Type="BiomeDefinition" Subtype="Highland_Tundra" />
+    <DistanceToSurface Min="-500" Max="-5" />
+    <Music Urgency="0" Track="MusicUndergroundCold" />
+  </Definition>
+
+	<!-- Sound rules -->
+	<Definition xsi:type="MyObjectBuilder_EnvironmentRuleDefinition">
+		<Id Type="EnvironmentRuleDefinition" Subtype="SoundTundraDay" />
+		<Biome Type="BiomeDefinition" Subtype="Highland_Tundra" />
+		<TimeOfDay>NotNight</TimeOfDay>
+    <Ambience Urgency="1" Track="AmbTundraDay" />
+	</Definition>
+  
+  <Definition xsi:type="MyObjectBuilder_EnvironmentRuleDefinition" Copy="Append">
+    <Id Type="EnvironmentRuleDefinition" Subtype="SoundTundraDayIndoor" />
+    <CopyFrom Type="EnvironmentRuleDefinition" Subtype="SoundTundraDay" />
+    <Inside>true</Inside>
+    <Result Urgency="1" Type="AudioFxDefinition" Subtype="FilterIndoor" />
+  </Definition>
+
+	<Definition xsi:type="MyObjectBuilder_EnvironmentRuleDefinition">
+		<Id Type="EnvironmentRuleDefinition" Subtype="SoundTundraNight" />
+		<Biome Type="BiomeDefinition" Subtype="Highland_Tundra" />
+		<TimeOfDay>NotDay</TimeOfDay>
+    <Ambience Urgency="1" Track="AmbTundraNight" />
+	</Definition>
+  
+  <Definition xsi:type="MyObjectBuilder_EnvironmentRuleDefinition" Copy="Append">
+    <Id Type="EnvironmentRuleDefinition" Subtype="SoundTundraNightIndoor" />
+    <CopyFrom Type="EnvironmentRuleDefinition" Subtype="SoundTundraNight" />
+    <Inside>true</Inside>
+    <Result Urgency="1" Type="AudioFxDefinition" Subtype="FilterIndoor" />
+  </Definition>
+	
+</Definitions>

@@ -2774,6 +2774,7 @@
         <Value>198</Value>
 		<Value>210</Value>
 		<Value>213</Value>
+		<Value>214</Value>
       </Biome>
 	  <Biome Type="BiomeDefinition" Subtype="Norden_ForestDense">
         <Value>216</Value>
@@ -2781,7 +2782,14 @@
       </Biome>
       <Biome Type="BiomeDefinition" Subtype="Norden_ForestGrassland">
         <Value>228</Value>
-     </Biome>
+      </Biome>
+	  <Biome Type="BiomeDefinition" Subtype="Highland_TundraForest">
+        <Value>186</Value>
+		<Value>189</Value>
+      </Biome>
+	  <Biome Type="BiomeDefinition" Subtype="Highland_Tundra">
+        <Value>183</Value>
+      </Biome>
     </BiomeMapping>
     <!-- Biomes: END-->
 

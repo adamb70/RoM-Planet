@@ -90,6 +90,7 @@
 		<VoxelMaterial>Snow_Stone</VoxelMaterial>
 		<VoxelMaterial>Snow_Woods</VoxelMaterial>
 		<VoxelMaterial>Snow_Woods_Needles</VoxelMaterial>
+		<VoxelMaterial>Snow_Rock_Moss_Mount</VoxelMaterial>
 		
         <PhysicalMaterial>Snow</PhysicalMaterial>
         <StepEffect CharacterMovementState="Walk" EventName="StepSnowRun" />
