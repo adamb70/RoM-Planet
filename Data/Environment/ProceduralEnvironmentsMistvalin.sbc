@@ -24,7 +24,7 @@
         <Item Type="Bot" Subtype="Deer" Density="0.7" />
       </Mapping>
 	  <Mapping>
-        <Biome>210</Biome>
+        <Biome>214</Biome>
         <Item Type="Bot" Subtype="Undead" Density="0.5" />
       </Mapping>
       <Mapping>
@@ -82,10 +82,10 @@
         <Slope Min="0" Max="50" />
 
         <Item Type="Tree" Subtype="DreadOakTreeSapling" Density="0.11" />
-        <Item Type="Tree" Subtype="DreadOakTree5" Density="0.19" />
+        <Item Type="Tree" Subtype="DreadOakTree10" Density="0.19" />
         <Item Type="Tree" Subtype="DreadOakTree10" Density="0.29" />
         <!-- <Item Type="Tree" Subtype="SpruceTree175m" Density="0.03" /> -->
-        <Item Type="Tree" Subtype="DreadOakTree25" Density="0.15" />
+        <Item Type="Tree" Subtype="DeadTree2" Density="0.15" />
         <!-- <Item Type="Tree" Subtype="SpruceTree225m" Density="0.03" /> -->
         <!-- <Item Type="Static" Subtype="Fern" Density="0.25" MaxRoll="35" /> -->
         <Item Type="Gatherable" Subtype="DeadTree3" Density="0.07" />
@@ -105,11 +105,11 @@
         <Slope Min="0" Max="50" />
 
         <Item Type="Tree" Subtype="DreadOakTreeSapling" Density="0.01" />
-        <Item Type="Tree" Subtype="DreadOakTree5" Density="0.01" />
-        <Item Type="Tree" Subtype="DreadOakTree25_var2" Density="0.09" />
-        <Item Type="Tree" Subtype="DreadOakTree75" Density="0.07" />
-        <Item Type="Tree" Subtype="DreadOakTree25" Density="0.25" />
-        <Item Type="Tree" Subtype="DreadOakTree75_var2" Density="0.05" />
+        <Item Type="Tree" Subtype="DeadTree3" Density="0.01" />
+        <Item Type="Tree" Subtype="DreadOakTree10" Density="0.09" />
+        <Item Type="Tree" Subtype="DeadTree1" Density="0.07" />
+        <Item Type="Tree" Subtype="DreadOakTree10" Density="0.25" />
+        <Item Type="Tree" Subtype="DeadTree2" Density="0.05" />
         <!-- <Item Type="Gatherable" Subtype="Berries" Density="0.05" /> -->
         <Item Type="Gatherable" Subtype="Mushrooms" Density="0.12" />
         <Item Type="Gatherable" Subtype="BrownStonePile" Density="0.02" />
@@ -152,11 +152,11 @@
         <Slope Min="0" Max="50" />
 		
 		<Item Type="Tree" Subtype="DreadOakTreeSapling" Density="0.11" />
-        <Item Type="Tree" Subtype="DreadOakTree10" Density="0.19" />
-        <Item Type="Tree" Subtype="DeadTree3" Density="0.29" />
-        <Item Type="Tree" Subtype="DreadOakTree75_var2" Density="0.2" />
-        <Item Type="Tree" Subtype="DreadOakTree25" Density="0.29" />
-        <Item Type="Tree" Subtype="DreadOakTree75" Density="0.15" />
+        <Item Type="Tree" Subtype="DeadTree1" Density="0.10" />
+        <Item Type="Tree" Subtype="DreadOakTree10" Density="0.29" />
+        <Item Type="Tree" Subtype="DeadTree3" Density="0.2" />
+        <Item Type="Tree" Subtype="DreadOakTree10" Density="0.29" />
+        <Item Type="Tree" Subtype="DeadTree2" Density="0.07" />
         <!-- <Item Type="Gatherable" Subtype="Berries" Density="0.08" /> -->
         <Item Type="Gatherable" Subtype="Mushrooms" Density="0.13" />
         <Item Type="Gatherable" Subtype="BrownStonePile" Density="0.02" />
@@ -168,10 +168,10 @@
         <Material>Woods_Needles_Dread</Material>
         <Height Min="0" Max="10" />
         <Slope Min="0" Max="50" />
-        <Item Type="Tree" Subtype="DreadOakTree25" Density="0.02" />
-        <Item Type="Tree" Subtype="DreadOakTree75_var2" Density="0.6" />
-        <Item Type="Tree" Subtype="DreadOakTree10" Density="0.01" />
-        <Item Type="Tree" Subtype="DreadOakTree75" Density="0.8" />
+        <Item Type="Tree" Subtype="DeadTree2" Density="0.02" />
+        <Item Type="Tree" Subtype="DreadOakTree10" Density="0.6" />
+        <Item Type="Tree" Subtype="DeadTree1" Density="0.01" />
+        <Item Type="Tree" Subtype="DreadOakTree10" Density="0.8" />
         <!-- <Item Type="Static" Subtype="Fern" Density="0.25" MaxRoll="35" /> -->
         <!-- <Item Type="Gatherable" Subtype="Berries" Density="0.03" /> -->
         <Item Type="Gatherable" Subtype="Mushrooms" Density="0.15" />
@@ -307,6 +307,255 @@
         <Item Type="Static" Subtype="Fern" Density="0.25" MaxRoll="35" />
         <Item Type="Gatherable" Subtype="Berries" Density="0.03" />
         <Item Type="Gatherable" Subtype="Mushrooms" Density="0.15" />
+        <Item Type="Gatherable" Subtype="StonePile" Density="0.02" />
+        <Item Type="Gatherable" Subtype="SingleStone" Density="0.04" />
+      </Mapping>
+	  
+	  <!-- Highland Forst -->
+	  <Mapping>
+        <Biome>186</Biome>
+        <Material>Grass</Material>
+        <Material>SteppeYellowGrass</Material>
+        <Material>SandGrass</Material>
+        <Material>SandGrassGreen</Material>
+        <Material>Woods</Material>
+        <Material>Woods_grass</Material>
+        <Material>Sand</Material>
+        <Material>Sandstone</Material>
+        <Material>Limestone</Material>
+        <Material>Rocks_grass</Material>
+		<Material>Rock_Grass_Dwarven</Material>
+        <Material>Gravel_Soil_Dwarven</Material>
+        <Material>Rock_Moss_Mount</Material>
+		<Material>Gravel_Dwarven</Material>
+		<Material>Gravel_Grass_Mount</Material>
+		<Material>Veg_Detail_Gravel_Dwarven</Material>
+		<Material>Grass_Norden</Material>
+		<Material>Gravel_Soil_Norden</Material>
+		<Material>Gravel_Norden</Material>
+		<Material>Veg_Detail_Gravel_Norden</Material>
+		<Material>Soil</Material>
+        <Height Min="0" Max="10" />
+        <Slope Min="0" Max="50" />
+
+        <Item Type="Tree" Subtype="SpruceTreeMedium4m" Density="0.11" />
+        <Item Type="Tree" Subtype="SpruceTree10m" Density="0.19" />
+        <Item Type="Tree" Subtype="SpruceTree15m" Density="0.29" />
+        <!-- <Item Type="Tree" Subtype="SpruceTree175m" Density="0.03" /> -->
+        <Item Type="Tree" Subtype="PineTree22m" Density="0.15" />
+        <!-- <Item Type="Tree" Subtype="SpruceTree225m" Density="0.03" /> -->
+        <Item Type="Static" Subtype="Fern" Density="0.25" MaxRoll="35" /> 
+        <Item Type="Gatherable" Subtype="HazelLarge" Density="0.07" />
+        <Item Type="Gatherable" Subtype="HazelMedium" Density="0.09" />
+        <Item Type="Gatherable" Subtype="HazelSmall" Density="0.04" />
+        <Item Type="Gatherable" Subtype="Berries" Density="0.08" />
+        <Item Type="Gatherable" Subtype="Mushrooms" Density="0.08" />
+        <Item Type="Gatherable" Subtype="StonePile" Density="0.02" />
+        <Item Type="Gatherable" Subtype="SingleStone" Density="0.04" />
+      </Mapping>
+	  <!-- Highland Forst -->
+	  <Mapping>
+        <Biome>186</Biome>
+        <Material>Woods_needles</Material>
+        <Height Min="0" Max="10" />
+        <Slope Min="0" Max="50" />
+
+        <Item Type="Tree" Subtype="SpruceTreeMedium4m" Density="0.01" />
+        <Item Type="Tree" Subtype="SpruceTree10m" Density="0.01" />
+        <Item Type="Tree" Subtype="SpruceTree15m" Density="0.09" />
+        <Item Type="Tree" Subtype="SpruceTree175m" Density="0.07" />
+        <Item Type="Tree" Subtype="PineTree22m" Density="0.25" />
+        <Item Type="Tree" Subtype="SpruceTree225m" Density="0.05" />
+        <Item Type="Static" Subtype="Fern" Density="0.25" MaxRoll="35" />
+        <Item Type="Gatherable" Subtype="Berries" Density="0.05" />
+        <Item Type="Gatherable" Subtype="Mushrooms" Density="0.10" />
+        <Item Type="Gatherable" Subtype="StonePile" Density="0.02" />
+        <Item Type="Gatherable" Subtype="SingleStone" Density="0.04" />
+      </Mapping>
+	  <!-- Highland Dense Forest -->
+	  <Mapping>
+        <Biome>189</Biome>
+        <Material>Grass</Material>
+        <Material>SteppeYellowGrass</Material>
+        <Material>SandGrass</Material>
+        <Material>SandGrassGreen</Material>
+        <Material>Woods</Material>
+        <Material>Woods_grass</Material>
+        <Material>Sand</Material>
+        <Material>Sandstone</Material>
+        <Material>Limestone</Material>
+        <Material>Rocks_grass</Material>
+		<Material>Rock_Grass_Dwarven</Material>
+        <Material>Gravel_Soil_Dwarven</Material>
+        <Material>Rock_Moss_Mount</Material>
+		<Material>Gravel_Dwarven</Material>
+		<Material>Gravel_Grass_Mount</Material>
+		<Material>Veg_Detail_Gravel_Dwarven</Material>
+		<Material>Grass_Norden</Material>
+		<Material>Gravel_Soil_Norden</Material>
+		<Material>Gravel_Norden</Material>
+		<Material>Veg_Detail_Gravel_Norden</Material>
+		<Material>Soil</Material>
+        <Height Min="0" Max="10" />
+        <Slope Min="0" Max="50" />
+
+        <Item Type="Tree" Subtype="SpruceTreeMedium4m" Density="0.11" />
+        <Item Type="Tree" Subtype="SpruceTree10m" Density="0.19" />
+        <Item Type="Tree" Subtype="SpruceTree15m" Density="0.29" />
+        <Item Type="Tree" Subtype="SpruceTree175m" Density="0.2" />
+        <Item Type="Tree" Subtype="PineTree22m" Density="0.29" />
+        <Item Type="Tree" Subtype="SpruceTree225m" Density="0.15" />
+        <Item Type="Static" Subtype="Fern" Density="0.25" MaxRoll="35" />
+        <Item Type="Gatherable" Subtype="HazelLarge" Density="0.03" />
+        <Item Type="Gatherable" Subtype="HazelMedium" Density="0.05" />
+        <Item Type="Gatherable" Subtype="HazelSmall" Density="0.07" />
+        <Item Type="Gatherable" Subtype="Berries" Density="0.08" />
+        <Item Type="Gatherable" Subtype="Mushrooms" Density="0.08" />
+        <Item Type="Gatherable" Subtype="StonePile" Density="0.02" />
+        <Item Type="Gatherable" Subtype="SingleStone" Density="0.04" />
+      </Mapping>
+	  <!-- Highland Dense Forest -->
+	  <Mapping>
+        <Biome>189</Biome>
+        <Material>Woods_needles</Material>
+        <Height Min="0" Max="10" />
+        <Slope Min="0" Max="50" />
+        <Item Type="Tree" Subtype="SpruceTree15m" Density="0.02" />
+        <Item Type="Tree" Subtype="SpruceTree175m" Density="0.6" />
+        <Item Type="Tree" Subtype="PineTree22m" Density="0.01" />
+        <Item Type="Tree" Subtype="SpruceTree225m" Density="0.8" />
+        <Item Type="Static" Subtype="Fern" Density="0.25" MaxRoll="35" />
+        <Item Type="Gatherable" Subtype="Berries" Density="0.03" />
+        <Item Type="Gatherable" Subtype="Mushrooms" Density="0.15" />
+        <Item Type="Gatherable" Subtype="StonePile" Density="0.02" />
+        <Item Type="Gatherable" Subtype="SingleStone" Density="0.04" />
+      </Mapping>
+	  
+	  
+	  <!-- Highland Forst Snowy -->
+	  <Mapping>
+        <Biome>186</Biome>
+        <Material>Snow</Material>
+        <Material>Snow_Rock_Grass_Dwarven</Material>
+		<Material>Snow_Woods</Material>
+		<Material>Snow_Grass</Material>
+		<Material>Snow_Soil</Material>
+        <Height Min="0" Max="10" />
+        <Slope Min="0" Max="50" />
+
+        <Item Type="Tree" Subtype="SpruceTreeMedium4m_Snowy" Density="0.11" />
+        <Item Type="Tree" Subtype="SpruceTree10m_Snowy" Density="0.19" />
+        <Item Type="Tree" Subtype="SpruceTree15m_Snowy" Density="0.29" />
+        <!-- <Item Type="Tree" Subtype="TreePine175Snowy" Density="0.03" /> -->
+        <Item Type="Tree" Subtype="SpruceTree25m_Snowy" Density="0.15" />
+        <!-- <Item Type="Tree" Subtype="SpruceTree225m_Snowy" Density="0.03" /> -->
+        <Item Type="Static" Subtype="Fern" Density="0.25" MaxRoll="35" /> 
+        <Item Type="Gatherable" Subtype="HazelBranchlessSnowy" Density="0.12" />
+        <Item Type="Gatherable" Subtype="Blue_Berry" Density="0.08" />
+        <Item Type="Gatherable" Subtype="HighlandCaps" Density="0.08" />
+        <Item Type="Gatherable" Subtype="StonePile" Density="0.02" />
+        <Item Type="Gatherable" Subtype="SingleStone" Density="0.04" />
+      </Mapping>
+	  <!-- Highland Forst Snowy -->
+	  <Mapping>
+        <Biome>186</Biome>
+		<Material>Snow_Woods_Needles</Material>
+        <Height Min="0" Max="10" />
+        <Slope Min="0" Max="50" />
+
+        <Item Type="Tree" Subtype="SpruceTreeMedium4m_Snowy" Density="0.01" />
+        <Item Type="Tree" Subtype="SpruceTree10m_Snowy" Density="0.01" />
+        <Item Type="Tree" Subtype="SpruceTree15m_Snowy" Density="0.09" />
+        <Item Type="Tree" Subtype="SpruceTree175m_Snowy" Density="0.07" />
+        <Item Type="Tree" Subtype="SpruceTree25m_Snowy" Density="0.25" />
+        <Item Type="Tree" Subtype="SpruceTree225m_Snowy" Density="0.05" />
+        <Item Type="Static" Subtype="Fern" Density="0.25" MaxRoll="35" />
+        <Item Type="Gatherable" Subtype="Blue_Berry" Density="0.05" />
+        <Item Type="Gatherable" Subtype="HighlandCaps" Density="0.10" />
+        <Item Type="Gatherable" Subtype="StonePile" Density="0.02" />
+        <Item Type="Gatherable" Subtype="SingleStone" Density="0.04" />
+      </Mapping>
+	  <!-- Highland Dense Forest Snowy -->
+	  <Mapping>
+        <Biome>189</Biome>
+        <Material>Snow</Material>
+        <Material>Snow_Rock_Grass_Dwarven</Material>
+		<Material>Snow_Woods</Material>
+		<Material>Snow_Grass</Material>
+		<Material>Snow_Soil</Material>
+        <Height Min="0" Max="10" />
+        <Slope Min="0" Max="50" />
+
+        <Item Type="Tree" Subtype="SpruceTreeMedium4m_Snowy" Density="0.11" />
+        <Item Type="Tree" Subtype="SpruceTree10m_Snowy" Density="0.19" />
+        <Item Type="Tree" Subtype="SpruceTree15m_Snowy" Density="0.1" />
+        <Item Type="Tree" Subtype="SpruceTree175m_Snowy" Density="0.2" />
+        <Item Type="Tree" Subtype="SpruceTree25m_Snowy" Density="0.15" />
+        <Item Type="Tree" Subtype="SpruceTree225m_Snowy" Density="0.35" />
+        <Item Type="Static" Subtype="Fern" Density="0.25" MaxRoll="35" />
+        <Item Type="Gatherable" Subtype="HazelBranchlessSnowy" Density="0.1" />
+        <Item Type="Gatherable" Subtype="Blue_Berry" Density="0.08" />
+        <Item Type="Gatherable" Subtype="HighlandCaps" Density="0.08" />
+        <Item Type="Gatherable" Subtype="StonePile" Density="0.02" />
+        <Item Type="Gatherable" Subtype="SingleStone" Density="0.04" />
+      </Mapping>
+	  <!-- Highland Dense Forest Snowy -->
+	  <Mapping>
+        <Biome>189</Biome>
+		<Material>Snow_Woods_Needles</Material>
+        <Height Min="0" Max="10" />
+        <Slope Min="0" Max="50" />
+        <Item Type="Tree" Subtype="SpruceTree25m_Snowy" Density="0.02" />
+        <Item Type="Tree" Subtype="SpruceTree175m_Snowy" Density="0.02" />
+        <Item Type="Tree" Subtype="SpruceTree225m_Snowy" Density="0.8" />
+        <Item Type="Static" Subtype="Fern" Density="0.25" MaxRoll="35" />
+        <Item Type="Gatherable" Subtype="Blue_Berry" Density="0.03" />
+        <Item Type="Gatherable" Subtype="HighlandCaps" Density="0.15" />
+        <Item Type="Gatherable" Subtype="StonePile" Density="0.02" />
+        <Item Type="Gatherable" Subtype="SingleStone" Density="0.04" />
+      </Mapping>
+	  
+	  <!-- Highland Mountain Pines -->
+	  <Mapping>
+        <Biome>177</Biome>
+        <Material>Snow</Material>
+        <Material>Grass</Material>
+        <Material>SteppeYellowGrass</Material>
+        <Material>SandGrass</Material>
+        <Material>SandGrassGreen</Material>
+        <Material>Woods</Material>
+        <Material>Woods_grass</Material>
+        <Material>Sand</Material>
+        <Material>Sandstone</Material>
+        <Material>Limestone</Material>
+        <Material>Rocks_grass</Material>
+		<Material>Rock_Grass_Dwarven</Material>
+        <Material>Gravel_Soil_Dwarven</Material>
+        <Material>Snow_Rock_Grass_Dwarven</Material>
+        <Material>Rock_Moss_Mount</Material>
+		<Material>Gravel_Dwarven</Material>
+		<Material>Woods_needles</Material>
+		<Material>Snow_Woods_Needles</Material>
+		<Material>Snow_Woods</Material>
+		<Material>Snow_Grass</Material>
+		<Material>Gravel_Grass_Mount</Material>
+		<Material>Veg_Detail_Gravel_Dwarven</Material>
+		<Material>Snow_Soil</Material>
+		<Material>Grass_Norden</Material>
+		<Material>Gravel_Soil_Norden</Material>
+		<Material>Gravel_Norden</Material>
+		<Material>Veg_Detail_Gravel_Norden</Material>
+		<Material>Soil</Material>
+        <Height Min="0" Max="10" />
+        <Slope Min="0" Max="50" />
+
+        <Item Type="Tree" Subtype="SpruceTreeMedium4m_Snowy" Density="0.11" />
+        <Item Type="Tree" Subtype="TreePine10Snowy" Density="0.6" />
+        <Item Type="Tree" Subtype="TreePine15Snowy" Density="0.8" />
+        <Item Type="Tree" Subtype="TreePine175Snowy" Density="0.4" />
+        <Item Type="Gatherable" Subtype="HazelBranchlessSnowy" Density="0.1" />
+        <Item Type="Gatherable" Subtype="Blue_Berry" Density="0.03" />
+        <Item Type="Gatherable" Subtype="HighlandCaps" Density="0.03" />
         <Item Type="Gatherable" Subtype="StonePile" Density="0.02" />
         <Item Type="Gatherable" Subtype="SingleStone" Density="0.04" />
       </Mapping>
@@ -528,7 +777,7 @@
 		<Height Min="0" Max="10" />
 
         <Item Type="Gatherable" Subtype="IronNugget" Density="0.25" />
-		<Item Density="0.05" Subtype="Berries" Type="Gatherable" />
+		<Item Density="0.05" Subtype="HighlandCaps" Type="Gatherable" />
 		<Item Density="0.05" Subtype="Blue_Berry" Type="Gatherable" />
 		<Item Density="0.015" Subtype="Roots" Type="Gatherable" />
 		<Item Density="0.04" Subtype="HazelBranchlessSnowy" Type="Gatherable" />
@@ -620,7 +869,7 @@
 		<Height Min="0" Max="10" />
 
         <Item Type="Gatherable" Subtype="PieceCopper" Density="0.25" />
-		<Item Density="0.05" Subtype="Berries" Type="Gatherable" />
+		<Item Density="0.05" Subtype="HighlandCaps" Type="Gatherable" />
 		<Item Density="0.05" Subtype="Blue_Berry" Type="Gatherable" />
 		<Item Density="0.015" Subtype="Roots" Type="Gatherable" />
 		<Item Density="0.04" Subtype="HazelBranchlessSnowy" Type="Gatherable" />
